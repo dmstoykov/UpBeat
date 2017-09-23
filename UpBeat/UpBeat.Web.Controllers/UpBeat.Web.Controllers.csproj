@@ -101,7 +101,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountController.cs" />
-    <Compile Include="Config\IdentityConfig.cs" />
     <Compile Include="HomeController.cs" />
     <Compile Include="ManageController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -111,6 +110,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\UpBeat.Auth\UpBeat.Auth.csproj">
+      <Project>{C0D99390-4E7F-4A8E-AC7F-1C7C1174EF22}</Project>
+      <Name>UpBeat.Auth</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UpBeat.Web.Models\UpBeat.Web.Models.csproj">
       <Project>{0C80CB22-1540-496D-B629-08118486BE41}</Project>
       <Name>UpBeat.Web.Models</Name>
