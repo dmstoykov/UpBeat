@@ -46,6 +46,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=6.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.1.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Bytes2you.Validation, Version=2.0.0.0, Culture=neutral, PublicKeyToken=a7d501dd757e0442, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bytes2you.Validation.2.0.0.0\lib\portable-win+net40+sl40+wp+Xbox40\Bytes2you.Validation.dll</HintPath>
+    </Reference>
     <Reference Include="Glimpse.AspNet, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Glimpse.AspNet.1.8.0\lib\net45\Glimpse.AspNet.dll</HintPath>
     </Reference>
@@ -208,6 +214,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\AutoMapperConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
@@ -296,6 +303,10 @@
     <ProjectReference Include="..\UpBeat.Auth\UpBeat.Auth.csproj">
       <Project>{C0D99390-4E7F-4A8E-AC7F-1C7C1174EF22}</Project>
       <Name>UpBeat.Auth</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UpBeat.Common\UpBeat.Common.csproj">
+      <Project>{A0CA61BE-9FCA-47DE-BC30-78E04C42BC61}</Project>
+      <Name>UpBeat.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\UpBeat.Web.Controllers\UpBeat.Web.Controllers.csproj">
       <Project>{ff696748-192d-45fa-bdd6-30c812989a9f}</Project>

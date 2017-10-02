@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity.Owin;
-using UpBeat.Auth.Models;
+using UpBeat.Data.Models;
 
 namespace UpBeat.Auth.Contracts
 {
@@ -11,7 +11,7 @@ namespace UpBeat.Auth.Contracts
 
         Task<bool> HasBeenVerifiedAsync();
 
-        Task SignInAsync(ApplicationUser user, bool isPersistent, bool rememberBrowser);
+        Task SignInAsync(User user, bool isPersistent, bool rememberBrowser);
 
         Task<SignInStatus> TwoFactorSignInAsync(string provider, string code, bool isPersistent, bool rememberBrowser);
 

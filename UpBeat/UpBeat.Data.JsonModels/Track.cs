@@ -4,7 +4,7 @@ using UpBeat.Common.Mappings;
 
 namespace UpBeat.Data.JsonModels
 {
-    public class Album : IMapFrom<Data.Models.Album>
+    public class Track : IMapFrom<Data.Models.Track>
     {
         //[JsonProperty("id")]
         //public string Id { get; set; }
@@ -12,16 +12,13 @@ namespace UpBeat.Data.JsonModels
         [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonProperty("release_date")]
-        public string ReleaseDate { get; set; }
-
         [JsonProperty("artists")]
         public IList<Artist> Artists { get; set; }
 
-        [JsonProperty("images")]
-        public IList<Image> Images { get; set; }
+        [JsonProperty("duration_ms")]
+        public long? Duration { get; set; }
 
-        [JsonProperty("tracks")]
-        public IList<Track> Tracks { get; set; }
+        [JsonProperty("preview_url")]
+        public string PreviewUrl { get; set; }
     }
 }

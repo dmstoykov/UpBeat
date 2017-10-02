@@ -30,6 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=6.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.1.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Bytes2you.Validation, Version=2.0.0.0, Culture=neutral, PublicKeyToken=a7d501dd757e0442, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bytes2you.Validation.2.0.0.0\lib\portable-win+net40+sl40+wp+Xbox40\Bytes2you.Validation.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -53,19 +59,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MsSqlDbContext.cs" />
     <Compile Include="Contracts\IDbContext.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Contracts\IGenericRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UpBeatDbContext.cs" />
+    <Compile Include="Repositories\GenericRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UpBeat.Auth\UpBeat.Auth.csproj">
-      <Project>{C0D99390-4E7F-4A8E-AC7F-1C7C1174EF22}</Project>
-      <Name>UpBeat.Auth</Name>
+    <ProjectReference Include="..\UpBeat.Data.JsonModels\UpBeat.Data.JsonModels.csproj">
+      <Project>{78C6FD55-234D-4B62-883C-665019FF60B7}</Project>
+      <Name>UpBeat.Data.JsonModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UpBeat.Data.Models\UpBeat.Data.Models.csproj">
+      <Project>{2BDBFF4C-D6D8-47B8-A16F-5199C29C2531}</Project>
+      <Name>UpBeat.Data.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
