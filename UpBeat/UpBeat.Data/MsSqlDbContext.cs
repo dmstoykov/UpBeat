@@ -16,6 +16,14 @@ namespace UpBeat.Data
         {
         }
 
+        public DbSet<Album> Albums { get; set; }
+
+        public DbSet<Artist> Artists { get; set; }
+
+        public DbSet<Image> Images { get; set; }
+
+        public DbSet<Track> Tracks { get; set; }
+
         public override int SaveChanges()
         {
             this.ApplyAuditInfoRules();

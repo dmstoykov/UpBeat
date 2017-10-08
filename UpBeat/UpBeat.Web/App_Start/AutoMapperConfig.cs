@@ -10,20 +10,31 @@ namespace UpBeat.Web.App_Start
 {
     public class AutoMapperConfig
     {
-        public static void RegisterMappings()
+        public void RegisterMappings()
         {
-            // Put IMapFrom And ICustomMapping to the json models and convert them to database models then execute parse and seed database
-            var types = Assembly.GetExecutingAssembly().GetExportedTypes();
-            var jsonModelTypes = Assembly.Load(Assemblies.JsonModels).GetExportedTypes();
+            // ERROR: Injection of dependency IConfigurationProvider into parameter configurationProvider of constructor of type Mapper
+            var jsonModelAssembly = Assembly.Load(Assemblies.JsonModels);
 
-            LoadStandardMappings(types);
-            LoadStandardMappings(jsonModelTypes);
-            
-            LoadCustomMappings(types);
-            LoadCustomMappings(jsonModelTypes);
+            this.Execute(jsonModelAssembly);
         }
 
-        private static void LoadStandardMappings(IEnumerable<Type> types)
+        public static IMapperConfigurationExpression Configuration { get; private set; }
+
+        public IMapperConfigurationExpression Execute(Assembly assembly)
+        {
+            Mapper.Initialize((config) =>
+            {
+                var types = assembly.GetExportedTypes();
+                LoadStandardMappings(types, config);
+                LoadCustomMappings(types, config);
+
+                Configuration = config;
+            });
+
+            return Configuration;
+        }
+
+        private static void LoadStandardMappings(IEnumerable<Type> types, IMapperConfigurationExpression config)
         {
             var maps = (from t in types
                         from i in t.GetInterfaces()
@@ -36,17 +47,14 @@ namespace UpBeat.Web.App_Start
                             Destination = t
                         }).ToArray();
 
-            Mapper.Initialize((config) =>
+            foreach (var map in maps)
             {
-                foreach (var map in maps)
-                {
-                    config.CreateMap(map.Source, map.Destination);
-                    config.CreateMap(map.Destination, map.Source);
-                }
-            });
+                config.CreateMap(map.Source, map.Destination);
+                config.CreateMap(map.Destination, map.Source);
+            }
         }
 
-        private static void LoadCustomMappings(IEnumerable<Type> types)
+        private static void LoadCustomMappings(IEnumerable<Type> types, IMapperConfigurationExpression config)
         {
             var maps = (from t in types
                         from i in t.GetInterfaces()
@@ -57,7 +65,7 @@ namespace UpBeat.Web.App_Start
 
             foreach (var map in maps)
             {
-                map.CreateMappings(Mapper.Configuration);
+                map.CreateMappings(config);
             }
         }
     }

@@ -7,7 +7,7 @@ namespace UpBeat.Data.Models
     {
         public string Name { get; set; }
 
-        public ICollection<Artist> Artists { get; set; }
+        public virtual ICollection<Artist> Artists { get; set; }
 
         public long? Duration { get; set; }
 

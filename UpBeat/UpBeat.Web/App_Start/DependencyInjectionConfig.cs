@@ -1,5 +1,5 @@
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(UpBeat.Web.App_Start.NinjectWebCommon), "Start")]
-[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(UpBeat.Web.App_Start.NinjectWebCommon), "Stop")]
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(UpBeat.Web.App_Start.DependencyInjectionConfig), "Start")]
+[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(UpBeat.Web.App_Start.DependencyInjectionConfig), "Stop")]
 
 namespace UpBeat.Web.App_Start
 {
@@ -13,21 +13,22 @@ namespace UpBeat.Web.App_Start
     using Ninject.Web.Common;
     using UpBeat.Auth.Contracts;
     using UpBeat.Auth;
+    using AutoMapper;
 
-    public static class NinjectWebCommon 
+    public static class DependencyInjectionConfig
     {
         private static readonly Bootstrapper bootstrapper = new Bootstrapper();
 
         /// <summary>
         /// Starts the application
         /// </summary>
-        public static void Start() 
+        public static void Start()
         {
             DynamicModuleUtility.RegisterModule(typeof(OnePerRequestHttpModule));
             DynamicModuleUtility.RegisterModule(typeof(NinjectHttpModule));
             bootstrapper.Initialize(CreateKernel);
         }
-        
+
         /// <summary>
         /// Stops the application.
         /// </summary>
@@ -35,7 +36,7 @@ namespace UpBeat.Web.App_Start
         {
             bootstrapper.ShutDown();
         }
-        
+
         /// <summary>
         /// Creates the kernel that will manage your application.
         /// </summary>
@@ -64,8 +65,9 @@ namespace UpBeat.Web.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Bind<IMapper>().ToMethod(ctx => Mapper.Instance).InSingletonScope();
             kernel.Bind<ISignInService>().ToMethod(_ => HttpContext.Current.GetOwinContext().Get<ApplicationSignInManager>());
             kernel.Bind<IUserService>().ToMethod(_ => HttpContext.Current.GetOwinContext().Get<ApplicationUserManager>());
-        }        
+        }
     }
 }

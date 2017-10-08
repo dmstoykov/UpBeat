@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using UpBeat.Data.Models.Contracts;
 
@@ -12,8 +13,12 @@ namespace UpBeat.Data.Contracts
 
         void Add(T entity);
 
+        void AddRange(IEnumerable<T> entities);
+
         void Update(T entity);
 
-        void Delete(T entity);
+        void Remove(T entity);
+
+        void RemoveRange(IEnumerable<T> entities);
     }
 }

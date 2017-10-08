@@ -9,10 +9,10 @@ namespace UpBeat.Data.Models
 
         public string ReleaseDate { get; set; }
 
-        public ICollection<Artist> Artists { get; set; }
+        public virtual ICollection<Artist> Artists { get; set; }
 
-        public ICollection<Image> Images { get; set; }
+        public virtual ICollection<Image> Images { get; set; }
 
-        public ICollection<Track> Tracks { get; set; }
+        public virtual ICollection<Track> Tracks { get; set; }
     }
 }

@@ -5,6 +5,7 @@ using System.Data.Entity.Infrastructure;
 using Bytes2you.Validation;
 using UpBeat.Data.Contracts;
 using UpBeat.Data.Models.Contracts;
+using System.Collections.Generic;
 
 namespace UpBeat.Data.Repositories
 {
@@ -52,7 +53,15 @@ namespace UpBeat.Data.Repositories
             }
         }
 
-        public void Delete(T entity)
+        public void AddRange(IEnumerable<T> entities)
+        {
+            foreach (var entity in entities)
+            {
+                this.Add(entity);
+            }
+        }
+
+        public void Remove(T entity)
         {
             Guard.WhenArgument(entity, nameof(entity)).IsNull().Throw();
 
@@ -62,6 +71,14 @@ namespace UpBeat.Data.Repositories
             DbEntityEntry entry = this.context.Entry(entity);
 
             entry.State = EntityState.Modified;
+        }
+
+        public void RemoveRange(IEnumerable<T> entities)
+        {
+            foreach (var entity in entities)
+            {
+                this.Remove(entity);
+            }
         }
 
         public void Update(T entity)

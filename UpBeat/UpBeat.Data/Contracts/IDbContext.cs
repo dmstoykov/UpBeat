@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
+using UpBeat.Data.Models;
 
 namespace UpBeat.Data.Contracts
 {

@@ -1,0 +1,2742 @@
+[
+    {
+        "id": "5rvIgXvAPGWspXY4rDLkeU",
+        "name": "Awake",
+        "release_date": "2017-09-21",
+        "artists": [
+            {
+                "id": "45eNHdiiabvmbp4erw26rg",
+                "name": "Illenium"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/85f63e6d3b84e250702c360ee33590b77d8049de"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/650b42d727816e45997473f5d07c533a1da9a337"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/84167f43914ba1081a67f12de42b2f984a352c0a"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "4d42YQbGZxwYq7YZiCkTDb",
+                "name": "Needed You",
+                "artists": [
+                    {
+                        "id": "45eNHdiiabvmbp4erw26rg",
+                        "name": "Illenium"
+                    },
+                    {
+                        "id": "3ppkM4QtM781APpaX7H9t7",
+                        "name": "Dia Frampton"
+                    }
+                ],
+                "duration_ms": 305571,
+                "preview_url": "https://p.scdn.co/mp3-preview/4824b5ebfd156e08fb5cfa1c0ab19c89624d799d?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "0q7oMII7kWTj1ZSX6GT6LU",
+                "name": "Crawl Outta Love",
+                "artists": [
+                    {
+                        "id": "45eNHdiiabvmbp4erw26rg",
+                        "name": "Illenium"
+                    },
+                    {
+                        "id": "0kErUwb6xgWfkdn0RyZWHZ",
+                        "name": "Annika Wells"
+                    }
+                ],
+                "duration_ms": 242011,
+                "preview_url": "https://p.scdn.co/mp3-preview/321f217e87c33274fa519e7e9aa91219279ae9db?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "2uA2UMcHR5gztUSECJjK8k",
+                "name": "No Time Like Now",
+                "artists": [
+                    {
+                        "id": "45eNHdiiabvmbp4erw26rg",
+                        "name": "Illenium"
+                    }
+                ],
+                "duration_ms": 123380,
+                "preview_url": "https://p.scdn.co/mp3-preview/a8b9954aed7dd602b1f0845f8397cbec3c5294cc?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "4ZAerT2NicBmzZ4VkpmWEn",
+                "name": "Free Fall",
+                "artists": [
+                    {
+                        "id": "45eNHdiiabvmbp4erw26rg",
+                        "name": "Illenium"
+                    },
+                    {
+                        "id": "7oFtywpTfrarYztjxUbpJQ",
+                        "name": "RUNN"
+                    }
+                ],
+                "duration_ms": 205970,
+                "preview_url": "https://p.scdn.co/mp3-preview/36ac19a1cefa0754ab94d1e0c55cdd3149bac455?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "2oL0HIuo0cxIycDtJWbpuN",
+                "name": "Where'd U Go",
+                "artists": [
+                    {
+                        "id": "45eNHdiiabvmbp4erw26rg",
+                        "name": "Illenium"
+                    },
+                    {
+                        "id": "4LZ4De2MoO3lP6QaNCfvcu",
+                        "name": "Said the Sky"
+                    }
+                ],
+                "duration_ms": 184556,
+                "preview_url": "https://p.scdn.co/mp3-preview/3499bc36aab4ad4ce6c031a23b2359c2aa53311c?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "4G3IXyVRxSx5lLhUvv3fu3",
+                "name": "Fractures",
+                "artists": [
+                    {
+                        "id": "45eNHdiiabvmbp4erw26rg",
+                        "name": "Illenium"
+                    },
+                    {
+                        "id": "3RTklnRcfHgkQJwFpgOq3t",
+                        "name": "Nevve"
+                    }
+                ],
+                "duration_ms": 245250,
+                "preview_url": "https://p.scdn.co/mp3-preview/c72096150a0bd249060e51e8d91b3f9924b090e0?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "5XlvOh5YbJMp7CU3NoksNf",
+                "name": "Leaving",
+                "artists": [
+                    {
+                        "id": "45eNHdiiabvmbp4erw26rg",
+                        "name": "Illenium"
+                    }
+                ],
+                "duration_ms": 234857,
+                "preview_url": "https://p.scdn.co/mp3-preview/7d3ecea1581ebf076502c7f164a22eb967826aac?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "4rIAqwhHGfWChQvQGYwEfR",
+                "name": "Lost",
+                "artists": [
+                    {
+                        "id": "45eNHdiiabvmbp4erw26rg",
+                        "name": "Illenium"
+                    },
+                    {
+                        "id": "5ooIuCvSBl6Eo4cHixvB7x",
+                        "name": "Emilie Brandt"
+                    }
+                ],
+                "duration_ms": 200000,
+                "preview_url": "https://p.scdn.co/mp3-preview/1c70d1886bf8178269290eb7c10d38186eca9c94?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "5WggjuxMubr94bo33Aan4K",
+                "name": "Sound of Walking Away",
+                "artists": [
+                    {
+                        "id": "45eNHdiiabvmbp4erw26rg",
+                        "name": "Illenium"
+                    },
+                    {
+                        "id": "4IFgewC2urR62Fwt7uAU03",
+                        "name": "Kerli"
+                    }
+                ],
+                "duration_ms": 253333,
+                "preview_url": "https://p.scdn.co/mp3-preview/504a8dc18df8b3e6fe7148d0cca379560f1d6970?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "1bI9jePC8sxwC8wGtCDCqR",
+                "name": "Taking Me Higher",
+                "artists": [
+                    {
+                        "id": "45eNHdiiabvmbp4erw26rg",
+                        "name": "Illenium"
+                    }
+                ],
+                "duration_ms": 164888,
+                "preview_url": "https://p.scdn.co/mp3-preview/667b2cd264216e63accf604efdc12caab8f2c2f1?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "0e0UxWGgjXoYAYUFhJgwji",
+                "name": "Feel Good",
+                "artists": [
+                    {
+                        "id": "45eNHdiiabvmbp4erw26rg",
+                        "name": "Illenium"
+                    },
+                    {
+                        "id": "2ZRQcIgzPCVaT9XKhXZIzh",
+                        "name": "Gryffin"
+                    },
+                    {
+                        "id": "6Dd3NScHWwnW6obMFbl1BH",
+                        "name": "Daya"
+                    }
+                ],
+                "duration_ms": 248156,
+                "preview_url": null
+            },
+            {
+                "id": "4pWawf1Rq4qHDv4Ktqjg2D",
+                "name": "Beautiful Creatures (feat. MAX)",
+                "artists": [
+                    {
+                        "id": "45eNHdiiabvmbp4erw26rg",
+                        "name": "Illenium"
+                    },
+                    {
+                        "id": "1bqxdqvUtPWZri43cKHac8",
+                        "name": "MAX"
+                    }
+                ],
+                "duration_ms": 240508,
+                "preview_url": "https://p.scdn.co/mp3-preview/1e0a65e084ffa72af52ff111cd2f06587f2f274d?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "43hcHVoAiHpkJ2gMbmO72h",
+                "name": "Let You Go",
+                "artists": [
+                    {
+                        "id": "45eNHdiiabvmbp4erw26rg",
+                        "name": "Illenium"
+                    },
+                    {
+                        "id": "1I5eQkzyM8jCVZIM3k2bKL",
+                        "name": "Ember Island"
+                    }
+                ],
+                "duration_ms": 184234,
+                "preview_url": "https://p.scdn.co/mp3-preview/4b51b98a369a228b6c0e8e6127ec14b5e9aac9fe?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            }
+        ]
+    },
+    {
+        "id": "72qA6s4fjF8Y2VX1UDMfp2",
+        "name": "GEMINI",
+        "release_date": "2017-09-22",
+        "artists": [
+            {
+                "id": "3JhNCzhSMTxs9WLGJJxWOY",
+                "name": "Macklemore"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/cd3a696cccd5ec42ec3f9b56ef3d6ccab633d06b"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/a86102b9d497c93537c718a4a532dad346a6ff98"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/12e5e138a15f76c9e3592cb29d01f8f4f61256ff"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "1FgmP7AOTcn7MGYmImj0kn",
+                "name": "Ain't Gonna Die Tonight (feat. Eric Nally)",
+                "artists": [
+                    {
+                        "id": "3JhNCzhSMTxs9WLGJJxWOY",
+                        "name": "Macklemore"
+                    },
+                    {
+                        "id": "3NoeRIxHApi6qe4yan2Vnn",
+                        "name": "Eric Nally"
+                    }
+                ],
+                "duration_ms": 214720,
+                "preview_url": "https://p.scdn.co/mp3-preview/d4e8bedf36990867f0892996a1b1d9a1d765efe6?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "0CokSRCu5hZgPxcZBaEzVE",
+                "name": "Glorious (feat. Skylar Grey)",
+                "artists": [
+                    {
+                        "id": "3JhNCzhSMTxs9WLGJJxWOY",
+                        "name": "Macklemore"
+                    },
+                    {
+                        "id": "4utLUGcTvOJFr6aqIJtYWV",
+                        "name": "Skylar Grey"
+                    }
+                ],
+                "duration_ms": 220454,
+                "preview_url": "https://p.scdn.co/mp3-preview/6b6ff3c8c72111b85b011d5ce8d573cbd2a8d8c9?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "7bsnTsbiwOymZWjPF9v6Di",
+                "name": "Marmalade (feat. Lil Yachty)",
+                "artists": [
+                    {
+                        "id": "3JhNCzhSMTxs9WLGJJxWOY",
+                        "name": "Macklemore"
+                    },
+                    {
+                        "id": "6icQOAFXDZKsumw3YXyusw",
+                        "name": "Lil Yachty"
+                    }
+                ],
+                "duration_ms": 261614,
+                "preview_url": "https://p.scdn.co/mp3-preview/96910db607da6bfd9d7d9804c9e0ae0745236bd3?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "7uKSil5r7uHexnM9lukPTc",
+                "name": "Willy Wonka (feat. Offset)",
+                "artists": [
+                    {
+                        "id": "3JhNCzhSMTxs9WLGJJxWOY",
+                        "name": "Macklemore"
+                    },
+                    {
+                        "id": "4DdkRBBYG6Yk9Ka8tdJ9BW",
+                        "name": "Offset"
+                    }
+                ],
+                "duration_ms": 222773,
+                "preview_url": "https://p.scdn.co/mp3-preview/2fc3f52538d63322bc68d9bc321073cce972ad47?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "51Bpjq1BdQlS3V852vJCw7",
+                "name": "Intentions (feat. Dan Caplen)",
+                "artists": [
+                    {
+                        "id": "3JhNCzhSMTxs9WLGJJxWOY",
+                        "name": "Macklemore"
+                    },
+                    {
+                        "id": "2U3FuHYvL3vhkbDAXm24Ep",
+                        "name": "Dan Caplen"
+                    }
+                ],
+                "duration_ms": 230506,
+                "preview_url": "https://p.scdn.co/mp3-preview/2f39c215dfed908d1830e05feb26c9e53b0f7438?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "2Za1AlJNvksouPPWbXpR2X",
+                "name": "Good Old Days (feat. Kesha)",
+                "artists": [
+                    {
+                        "id": "3JhNCzhSMTxs9WLGJJxWOY",
+                        "name": "Macklemore"
+                    },
+                    {
+                        "id": "6LqNN22kT3074XbTVUrhzX",
+                        "name": "Kesha"
+                    }
+                ],
+                "duration_ms": 240506,
+                "preview_url": "https://p.scdn.co/mp3-preview/382e98fe869bf3ce35acf0f01b09cc199a3292be?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "3S5foHRNI5lS6V3jZjTC4A",
+                "name": "Levitate (feat. Otieno Terry)",
+                "artists": [
+                    {
+                        "id": "3JhNCzhSMTxs9WLGJJxWOY",
+                        "name": "Macklemore"
+                    },
+                    {
+                        "id": "3C6wuu8asCGd2KaEzBSAEP",
+                        "name": "Otieno Terry"
+                    }
+                ],
+                "duration_ms": 212773,
+                "preview_url": "https://p.scdn.co/mp3-preview/b763fe99de4822b2eb7a30f3b2c438f559119018?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "2eucFttlfFNX5fRD78JBdI",
+                "name": "Firebreather (feat. Reignwolf)",
+                "artists": [
+                    {
+                        "id": "3JhNCzhSMTxs9WLGJJxWOY",
+                        "name": "Macklemore"
+                    },
+                    {
+                        "id": "66YGDwn22fjphzqGCSIbbK",
+                        "name": "Reignwolf"
+                    }
+                ],
+                "duration_ms": 205533,
+                "preview_url": "https://p.scdn.co/mp3-preview/e1ea1e2fbd73688779fbd052f68bee37a16791df?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "61LwlLA6HkrEcGp6kwKiGg",
+                "name": "How To Play the Flute (feat. King Draino)",
+                "artists": [
+                    {
+                        "id": "3JhNCzhSMTxs9WLGJJxWOY",
+                        "name": "Macklemore"
+                    },
+                    {
+                        "id": "1GaZ8H1LmwzQSVztcJOwGH",
+                        "name": "King Draino"
+                    }
+                ],
+                "duration_ms": 208720,
+                "preview_url": "https://p.scdn.co/mp3-preview/8fe7bf459393fd529da206ec7ab369a495b7d858?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "2vlWFxvJ1sapI9yULzm6ma",
+                "name": "Ten Million",
+                "artists": [
+                    {
+                        "id": "3JhNCzhSMTxs9WLGJJxWOY",
+                        "name": "Macklemore"
+                    }
+                ],
+                "duration_ms": 179506,
+                "preview_url": "https://p.scdn.co/mp3-preview/12e4824789850a2e364882e93f60adfa30428eca?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "2JjkHuu2A0A0hvewiZKutV",
+                "name": "Over It (feat. Donna Missal)",
+                "artists": [
+                    {
+                        "id": "3JhNCzhSMTxs9WLGJJxWOY",
+                        "name": "Macklemore"
+                    },
+                    {
+                        "id": "4QFHHdZkeqmneDQqKIjAN8",
+                        "name": "Donna Missal"
+                    }
+                ],
+                "duration_ms": 218560,
+                "preview_url": "https://p.scdn.co/mp3-preview/e948bb9dde32aa558bea7c9f61604ff2fdfd42f4?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "4IlBZXHTwY7DoxA4piiHtM",
+                "name": "Zara (feat. Abir)",
+                "artists": [
+                    {
+                        "id": "3JhNCzhSMTxs9WLGJJxWOY",
+                        "name": "Macklemore"
+                    },
+                    {
+                        "id": "3QUOtWgmuxFyae4C0Q0thd",
+                        "name": "Abir"
+                    }
+                ],
+                "duration_ms": 217280,
+                "preview_url": "https://p.scdn.co/mp3-preview/688645ef99a42385febcc1618818957f604bf1e6?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "4m4aiyWCBH011DhxQeoWt1",
+                "name": "Corner Store (feat. Dave B & Travis Thompson)",
+                "artists": [
+                    {
+                        "id": "3JhNCzhSMTxs9WLGJJxWOY",
+                        "name": "Macklemore"
+                    },
+                    {
+                        "id": "5bfqwcEcRrMhtY9smw3IeJ",
+                        "name": "Dave B."
+                    },
+                    {
+                        "id": "6WZfEqqsYujHTUDuNd5Lbc",
+                        "name": "Travis Thompson"
+                    }
+                ],
+                "duration_ms": 273520,
+                "preview_url": "https://p.scdn.co/mp3-preview/f3bb29b0d91916555efa3ce3a434603c4fd9f775?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "7seAyaKcGBCEJff8Zf3YyU",
+                "name": "Miracle (feat. Dan Caplen)",
+                "artists": [
+                    {
+                        "id": "3JhNCzhSMTxs9WLGJJxWOY",
+                        "name": "Macklemore"
+                    },
+                    {
+                        "id": "2U3FuHYvL3vhkbDAXm24Ep",
+                        "name": "Dan Caplen"
+                    }
+                ],
+                "duration_ms": 224640,
+                "preview_url": "https://p.scdn.co/mp3-preview/b34d6deb018750e2424e29ebbb30105afd27ddcd?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "3R68iUwgcJ6cXSbjt3kRjw",
+                "name": "Church (feat. Xperience)",
+                "artists": [
+                    {
+                        "id": "3JhNCzhSMTxs9WLGJJxWOY",
+                        "name": "Macklemore"
+                    },
+                    {
+                        "id": "0I9ypY8cPMh1a3N3Yra40T",
+                        "name": "Xperience"
+                    }
+                ],
+                "duration_ms": 250466,
+                "preview_url": "https://p.scdn.co/mp3-preview/fa09b6fe3a350ab542817c1a9f023ba5a9aa176d?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "2KrMF8DGJrhADg3rPtWFZy",
+                "name": "Excavate (feat. Saint Claire)",
+                "artists": [
+                    {
+                        "id": "3JhNCzhSMTxs9WLGJJxWOY",
+                        "name": "Macklemore"
+                    },
+                    {
+                        "id": "78xOqjJTOsM2Y5XdtvjDq2",
+                        "name": "Saint Claire"
+                    }
+                ],
+                "duration_ms": 236440,
+                "preview_url": "https://p.scdn.co/mp3-preview/261e15638627df735cd2e8b02fcf0100271ab6ab?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            }
+        ]
+    },
+    {
+        "id": "6VgP9W8F4emVRlcCzKyc7l",
+        "name": "Run It Up",
+        "release_date": "2017-09-22",
+        "artists": [
+            {
+                "id": "6H6svVOQLsIH1uK7KedZoQ",
+                "name": "Dame D.O.L.L.A"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/6e6432eb33bc773f02fdbd4e79c524b384d0663a"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/3c52e7af951b746b291a8f5d1f370c641e141890"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/de5b2fcca7ac44653c8de0e6d699eaf4c61225e2"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "3ALt5jbn9Hse5jInFNUSwC",
+                "name": "Run It Up",
+                "artists": [
+                    {
+                        "id": "6H6svVOQLsIH1uK7KedZoQ",
+                        "name": "Dame D.O.L.L.A"
+                    },
+                    {
+                        "id": "55Aa2cqylxrFIXC767Z865",
+                        "name": "Lil Wayne"
+                    }
+                ],
+                "duration_ms": 240184,
+                "preview_url": "https://p.scdn.co/mp3-preview/ad341c7f14674a66de1a253b052797c4ce526f22?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            }
+        ]
+    },
+    {
+        "id": "5UD36hu4fYZ6R8b8crkKL7",
+        "name": "Again",
+        "release_date": "2017-09-22",
+        "artists": [
+            {
+                "id": "55fhWPvDiMpLnE4ZzNXZyW",
+                "name": "Noah Cyrus"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/fa91e2e3db76d4593166f54cfd014e5a2844f65b"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/4749342250969ad8fbb455556fe9597a7952a294"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/a4f53fddd1f4a17dafa862e1355897e6284dff28"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "2S2od3hT7ceytw7d1pTRuE",
+                "name": "Again",
+                "artists": [
+                    {
+                        "id": "55fhWPvDiMpLnE4ZzNXZyW",
+                        "name": "Noah Cyrus"
+                    },
+                    {
+                        "id": "15UsOTVnJzReFVN1VCnxy4",
+                        "name": "XXXTENTACION"
+                    }
+                ],
+                "duration_ms": 193961,
+                "preview_url": "https://p.scdn.co/mp3-preview/3ebeebac5175eee9cdc397bae16fd2ceb076177d?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            }
+        ]
+    },
+    {
+        "id": "1yUP241XpzjhNZK8WckQsv",
+        "name": "Side A",
+        "release_date": "2017-09-22",
+        "artists": [
+            {
+                "id": "5GDZ6xhBwk7Yja97CFLmV7",
+                "name": "Jillian Jacqueline"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/14887008220530ccce93fc96dca892479b040084"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/da5431b683b0c72d9bbe96a9d35dc216261b110a"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/cd48ba439de7a1c370b5ddc6cadc5e954d80759a"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "5bPiULQ8j6EpEdEXisn7yi",
+                "name": "Reasons",
+                "artists": [
+                    {
+                        "id": "5GDZ6xhBwk7Yja97CFLmV7",
+                        "name": "Jillian Jacqueline"
+                    }
+                ],
+                "duration_ms": 190226,
+                "preview_url": null
+            },
+            {
+                "id": "4wWsfcNAyABRcuCKH5xYCh",
+                "name": "Sugar And Salt",
+                "artists": [
+                    {
+                        "id": "5GDZ6xhBwk7Yja97CFLmV7",
+                        "name": "Jillian Jacqueline"
+                    }
+                ],
+                "duration_ms": 181013,
+                "preview_url": null
+            },
+            {
+                "id": "5XKNIPwNK3Z8yrz71pAZrc",
+                "name": "Holier Than Thou",
+                "artists": [
+                    {
+                        "id": "5GDZ6xhBwk7Yja97CFLmV7",
+                        "name": "Jillian Jacqueline"
+                    }
+                ],
+                "duration_ms": 182133,
+                "preview_url": null
+            },
+            {
+                "id": "1pa7g1J3vUYRrcg5GRTZdK",
+                "name": "Bleachers",
+                "artists": [
+                    {
+                        "id": "5GDZ6xhBwk7Yja97CFLmV7",
+                        "name": "Jillian Jacqueline"
+                    }
+                ],
+                "duration_ms": 172626,
+                "preview_url": null
+            },
+            {
+                "id": "5OeCF6aMI1exbENeZLjObs",
+                "name": "Hate Me",
+                "artists": [
+                    {
+                        "id": "5GDZ6xhBwk7Yja97CFLmV7",
+                        "name": "Jillian Jacqueline"
+                    }
+                ],
+                "duration_ms": 230093,
+                "preview_url": null
+            },
+            {
+                "id": "18la0MdLGXAKbflRNAerRf",
+                "name": "God Bless This Mess",
+                "artists": [
+                    {
+                        "id": "5GDZ6xhBwk7Yja97CFLmV7",
+                        "name": "Jillian Jacqueline"
+                    }
+                ],
+                "duration_ms": 227066,
+                "preview_url": null
+            },
+            {
+                "id": "12NJA0BdYJeO1kloRHbeNe",
+                "name": "Reasons - Acoustic",
+                "artists": [
+                    {
+                        "id": "5GDZ6xhBwk7Yja97CFLmV7",
+                        "name": "Jillian Jacqueline"
+                    }
+                ],
+                "duration_ms": 184840,
+                "preview_url": null
+            },
+            {
+                "id": "6KIfs9hDFsLFbCOnhjHgzQ",
+                "name": "Hate Me - Acoustic",
+                "artists": [
+                    {
+                        "id": "5GDZ6xhBwk7Yja97CFLmV7",
+                        "name": "Jillian Jacqueline"
+                    }
+                ],
+                "duration_ms": 194080,
+                "preview_url": null
+            },
+            {
+                "id": "4loT5OTVHC0j3rVggZSpJx",
+                "name": "God Bless This Mess - Acoustic",
+                "artists": [
+                    {
+                        "id": "5GDZ6xhBwk7Yja97CFLmV7",
+                        "name": "Jillian Jacqueline"
+                    }
+                ],
+                "duration_ms": 225840,
+                "preview_url": null
+            }
+        ]
+    },
+    {
+        "id": "4Aoya3mHnhEk4qd7oR1z16",
+        "name": "Week Without You",
+        "release_date": "2017-09-21",
+        "artists": [
+            {
+                "id": "5YGY8feqx7naU7z4HrwZM6",
+                "name": "Miley Cyrus"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/a1fa7f590996868ebd1248aab3233e793db22fd7"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/e7367c0cde2558ba49d2a99694bf9752b0439ad4"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/ae591a8b374eedca3f013010883c00effddc8e31"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "56lF5BpJB1jZLcv2JcNuSC",
+                "name": "Week Without You",
+                "artists": [
+                    {
+                        "id": "5YGY8feqx7naU7z4HrwZM6",
+                        "name": "Miley Cyrus"
+                    }
+                ],
+                "duration_ms": 224373,
+                "preview_url": "https://p.scdn.co/mp3-preview/088811f0748bb99ec9524eece3cfb9cc846167a8?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            }
+        ]
+    },
+    {
+        "id": "7CAAClnSiXdMibPT1oyl4k",
+        "name": "Trip",
+        "release_date": "2017-09-22",
+        "artists": [
+            {
+                "id": "5ZS223C6JyBfXasXxrRqOk",
+                "name": "Jhene Aiko"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/fadc73a93cfeafefbc0f11cffbaeec985848685b"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/3292ef3fd8d2d5fe1d802995dad1e0618df0e6ff"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/991a3f7c128739003534aa1214014bf2debe1351"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "76u71tQ2GALnwY0VJyOu83",
+                "name": "LSD",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    }
+                ],
+                "duration_ms": 105533,
+                "preview_url": null
+            },
+            {
+                "id": "4dwNcnCoPnz1x83AWu1kAa",
+                "name": "Jukai",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    }
+                ],
+                "duration_ms": 256253,
+                "preview_url": null
+            },
+            {
+                "id": "4mL59LVbKgOpEACxraGYdr",
+                "name": "While We're Young",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    }
+                ],
+                "duration_ms": 236160,
+                "preview_url": null
+            },
+            {
+                "id": "2nvmHk4JnsZ94mygliLsou",
+                "name": "Moments",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    },
+                    {
+                        "id": "0c173mlxpT3dSFRgMO8XPh",
+                        "name": "Big Sean"
+                    }
+                ],
+                "duration_ms": 178920,
+                "preview_url": null
+            },
+            {
+                "id": "1DlMzdRaFpIABvx07jCgvQ",
+                "name": "OLLA (Only Lovers Left Alive)",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    },
+                    {
+                        "id": "6g8AmloI8egfrr3dm3SnUL",
+                        "name": "TWENTY88"
+                    }
+                ],
+                "duration_ms": 348693,
+                "preview_url": null
+            },
+            {
+                "id": "63LJjsJuqZgQyYibMXn9ku",
+                "name": "When We Love",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    }
+                ],
+                "duration_ms": 262626,
+                "preview_url": null
+            },
+            {
+                "id": "2pg2TiYo9Rb8KeB5JjP7jS",
+                "name": "Sativa",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    },
+                    {
+                        "id": "1zNqQNIdeOUZHb8zbZRFMX",
+                        "name": "Swae Lee"
+                    }
+                ],
+                "duration_ms": 276960,
+                "preview_url": null
+            },
+            {
+                "id": "0PYmO55JPwEWgtyJbkN6mq",
+                "name": "New Balance",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    }
+                ],
+                "duration_ms": 279453,
+                "preview_url": null
+            },
+            {
+                "id": "1LJdXxqYLqC1hP7dqawFBS",
+                "name": "Newer Balance - Freestyle",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    }
+                ],
+                "duration_ms": 65786,
+                "preview_url": null
+            },
+            {
+                "id": "7tX9wItFwaTPCuVBneLrHs",
+                "name": "You Are Here",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    }
+                ],
+                "duration_ms": 219520,
+                "preview_url": null
+            },
+            {
+                "id": "0WXct4PcELq8Jh1R4Yhw4W",
+                "name": "Never Call Me",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    },
+                    {
+                        "id": "6NyJIFHAePjHR1pFxwisqz",
+                        "name": "Kurupt"
+                    }
+                ],
+                "duration_ms": 270546,
+                "preview_url": null
+            },
+            {
+                "id": "4t5oLATCoedh5N7gHOBtcz",
+                "name": "Nobody",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    }
+                ],
+                "duration_ms": 256266,
+                "preview_url": null
+            },
+            {
+                "id": "5myRfsc4luoaoV1r72m1LT",
+                "name": "Overstimulated",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    }
+                ],
+                "duration_ms": 319533,
+                "preview_url": null
+            },
+            {
+                "id": "2ojmwHSbnnAokGyYfisXDl",
+                "name": "Bad Trip - Interlude",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    }
+                ],
+                "duration_ms": 119666,
+                "preview_url": null
+            },
+            {
+                "id": "6bPX2O1L9QAlvUaindaEFL",
+                "name": "Oblivion (Creation)",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    },
+                    {
+                        "id": "02sp94ivWaP4d19xhQvIXC",
+                        "name": "Dr. Chill"
+                    }
+                ],
+                "duration_ms": 350586,
+                "preview_url": null
+            },
+            {
+                "id": "63OzpVdDGsUJnNqN6q5O3z",
+                "name": "Psilocybin (Love In Full Effect)",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    },
+                    {
+                        "id": "02sp94ivWaP4d19xhQvIXC",
+                        "name": "Dr. Chill"
+                    }
+                ],
+                "duration_ms": 466280,
+                "preview_url": null
+            },
+            {
+                "id": "6NUW99yrBN833ABDjII55W",
+                "name": "Mystic Journey - Freestyle",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    }
+                ],
+                "duration_ms": 127560,
+                "preview_url": null
+            },
+            {
+                "id": "01RDEYV52M6CFv9xqgl0D7",
+                "name": "Picture Perfect - Freestyle",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    }
+                ],
+                "duration_ms": 189160,
+                "preview_url": null
+            },
+            {
+                "id": "6QbM2D1CI7cbt6c8G1d3EL",
+                "name": "Sing To Me",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    },
+                    {
+                        "id": "27ycFhJqXswOxi41u9lz56",
+                        "name": "Namiko Love"
+                    }
+                ],
+                "duration_ms": 147360,
+                "preview_url": null
+            },
+            {
+                "id": "5mymZaPY1A5x7or2TB7TJ3",
+                "name": "Frequency",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    }
+                ],
+                "duration_ms": 230480,
+                "preview_url": null
+            },
+            {
+                "id": "4PdxJc9J12zF8cFgdH5tik",
+                "name": "Ascension",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    },
+                    {
+                        "id": "05oH07COxkXKIMt6mIPRee",
+                        "name": "Brandy"
+                    }
+                ],
+                "duration_ms": 213760,
+                "preview_url": null
+            },
+            {
+                "id": "0ShtJHFyIDql6ZbbhJwf6Q",
+                "name": "Trip",
+                "artists": [
+                    {
+                        "id": "5ZS223C6JyBfXasXxrRqOk",
+                        "name": "Jhene Aiko"
+                    },
+                    {
+                        "id": "4S4kD5NBlgaq4YLBQSEMyY",
+                        "name": "Mali Music"
+                    }
+                ],
+                "duration_ms": 216093,
+                "preview_url": null
+            }
+        ]
+    },
+    {
+        "id": "0K6rT95WNCXm2G6byeAwdw",
+        "name": "One Foot",
+        "release_date": "2017-09-22",
+        "artists": [
+            {
+                "id": "6DIS6PRrLS3wbnZsf7vYic",
+                "name": "WALK THE MOON"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/b3c160fc67f5111f4dc8dc997b5f902102d8b517"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/b01471485a4b73c07bc07b548449226ab3c22be5"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/a2b145d9dddaff808d2626516837cd4062b195d2"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "3yWsWi2PAo9s6elIhnywIS",
+                "name": "One Foot",
+                "artists": [
+                    {
+                        "id": "6DIS6PRrLS3wbnZsf7vYic",
+                        "name": "WALK THE MOON"
+                    }
+                ],
+                "duration_ms": 261371,
+                "preview_url": "https://p.scdn.co/mp3-preview/eb02ba14edb2ee776e87c9d960c66833a77d6706?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            }
+        ]
+    },
+    {
+        "id": "2FTS6a6DLXMNp8flyA0HGO",
+        "name": "Love Yourself 承 'Her'",
+        "release_date": "2017-09-18",
+        "artists": [
+            {
+                "id": "3Nrfpe0tUJi4K4DXYWgMUX",
+                "name": "BTS"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/d69dbdee8294ad485658afd4cf9c1eee3d03a5e2"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/107a89788f447c3226e85ebf0d7c5c3c81376815"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/dd6c9a91525f2ba0249509e7c1805a0307a54ef5"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "7iV733e1KacKrFRaBNxVEf",
+                "name": "Intro: Serendipity",
+                "artists": [
+                    {
+                        "id": "3Nrfpe0tUJi4K4DXYWgMUX",
+                        "name": "BTS"
+                    }
+                ],
+                "duration_ms": 139971,
+                "preview_url": "https://p.scdn.co/mp3-preview/b2a256ffa6df3bfa1c120881be17e6649cdb5d1a?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "5SE57ljOIUJ1ybL9U6CuBH",
+                "name": "DNA",
+                "artists": [
+                    {
+                        "id": "3Nrfpe0tUJi4K4DXYWgMUX",
+                        "name": "BTS"
+                    }
+                ],
+                "duration_ms": 223122,
+                "preview_url": "https://p.scdn.co/mp3-preview/ef7f2f01d7b95b8047075247a68d598a71d13ccb?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "2tdq0CeAGSfhI2l4Gwkvgx",
+                "name": "Best Of Me",
+                "artists": [
+                    {
+                        "id": "3Nrfpe0tUJi4K4DXYWgMUX",
+                        "name": "BTS"
+                    }
+                ],
+                "duration_ms": 227191,
+                "preview_url": "https://p.scdn.co/mp3-preview/7a9a70ee86c55b41048088d670be8eb2f708b051?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "3ryjLm3oupIjJFGc39naNi",
+                "name": "dimple",
+                "artists": [
+                    {
+                        "id": "3Nrfpe0tUJi4K4DXYWgMUX",
+                        "name": "BTS"
+                    }
+                ],
+                "duration_ms": 196776,
+                "preview_url": "https://p.scdn.co/mp3-preview/3b670768d2b1e55ebdbde91b8c116b48f97f1dae?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "0ffweDHrg4bZqdG4IfGYuo",
+                "name": "Pied Piper",
+                "artists": [
+                    {
+                        "id": "3Nrfpe0tUJi4K4DXYWgMUX",
+                        "name": "BTS"
+                    }
+                ],
+                "duration_ms": 245620,
+                "preview_url": "https://p.scdn.co/mp3-preview/248ad5fb284b85e40d92dbaec9b971a47a086771?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "7KXEhfjwdxHVra8VcT2QHH",
+                "name": "Skit: Billboard Music Awards Speech",
+                "artists": [
+                    {
+                        "id": "3Nrfpe0tUJi4K4DXYWgMUX",
+                        "name": "BTS"
+                    }
+                ],
+                "duration_ms": 107062,
+                "preview_url": "https://p.scdn.co/mp3-preview/e079a7964bbe1b3c1a20dce080c2a55ef5aeb32c?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "2SYa5Lx1uoCvyDIW4oee9b",
+                "name": "MIC Drop",
+                "artists": [
+                    {
+                        "id": "3Nrfpe0tUJi4K4DXYWgMUX",
+                        "name": "BTS"
+                    }
+                ],
+                "duration_ms": 238193,
+                "preview_url": "https://p.scdn.co/mp3-preview/045b01681f7405313098aad8bbe1ce8182104440?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "5nq1uTNIR1cBR72T87viS0",
+                "name": "Go Go",
+                "artists": [
+                    {
+                        "id": "3Nrfpe0tUJi4K4DXYWgMUX",
+                        "name": "BTS"
+                    }
+                ],
+                "duration_ms": 235779,
+                "preview_url": "https://p.scdn.co/mp3-preview/a94bba92d68e8b679731af8b41a7ab535207a267?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "3l8yQMdniG6Os8gUBNXV57",
+                "name": "Outro: Her",
+                "artists": [
+                    {
+                        "id": "3Nrfpe0tUJi4K4DXYWgMUX",
+                        "name": "BTS"
+                    }
+                ],
+                "duration_ms": 228612,
+                "preview_url": "https://p.scdn.co/mp3-preview/0172f8362c56814fc13d0d165e4c5f5623521cc5?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            }
+        ]
+    },
+    {
+        "id": "5TMnKX3SaYXgYsmFuH8mxB",
+        "name": "Wonderful Wonderful (Deluxe)",
+        "release_date": "2017-09-22",
+        "artists": [
+            {
+                "id": "0C0XlULifJtAgn6ZNCW2eu",
+                "name": "The Killers"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/3f0fbe9f05ce17126f3c075151cd71cb7f0ea344"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/8c1eb19c50a8120ae629c0270c6fc0e5e702087e"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/f3eb480262d746e60fa343bcaa2fc5332a90ce45"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "34Z7ksxNZ5UttoqD0ZLa6P",
+                "name": "Wonderful Wonderful",
+                "artists": [
+                    {
+                        "id": "0C0XlULifJtAgn6ZNCW2eu",
+                        "name": "The Killers"
+                    }
+                ],
+                "duration_ms": 310506,
+                "preview_url": null
+            },
+            {
+                "id": "6U5ySz3l4LtpaJ37pr3bGU",
+                "name": "The Man",
+                "artists": [
+                    {
+                        "id": "0C0XlULifJtAgn6ZNCW2eu",
+                        "name": "The Killers"
+                    }
+                ],
+                "duration_ms": 250093,
+                "preview_url": null
+            },
+            {
+                "id": "5IGvpvIDKS03xlvhPCJ9qS",
+                "name": "Rut",
+                "artists": [
+                    {
+                        "id": "0C0XlULifJtAgn6ZNCW2eu",
+                        "name": "The Killers"
+                    }
+                ],
+                "duration_ms": 264480,
+                "preview_url": null
+            },
+            {
+                "id": "4TqowMxiy3kmV6jlxdldDm",
+                "name": "Life To Come",
+                "artists": [
+                    {
+                        "id": "0C0XlULifJtAgn6ZNCW2eu",
+                        "name": "The Killers"
+                    }
+                ],
+                "duration_ms": 271933,
+                "preview_url": null
+            },
+            {
+                "id": "6oy7lD7B9HScHz11HQ2P0F",
+                "name": "Run For Cover",
+                "artists": [
+                    {
+                        "id": "0C0XlULifJtAgn6ZNCW2eu",
+                        "name": "The Killers"
+                    }
+                ],
+                "duration_ms": 222146,
+                "preview_url": null
+            },
+            {
+                "id": "1QPwiMASgVIv0g3CKcAKTd",
+                "name": "Tyson vs Douglas",
+                "artists": [
+                    {
+                        "id": "0C0XlULifJtAgn6ZNCW2eu",
+                        "name": "The Killers"
+                    }
+                ],
+                "duration_ms": 273706,
+                "preview_url": null
+            },
+            {
+                "id": "7aPhHopd7f2qVb3rUKq1ZF",
+                "name": "Some Kind Of Love",
+                "artists": [
+                    {
+                        "id": "0C0XlULifJtAgn6ZNCW2eu",
+                        "name": "The Killers"
+                    }
+                ],
+                "duration_ms": 278093,
+                "preview_url": null
+            },
+            {
+                "id": "2RXfhCJMkK5HC09bdq5bJW",
+                "name": "Out Of My Mind",
+                "artists": [
+                    {
+                        "id": "0C0XlULifJtAgn6ZNCW2eu",
+                        "name": "The Killers"
+                    }
+                ],
+                "duration_ms": 223680,
+                "preview_url": null
+            },
+            {
+                "id": "4mXz25MicymcUAIddLlciH",
+                "name": "The Calling",
+                "artists": [
+                    {
+                        "id": "0C0XlULifJtAgn6ZNCW2eu",
+                        "name": "The Killers"
+                    }
+                ],
+                "duration_ms": 241786,
+                "preview_url": null
+            },
+            {
+                "id": "01sMUErD5yAOElT0iv8fkL",
+                "name": "Have All The Songs Been Written?",
+                "artists": [
+                    {
+                        "id": "0C0XlULifJtAgn6ZNCW2eu",
+                        "name": "The Killers"
+                    }
+                ],
+                "duration_ms": 249946,
+                "preview_url": null
+            },
+            {
+                "id": "3GRHMonSDz3bsa9krYze3T",
+                "name": "Money On Straight",
+                "artists": [
+                    {
+                        "id": "0C0XlULifJtAgn6ZNCW2eu",
+                        "name": "The Killers"
+                    }
+                ],
+                "duration_ms": 214626,
+                "preview_url": null
+            },
+            {
+                "id": "6E8M4h5pBM5DK2XyyVHeZJ",
+                "name": "The Man - Jacques Lu Cont Remix",
+                "artists": [
+                    {
+                        "id": "0C0XlULifJtAgn6ZNCW2eu",
+                        "name": "The Killers"
+                    },
+                    {
+                        "id": "4SINYGzldpKMExpCjseS9o",
+                        "name": "Jacques Lu Cont"
+                    }
+                ],
+                "duration_ms": 255840,
+                "preview_url": null
+            },
+            {
+                "id": "2lr1nNSFX9A2WPq9rN9YYE",
+                "name": "The Man - Duke Dumont Remix",
+                "artists": [
+                    {
+                        "id": "0C0XlULifJtAgn6ZNCW2eu",
+                        "name": "The Killers"
+                    },
+                    {
+                        "id": "61lyPtntblHJvA7FMMhi7E",
+                        "name": "Duke Dumont"
+                    }
+                ],
+                "duration_ms": 233800,
+                "preview_url": null
+            }
+        ]
+    },
+    {
+        "id": "3wcPvgkFRb42NQamzvzKz9",
+        "name": "By Any Means 2",
+        "release_date": "2017-09-22",
+        "artists": [
+            {
+                "id": "1gPhS1zisyXr5dHTYZyiMe",
+                "name": "Kevin Gates"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/43422c174603fb4711614d5a4b4a924cd85f4f5c"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/38b5eee752b12a461f1033166780ae2ec03afe6a"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/94351b2f070b8243f07bdb48b31f2d2e8fe19bcf"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "1bOvOZbpwVDDpLMmagxLEo",
+                "name": "No Love",
+                "artists": [
+                    {
+                        "id": "1gPhS1zisyXr5dHTYZyiMe",
+                        "name": "Kevin Gates"
+                    }
+                ],
+                "duration_ms": 198507,
+                "preview_url": "https://p.scdn.co/mp3-preview/aba79ba13da2d5a1d2b98d45a683efc3018e2004?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "5CGG5T4TQSggqIATy5eHPb",
+                "name": "McGyver",
+                "artists": [
+                    {
+                        "id": "1gPhS1zisyXr5dHTYZyiMe",
+                        "name": "Kevin Gates"
+                    }
+                ],
+                "duration_ms": 196255,
+                "preview_url": "https://p.scdn.co/mp3-preview/797741925fd0b2b6cc4202a6419634dbbb754da2?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "6Y0kwGULORFXHzwOBUlMqf",
+                "name": "Had To",
+                "artists": [
+                    {
+                        "id": "1gPhS1zisyXr5dHTYZyiMe",
+                        "name": "Kevin Gates"
+                    }
+                ],
+                "duration_ms": 219801,
+                "preview_url": "https://p.scdn.co/mp3-preview/748d708fbe1029623b2248f8f8856758e1b75e22?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "5i7jTSYQ2tkBHMZ96ZCb7C",
+                "name": "Fucking Right",
+                "artists": [
+                    {
+                        "id": "1gPhS1zisyXr5dHTYZyiMe",
+                        "name": "Kevin Gates"
+                    }
+                ],
+                "duration_ms": 198165,
+                "preview_url": "https://p.scdn.co/mp3-preview/8c2b9d16e9ad1a1523582f24edaabe08169c6744?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "3fFMwoU0tS2IqfRCGNOMP1",
+                "name": "Beautiful Scars (feat. PnB Rock)",
+                "artists": [
+                    {
+                        "id": "1gPhS1zisyXr5dHTYZyiMe",
+                        "name": "Kevin Gates"
+                    },
+                    {
+                        "id": "21WS9wngs9AqFckK7yYJPM",
+                        "name": "PnB Rock"
+                    }
+                ],
+                "duration_ms": 187317,
+                "preview_url": "https://p.scdn.co/mp3-preview/bcc6396c377ad6aa1bba5293762cd115c35dd402?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "2ytb88Kj6veHUYFx9oe1T6",
+                "name": "Attention",
+                "artists": [
+                    {
+                        "id": "1gPhS1zisyXr5dHTYZyiMe",
+                        "name": "Kevin Gates"
+                    }
+                ],
+                "duration_ms": 227326,
+                "preview_url": "https://p.scdn.co/mp3-preview/8d5cc94bdb5391dac790dbcc8b4e4bdd5cdbe70f?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "3yRmOCGoYJO0PZkovJCqSD",
+                "name": "GOMD",
+                "artists": [
+                    {
+                        "id": "1gPhS1zisyXr5dHTYZyiMe",
+                        "name": "Kevin Gates"
+                    }
+                ],
+                "duration_ms": 188529,
+                "preview_url": "https://p.scdn.co/mp3-preview/34e6144551160ba493a8d327bc423731925d878e?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "0fivzT98mFK9EZAtJtV2iW",
+                "name": "D U Down",
+                "artists": [
+                    {
+                        "id": "1gPhS1zisyXr5dHTYZyiMe",
+                        "name": "Kevin Gates"
+                    }
+                ],
+                "duration_ms": 193687,
+                "preview_url": "https://p.scdn.co/mp3-preview/471515955e2e5a3c15170fc0190a6542e2cccc95?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "0xLveImn5AxGYzeyw1oz9O",
+                "name": "What If",
+                "artists": [
+                    {
+                        "id": "1gPhS1zisyXr5dHTYZyiMe",
+                        "name": "Kevin Gates"
+                    }
+                ],
+                "duration_ms": 194717,
+                "preview_url": "https://p.scdn.co/mp3-preview/6a29fe1a8f9637db6de7f1f0248410afa3f9b661?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "4DzIVmiCe8CZVi98F4QNpq",
+                "name": "Came Up",
+                "artists": [
+                    {
+                        "id": "1gPhS1zisyXr5dHTYZyiMe",
+                        "name": "Kevin Gates"
+                    }
+                ],
+                "duration_ms": 161231,
+                "preview_url": "https://p.scdn.co/mp3-preview/9356b14babca22be6ca7558ea20a4703c7ddcd2e?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "7CCb8IeGwXfnENvvGnCk9c",
+                "name": "Imagine That",
+                "artists": [
+                    {
+                        "id": "1gPhS1zisyXr5dHTYZyiMe",
+                        "name": "Kevin Gates"
+                    }
+                ],
+                "duration_ms": 220987,
+                "preview_url": "https://p.scdn.co/mp3-preview/f8e468f590863f2cc370bf7c19474bab832daf64?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "6mtOCoQKOhZQMwAFfRdhWw",
+                "name": "No Trust",
+                "artists": [
+                    {
+                        "id": "1gPhS1zisyXr5dHTYZyiMe",
+                        "name": "Kevin Gates"
+                    }
+                ],
+                "duration_ms": 149544,
+                "preview_url": "https://p.scdn.co/mp3-preview/603034afad696ed1efb922eee226e9aed6d69c6e?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "3QOUNGdI8OPU9Y8O76xWAm",
+                "name": "Jus Wanna",
+                "artists": [
+                    {
+                        "id": "1gPhS1zisyXr5dHTYZyiMe",
+                        "name": "Kevin Gates"
+                    }
+                ],
+                "duration_ms": 231048,
+                "preview_url": "https://p.scdn.co/mp3-preview/1f6313d5cbfa9519fe300d281803640e12e6e1ec?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "4gghsmdN9kkDISIP3i9t6W",
+                "name": "Why I",
+                "artists": [
+                    {
+                        "id": "1gPhS1zisyXr5dHTYZyiMe",
+                        "name": "Kevin Gates"
+                    }
+                ],
+                "duration_ms": 212272,
+                "preview_url": "https://p.scdn.co/mp3-preview/a6120e5811bd1a43d3110196d5953f5fa2a2b5ea?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            }
+        ]
+    },
+    {
+        "id": "1uPwwIkzsCOanBsLExFitZ",
+        "name": "Young Martha",
+        "release_date": "2017-09-22",
+        "artists": [
+            {
+                "id": "50co4Is1HCEo8bhOyUWKpn",
+                "name": "Young Thug"
+            },
+            {
+                "id": "7CCjtD0hCK005Bvg2WG1a7",
+                "name": "Carnage"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/f6327292addb2f8092658b80f3e65cb0dafa6a33"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/1992d89e335648aed58acbb7628b042b129f57cf"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/2bb90f52679b486bc35659feae2a0f84201f9e78"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "7x9UhVfr6ZLMyDCixHWjeN",
+                "name": "Homie (feat. Meek Mill)",
+                "artists": [
+                    {
+                        "id": "50co4Is1HCEo8bhOyUWKpn",
+                        "name": "Young Thug"
+                    },
+                    {
+                        "id": "7CCjtD0hCK005Bvg2WG1a7",
+                        "name": "Carnage"
+                    },
+                    {
+                        "id": "20sxb77xiYeusSH8cVdatc",
+                        "name": "Meek Mill"
+                    }
+                ],
+                "duration_ms": 218865,
+                "preview_url": "https://p.scdn.co/mp3-preview/3e7b9fd466d96ed2f53b8abc03616bc8ea6e2756?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "5Nv3x5T9qpqD8KxskUFbkB",
+                "name": "Liger",
+                "artists": [
+                    {
+                        "id": "50co4Is1HCEo8bhOyUWKpn",
+                        "name": "Young Thug"
+                    },
+                    {
+                        "id": "7CCjtD0hCK005Bvg2WG1a7",
+                        "name": "Carnage"
+                    }
+                ],
+                "duration_ms": 208629,
+                "preview_url": "https://p.scdn.co/mp3-preview/ec19269667cd80604a4ba32a0ee4b2225270c633?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "31VfidluZ3h42PP4j71KRj",
+                "name": "10,000 Slimes",
+                "artists": [
+                    {
+                        "id": "50co4Is1HCEo8bhOyUWKpn",
+                        "name": "Young Thug"
+                    },
+                    {
+                        "id": "7CCjtD0hCK005Bvg2WG1a7",
+                        "name": "Carnage"
+                    }
+                ],
+                "duration_ms": 282475,
+                "preview_url": "https://p.scdn.co/mp3-preview/f8f2c4831a10f0bfa7ad98fb127503dd43d76e05?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "0UuPvqKc9Xcjo37C5liY5B",
+                "name": "Don't Call Me (feat. Shakka)",
+                "artists": [
+                    {
+                        "id": "50co4Is1HCEo8bhOyUWKpn",
+                        "name": "Young Thug"
+                    },
+                    {
+                        "id": "7CCjtD0hCK005Bvg2WG1a7",
+                        "name": "Carnage"
+                    },
+                    {
+                        "id": "3FZf9vTTsMWbCaVOvpjfBx",
+                        "name": "Shakka"
+                    }
+                ],
+                "duration_ms": 236312,
+                "preview_url": "https://p.scdn.co/mp3-preview/7df06fc99ba91e7d0b9ee6a480ba8136756a24fd?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            }
+        ]
+    },
+    {
+        "id": "5oGhtfRrxbMxbGIfCeOgwW",
+        "name": "All In",
+        "release_date": "2017-09-22",
+        "artists": [
+            {
+                "id": "6e8OTLDQpaz1Tl2GEaxsNj",
+                "name": "Matthew West"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/2e75f62cfda0e8045e1c43a9a0fd30b989e2e7ea"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/47aba4eb9a8285626afa19df0f36bf57abce19c9"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/9488c2789730cdc66ba60ac5021d8c4932a8e7f5"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "0l9YBP7JamNkWdm9uTF0HX",
+                "name": "All In",
+                "artists": [
+                    {
+                        "id": "6e8OTLDQpaz1Tl2GEaxsNj",
+                        "name": "Matthew West"
+                    }
+                ],
+                "duration_ms": 211706,
+                "preview_url": null
+            },
+            {
+                "id": "2SRmoMTKQPwqySNCq0eANT",
+                "name": "Broken Things",
+                "artists": [
+                    {
+                        "id": "6e8OTLDQpaz1Tl2GEaxsNj",
+                        "name": "Matthew West"
+                    }
+                ],
+                "duration_ms": 187293,
+                "preview_url": null
+            },
+            {
+                "id": "5hEbWH2PJzc19N83i04WyQ",
+                "name": "Mercy Is A Song",
+                "artists": [
+                    {
+                        "id": "6e8OTLDQpaz1Tl2GEaxsNj",
+                        "name": "Matthew West"
+                    }
+                ],
+                "duration_ms": 225560,
+                "preview_url": null
+            },
+            {
+                "id": "2MbfzEvbrZDQlNPr5C7s6W",
+                "name": "Amen",
+                "artists": [
+                    {
+                        "id": "6e8OTLDQpaz1Tl2GEaxsNj",
+                        "name": "Matthew West"
+                    }
+                ],
+                "duration_ms": 195386,
+                "preview_url": null
+            },
+            {
+                "id": "74EBvCruJxvo6SwZPGZbHQ",
+                "name": "The Sound Of A Life Changing",
+                "artists": [
+                    {
+                        "id": "6e8OTLDQpaz1Tl2GEaxsNj",
+                        "name": "Matthew West"
+                    }
+                ],
+                "duration_ms": 206853,
+                "preview_url": null
+            },
+            {
+                "id": "5mRJ7x2a2jSDpoppmVX3jo",
+                "name": "Something Greater",
+                "artists": [
+                    {
+                        "id": "6e8OTLDQpaz1Tl2GEaxsNj",
+                        "name": "Matthew West"
+                    }
+                ],
+                "duration_ms": 199893,
+                "preview_url": null
+            },
+            {
+                "id": "2pMhQdbFKdXg4reOshRxMu",
+                "name": "Jesus & You",
+                "artists": [
+                    {
+                        "id": "6e8OTLDQpaz1Tl2GEaxsNj",
+                        "name": "Matthew West"
+                    }
+                ],
+                "duration_ms": 202533,
+                "preview_url": null
+            },
+            {
+                "id": "15JKU30tzA8Kq8kbEysqP8",
+                "name": "The Beautiful Things We Miss",
+                "artists": [
+                    {
+                        "id": "6e8OTLDQpaz1Tl2GEaxsNj",
+                        "name": "Matthew West"
+                    }
+                ],
+                "duration_ms": 203386,
+                "preview_url": null
+            },
+            {
+                "id": "3jA6RHAYMpOaNWFkG4cf3V",
+                "name": "1 Song",
+                "artists": [
+                    {
+                        "id": "6e8OTLDQpaz1Tl2GEaxsNj",
+                        "name": "Matthew West"
+                    }
+                ],
+                "duration_ms": 175173,
+                "preview_url": null
+            },
+            {
+                "id": "7ipRY2J6mNjQGxbRmOuHYf",
+                "name": "POWER LOVE SOUND MIND",
+                "artists": [
+                    {
+                        "id": "6e8OTLDQpaz1Tl2GEaxsNj",
+                        "name": "Matthew West"
+                    }
+                ],
+                "duration_ms": 228013,
+                "preview_url": null
+            },
+            {
+                "id": "7euAL6DIc1JPHJI5Rk1uyo",
+                "name": "Never Ever Give Up",
+                "artists": [
+                    {
+                        "id": "6e8OTLDQpaz1Tl2GEaxsNj",
+                        "name": "Matthew West"
+                    }
+                ],
+                "duration_ms": 161080,
+                "preview_url": null
+            },
+            {
+                "id": "4kdrKMOjCNapEuuEpPEOYe",
+                "name": "Dream Again",
+                "artists": [
+                    {
+                        "id": "6e8OTLDQpaz1Tl2GEaxsNj",
+                        "name": "Matthew West"
+                    }
+                ],
+                "duration_ms": 280480,
+                "preview_url": null
+            },
+            {
+                "id": "1ClHmPJLgZPIGU9uf7DGaA",
+                "name": "Becoming Me",
+                "artists": [
+                    {
+                        "id": "6e8OTLDQpaz1Tl2GEaxsNj",
+                        "name": "Matthew West"
+                    },
+                    {
+                        "id": "7a3sDI6GCVntr6RXmCphhl",
+                        "name": "Lulu West"
+                    }
+                ],
+                "duration_ms": 245226,
+                "preview_url": null
+            },
+            {
+                "id": "4gvonkCpsXfkTVVlKzC9Wp",
+                "name": "You Are Known",
+                "artists": [
+                    {
+                        "id": "6e8OTLDQpaz1Tl2GEaxsNj",
+                        "name": "Matthew West"
+                    }
+                ],
+                "duration_ms": 243293,
+                "preview_url": null
+            }
+        ]
+    },
+    {
+        "id": "5p5lKDY6Ag62f8HWfIFzQ0",
+        "name": "On The Rocks",
+        "release_date": "2017-09-22",
+        "artists": [
+            {
+                "id": "1DTZRmlVZBxx2wRQBtx6yi",
+                "name": "Midland"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/3d93d8fec73fe1c418976c52400dfbf6b2c16d3f"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/d37cabbb50ec58d192520660759cdf0b8fb0c01c"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/26bc3d811a22d5c504dcc957e66df653d1268056"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "7B9VK5iBDUVZW8o66DyU8f",
+                "name": "Lonely For You Only",
+                "artists": [
+                    {
+                        "id": "1DTZRmlVZBxx2wRQBtx6yi",
+                        "name": "Midland"
+                    }
+                ],
+                "duration_ms": 230000,
+                "preview_url": null
+            },
+            {
+                "id": "7nDLdzyh2IDjL77JBmZTiQ",
+                "name": "Make A Little",
+                "artists": [
+                    {
+                        "id": "1DTZRmlVZBxx2wRQBtx6yi",
+                        "name": "Midland"
+                    }
+                ],
+                "duration_ms": 181533,
+                "preview_url": null
+            },
+            {
+                "id": "1vBpwxsLVwaR4evBIaFmqD",
+                "name": "Drinkin' Problem",
+                "artists": [
+                    {
+                        "id": "1DTZRmlVZBxx2wRQBtx6yi",
+                        "name": "Midland"
+                    }
+                ],
+                "duration_ms": 220800,
+                "preview_url": null
+            },
+            {
+                "id": "6y0mAMhVwWpbqQyWeBWDbp",
+                "name": "At Least You Cried",
+                "artists": [
+                    {
+                        "id": "1DTZRmlVZBxx2wRQBtx6yi",
+                        "name": "Midland"
+                    }
+                ],
+                "duration_ms": 158000,
+                "preview_url": null
+            },
+            {
+                "id": "7yrJnekdlwWARt5lmVqJ6L",
+                "name": "Burn Out",
+                "artists": [
+                    {
+                        "id": "1DTZRmlVZBxx2wRQBtx6yi",
+                        "name": "Midland"
+                    }
+                ],
+                "duration_ms": 188613,
+                "preview_url": null
+            },
+            {
+                "id": "5zRHjnfnJyahARo5ugxHgV",
+                "name": "Out Of Sight",
+                "artists": [
+                    {
+                        "id": "1DTZRmlVZBxx2wRQBtx6yi",
+                        "name": "Midland"
+                    }
+                ],
+                "duration_ms": 261826,
+                "preview_url": null
+            },
+            {
+                "id": "5t6GawlTh3qmDpncM495yl",
+                "name": "More Than A Fever",
+                "artists": [
+                    {
+                        "id": "1DTZRmlVZBxx2wRQBtx6yi",
+                        "name": "Midland"
+                    }
+                ],
+                "duration_ms": 222733,
+                "preview_url": null
+            },
+            {
+                "id": "4vxgfdGbsnp641hQR2AZhb",
+                "name": "Check Cashin' Country",
+                "artists": [
+                    {
+                        "id": "1DTZRmlVZBxx2wRQBtx6yi",
+                        "name": "Midland"
+                    }
+                ],
+                "duration_ms": 229053,
+                "preview_url": null
+            },
+            {
+                "id": "1qX7cD42VEs6zgMIBbFlCO",
+                "name": "Nothin' New Under The Neon",
+                "artists": [
+                    {
+                        "id": "1DTZRmlVZBxx2wRQBtx6yi",
+                        "name": "Midland"
+                    }
+                ],
+                "duration_ms": 226293,
+                "preview_url": null
+            },
+            {
+                "id": "6kSnXB5ndaj6yW9CEwfEk5",
+                "name": "This Old Heart",
+                "artists": [
+                    {
+                        "id": "1DTZRmlVZBxx2wRQBtx6yi",
+                        "name": "Midland"
+                    }
+                ],
+                "duration_ms": 193973,
+                "preview_url": null
+            },
+            {
+                "id": "4XSLXwwLskeFy1k6ec4tBg",
+                "name": "Altitude Adjustment",
+                "artists": [
+                    {
+                        "id": "1DTZRmlVZBxx2wRQBtx6yi",
+                        "name": "Midland"
+                    }
+                ],
+                "duration_ms": 206040,
+                "preview_url": null
+            },
+            {
+                "id": "30NNgmydG6afRcPV4PmFW8",
+                "name": "Electric Rodeo",
+                "artists": [
+                    {
+                        "id": "1DTZRmlVZBxx2wRQBtx6yi",
+                        "name": "Midland"
+                    }
+                ],
+                "duration_ms": 198880,
+                "preview_url": null
+            },
+            {
+                "id": "7kISgr6Y51hKENX23gXu2L",
+                "name": "Somewhere On The Wind",
+                "artists": [
+                    {
+                        "id": "1DTZRmlVZBxx2wRQBtx6yi",
+                        "name": "Midland"
+                    }
+                ],
+                "duration_ms": 200946,
+                "preview_url": null
+            }
+        ]
+    },
+    {
+        "id": "5DPZqC3ySZkJClCvZlIq6K",
+        "name": "All Things Work Together",
+        "release_date": "2017-09-22",
+        "artists": [
+            {
+                "id": "1CFCsEqKrCyvAFKOATQHiW",
+                "name": "Lecrae"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/fab3d024fb642a186881f1381d02182e5fc2e535"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/9963ad23b96484c6252be05daf2104e7fab5d4f4"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/652d5c7b67528c417c538a73aa2a72b3953afb60"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "0ld7U3AoaiDBJAjkNBJOsB",
+                "name": "Always Knew",
+                "artists": [
+                    {
+                        "id": "1CFCsEqKrCyvAFKOATQHiW",
+                        "name": "Lecrae"
+                    }
+                ],
+                "duration_ms": 214613,
+                "preview_url": "https://p.scdn.co/mp3-preview/5356068473cd7398de20e1413d2a3f74cfe02aa0?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "00h12tbjC9Aa5uEuq9HrgO",
+                "name": "Facts",
+                "artists": [
+                    {
+                        "id": "1CFCsEqKrCyvAFKOATQHiW",
+                        "name": "Lecrae"
+                    }
+                ],
+                "duration_ms": 241573,
+                "preview_url": "https://p.scdn.co/mp3-preview/f435ea1f5ceb4954e8a1b3ae86206fa39e79fe44?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "7A2dius6RtCZDWbJmNe6gQ",
+                "name": "Broke",
+                "artists": [
+                    {
+                        "id": "1CFCsEqKrCyvAFKOATQHiW",
+                        "name": "Lecrae"
+                    }
+                ],
+                "duration_ms": 179880,
+                "preview_url": "https://p.scdn.co/mp3-preview/abe97c04b099264915d84e8ccf526ef4e0691370?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "56vMywhKow2JM8lW6iLn7x",
+                "name": "Blessings",
+                "artists": [
+                    {
+                        "id": "1CFCsEqKrCyvAFKOATQHiW",
+                        "name": "Lecrae"
+                    },
+                    {
+                        "id": "7c0XG5cIJTrrAgEC3ULPiq",
+                        "name": "Ty Dolla $ign"
+                    }
+                ],
+                "duration_ms": 231053,
+                "preview_url": "https://p.scdn.co/mp3-preview/6f8e7312fb703b89bcfbe0314939f24d508ff69c?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "4tEnwJD6qaFF9B7AEZYtof",
+                "name": "Whatchu Mean",
+                "artists": [
+                    {
+                        "id": "1CFCsEqKrCyvAFKOATQHiW",
+                        "name": "Lecrae"
+                    },
+                    {
+                        "id": "7suLW93RkuQKWb4WTI5F14",
+                        "name": "Aha Gazelle"
+                    }
+                ],
+                "duration_ms": 260680,
+                "preview_url": "https://p.scdn.co/mp3-preview/b86d1b0f7a978f609b879b49b679c4b2a84bb5a1?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "5QgQeBU5kzNL93xWBfAoj6",
+                "name": "Hammer Time",
+                "artists": [
+                    {
+                        "id": "1CFCsEqKrCyvAFKOATQHiW",
+                        "name": "Lecrae"
+                    },
+                    {
+                        "id": "4SlhwYTW10Psr4CDAIJHLw",
+                        "name": "1K Phew"
+                    }
+                ],
+                "duration_ms": 214120,
+                "preview_url": "https://p.scdn.co/mp3-preview/41fdc20566f7b0eb92aaab8b019fd470beead313?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "1P3frhEyo1uLvIj7RdFoX4",
+                "name": "Come and Get Me",
+                "artists": [
+                    {
+                        "id": "1CFCsEqKrCyvAFKOATQHiW",
+                        "name": "Lecrae"
+                    }
+                ],
+                "duration_ms": 252520,
+                "preview_url": "https://p.scdn.co/mp3-preview/4a07d42e56deb6015591709da195662ebf7be4b1?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "1HiJBQgR00UltPnoRWHjiM",
+                "name": "Lucked Up",
+                "artists": [
+                    {
+                        "id": "1CFCsEqKrCyvAFKOATQHiW",
+                        "name": "Lecrae"
+                    },
+                    {
+                        "id": "2X6HwtMk1Za9PdPc7XHne5",
+                        "name": "Nija"
+                    }
+                ],
+                "duration_ms": 220746,
+                "preview_url": "https://p.scdn.co/mp3-preview/e2a7f9c6c9423aa7c1f13f0a7ed309c43470e763?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "6aHpsjOqEHs3oMaA1kxqhs",
+                "name": "Wish You the Best",
+                "artists": [
+                    {
+                        "id": "1CFCsEqKrCyvAFKOATQHiW",
+                        "name": "Lecrae"
+                    },
+                    {
+                        "id": "0EgUow5z0SXVA9lunNSB1q",
+                        "name": "Verse Simmonds"
+                    }
+                ],
+                "duration_ms": 224093,
+                "preview_url": "https://p.scdn.co/mp3-preview/a6bc1bc71e75a0f9fc50bc435e4ebaa67a409e51?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "4rzqGewELrzz5ZxWFsVHdS",
+                "name": "Can't Stop Me Now (Destination)",
+                "artists": [
+                    {
+                        "id": "1CFCsEqKrCyvAFKOATQHiW",
+                        "name": "Lecrae"
+                    }
+                ],
+                "duration_ms": 250480,
+                "preview_url": "https://p.scdn.co/mp3-preview/6e90ea8439090ac4509685573bab136d4b2cbf42?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "6m60IwLIkZ2Fmz4J9FsQ1o",
+                "name": "I'll Find You",
+                "artists": [
+                    {
+                        "id": "1CFCsEqKrCyvAFKOATQHiW",
+                        "name": "Lecrae"
+                    },
+                    {
+                        "id": "1vSN1fsvrzpbttOYGsliDr",
+                        "name": "Tori Kelly"
+                    }
+                ],
+                "duration_ms": 217506,
+                "preview_url": "https://p.scdn.co/mp3-preview/912f0ee7dc82b8806c5ddf4630b0d07addb32c24?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "1Dv15gRjKjCmM8bJe9urzM",
+                "name": "8:28",
+                "artists": [
+                    {
+                        "id": "1CFCsEqKrCyvAFKOATQHiW",
+                        "name": "Lecrae"
+                    }
+                ],
+                "duration_ms": 189880,
+                "preview_url": "https://p.scdn.co/mp3-preview/8500851a76da97827f4d782343c93bf025d556a5?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "3wJJPeMhR7A8t2AkCoP9Ma",
+                "name": "Cry For You",
+                "artists": [
+                    {
+                        "id": "1CFCsEqKrCyvAFKOATQHiW",
+                        "name": "Lecrae"
+                    },
+                    {
+                        "id": "5enXh7VYtH8x63M7coq9tJ",
+                        "name": "Taylor Hill"
+                    }
+                ],
+                "duration_ms": 263466,
+                "preview_url": "https://p.scdn.co/mp3-preview/ac6a77f49f9399aecc5824e27618d12afda38b12?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            },
+            {
+                "id": "3qa9CI4W8SQf85VZzi7GIQ",
+                "name": "Worth It",
+                "artists": [
+                    {
+                        "id": "1CFCsEqKrCyvAFKOATQHiW",
+                        "name": "Lecrae"
+                    },
+                    {
+                        "id": "4x3CdMQ3YjnPn4Evhyni5y",
+                        "name": "Kierra Sheard"
+                    },
+                    {
+                        "id": "1zWtqUs1JpL98hWc6B8DtA",
+                        "name": "Jawan Harris"
+                    }
+                ],
+                "duration_ms": 294893,
+                "preview_url": "https://p.scdn.co/mp3-preview/ea638eb8a4de15e5935ef790a5c41720ddf6af25?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            }
+        ]
+    },
+    {
+        "id": "6B3wbycw5QgjzhrYu48iDK",
+        "name": "Spent the Day in Bed",
+        "release_date": "2017-09-19",
+        "artists": [
+            {
+                "id": "3iTsJGG39nMg9YiolUgLMQ",
+                "name": "Morrissey"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/b74db6d698a0809de95e56120b20ebb6a6732a1e"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/e754b776de82655e1ed74cce580b348e04a6cafc"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/bf9c64a6fb0c63a3853c1d231ff8aebfa6a9436e"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "14Rb3dViHmaUpIrl83Q3fn",
+                "name": "Spent the Day in Bed",
+                "artists": [
+                    {
+                        "id": "3iTsJGG39nMg9YiolUgLMQ",
+                        "name": "Morrissey"
+                    }
+                ],
+                "duration_ms": 211280,
+                "preview_url": "https://p.scdn.co/mp3-preview/07b8eb3b21455c6794113e64b5059c4f6ae1de5c?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            }
+        ]
+    },
+    {
+        "id": "4Pcj6texpZmV0vWu9CCu0X",
+        "name": "Moments Passed",
+        "release_date": "2017-09-19",
+        "artists": [
+            {
+                "id": "5KNNVgR6LBIABRIomyCwKJ",
+                "name": "Dermot Kennedy"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/99c4625817a0016ddde9f5a965e10b03ab0adb57"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/95e3687f309a067c4f8f10daa1e8f4b5653ef7ec"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/639395d6451238d0aaf56cf00e2ba6a9c226b6ba"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "3H4SQPQVJ4birjwbMMuYlY",
+                "name": "Moments Passed",
+                "artists": [
+                    {
+                        "id": "5KNNVgR6LBIABRIomyCwKJ",
+                        "name": "Dermot Kennedy"
+                    }
+                ],
+                "duration_ms": 271357,
+                "preview_url": null
+            }
+        ]
+    },
+    {
+        "id": "4PSoaA9rxBDYfrROdI17b9",
+        "name": "A Different Way (Feat. Lauv)",
+        "release_date": "2017-09-21",
+        "artists": [
+            {
+                "id": "540vIaP2JwjQb9dm3aArA4",
+                "name": "DJ Snake"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/57e85852dc31c2c1a6d918d9d2f5bbf86361baa3"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/c4465695f7aad2bddb375c75ff999d776570a016"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/319e83772939ab2d1c6cf528c0ac4130b391257a"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "1YMBg7rOjxzbya0fPOYfNX",
+                "name": "A Different Way (Feat. Lauv)",
+                "artists": [
+                    {
+                        "id": "540vIaP2JwjQb9dm3aArA4",
+                        "name": "DJ Snake"
+                    },
+                    {
+                        "id": "5JZ7CnR6gTvEMKX4g70Amv",
+                        "name": "Lauv"
+                    }
+                ],
+                "duration_ms": 198285,
+                "preview_url": null
+            }
+        ]
+    },
+    {
+        "id": "4VptnMNHBiCaWzeI1E9KDm",
+        "name": "Haiku From Zero",
+        "release_date": "2017-09-22",
+        "artists": [
+            {
+                "id": "4EENT7N7rCBwrddM3s0vFS",
+                "name": "Cut Copy"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/664f6de4e54c023d7ebd5e4c220c6ae91927c905"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/7f8697db6b7f1f0532ade8cefb6596eb968eaa75"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/766b56b1141db6d7275397b1516be0737cc9bd3d"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "1alqVpvDH6ogtLQtsjHBKu",
+                "name": "Standing In The Middle Of The Field",
+                "artists": [
+                    {
+                        "id": "4EENT7N7rCBwrddM3s0vFS",
+                        "name": "Cut Copy"
+                    }
+                ],
+                "duration_ms": 331080,
+                "preview_url": null
+            },
+            {
+                "id": "49sMChf1zXNi3PEBZZ6Xwg",
+                "name": "Counting Down",
+                "artists": [
+                    {
+                        "id": "4EENT7N7rCBwrddM3s0vFS",
+                        "name": "Cut Copy"
+                    }
+                ],
+                "duration_ms": 230786,
+                "preview_url": null
+            },
+            {
+                "id": "2uxkidOJsgJPyjDeN1ez9o",
+                "name": "Black Rainbows",
+                "artists": [
+                    {
+                        "id": "4EENT7N7rCBwrddM3s0vFS",
+                        "name": "Cut Copy"
+                    }
+                ],
+                "duration_ms": 248026,
+                "preview_url": null
+            },
+            {
+                "id": "6muTQn0qSK2yGTjKQ9XKCq",
+                "name": "Stars Last Me A Lifetime",
+                "artists": [
+                    {
+                        "id": "4EENT7N7rCBwrddM3s0vFS",
+                        "name": "Cut Copy"
+                    }
+                ],
+                "duration_ms": 225626,
+                "preview_url": null
+            },
+            {
+                "id": "5uClqnsvwVKrWg39vuRMJg",
+                "name": "Airborne",
+                "artists": [
+                    {
+                        "id": "4EENT7N7rCBwrddM3s0vFS",
+                        "name": "Cut Copy"
+                    }
+                ],
+                "duration_ms": 318586,
+                "preview_url": null
+            },
+            {
+                "id": "12kruCvz1kaxQIRqpaXTC4",
+                "name": "No Fixed Destination",
+                "artists": [
+                    {
+                        "id": "4EENT7N7rCBwrddM3s0vFS",
+                        "name": "Cut Copy"
+                    }
+                ],
+                "duration_ms": 253986,
+                "preview_url": null
+            },
+            {
+                "id": "0VDVE8cHzTCy9EFKPVbAAR",
+                "name": "Memories We Share",
+                "artists": [
+                    {
+                        "id": "4EENT7N7rCBwrddM3s0vFS",
+                        "name": "Cut Copy"
+                    }
+                ],
+                "duration_ms": 302266,
+                "preview_url": null
+            },
+            {
+                "id": "17ncr0Ifjn2iwVA22tAKD8",
+                "name": "Living Upside Down",
+                "artists": [
+                    {
+                        "id": "4EENT7N7rCBwrddM3s0vFS",
+                        "name": "Cut Copy"
+                    }
+                ],
+                "duration_ms": 349053,
+                "preview_url": null
+            },
+            {
+                "id": "2e9UkVDmbl0wTLBlNofcyz",
+                "name": "Tied To The Weather",
+                "artists": [
+                    {
+                        "id": "4EENT7N7rCBwrddM3s0vFS",
+                        "name": "Cut Copy"
+                    }
+                ],
+                "duration_ms": 272946,
+                "preview_url": null
+            }
+        ]
+    },
+    {
+        "id": "1UuCqtFltuVqr9gHfI3PFr",
+        "name": "Dawsin's Breek (feat. Jeremih)",
+        "release_date": "2017-09-20",
+        "artists": [
+            {
+                "id": "7c0XG5cIJTrrAgEC3ULPiq",
+                "name": "Ty Dolla $ign"
+            },
+            {
+                "id": "3KV3p5EY4AvKxOlhGHORLg",
+                "name": "Jeremih"
+            }
+        ],
+        "images": [
+            {
+                "width": 640,
+                "height": 640,
+                "url": "https://i.scdn.co/image/7684222e8ec1bc1367b91598b4d5988cbb62404e"
+            },
+            {
+                "width": 300,
+                "height": 300,
+                "url": "https://i.scdn.co/image/98af99d79872df6b73b2538c761d06f10a236f75"
+            },
+            {
+                "width": 64,
+                "height": 64,
+                "url": "https://i.scdn.co/image/2b3d799a803fa9a302568bc42c2c35b77ae80dba"
+            }
+        ],
+        "tracks": [
+            {
+                "id": "3HD1VRaHsD8toQySblbJv4",
+                "name": "Dawsin's Breek (feat. Jeremih)",
+                "artists": [
+                    {
+                        "id": "7c0XG5cIJTrrAgEC3ULPiq",
+                        "name": "Ty Dolla $ign"
+                    },
+                    {
+                        "id": "3KV3p5EY4AvKxOlhGHORLg",
+                        "name": "Jeremih"
+                    }
+                ],
+                "duration_ms": 165200,
+                "preview_url": "https://p.scdn.co/mp3-preview/2f1c3fe960a8e7c99167199354ab858ee0d4a272?cid=aadb36f1c1ff4708854ca9fc9c5e2674"
+            }
+        ]
+    }
+]

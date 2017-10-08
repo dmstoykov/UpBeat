@@ -4,6 +4,6 @@ namespace UpBeat.Common.Mappings
 {
     public interface ICustomMapping
     {
-        void CreateMappings(IConfigurationProvider configuration);
+        void CreateMappings(IMapperConfigurationExpression configuration);
     }
 }

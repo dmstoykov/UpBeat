@@ -6,6 +6,8 @@ using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using UpBeat.Web;
 using UpBeat.Web.Controllers;
+using AutoMapper;
+using Moq;
 
 namespace UpBeat.Web.UnitTests.Controllers
 {
@@ -16,7 +18,8 @@ namespace UpBeat.Web.UnitTests.Controllers
         public void Index()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            var mockedMapper = new Mock<IMapper>();
+            HomeController controller = new HomeController(mockedMapper.Object);
 
             // Act
             ViewResult result = controller.Index() as ViewResult;
@@ -29,7 +32,8 @@ namespace UpBeat.Web.UnitTests.Controllers
         public void About()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            var mockedMapper = new Mock<IMapper>();
+            HomeController controller = new HomeController(mockedMapper.Object);
 
             // Act
             ViewResult result = controller.About() as ViewResult;
@@ -42,7 +46,8 @@ namespace UpBeat.Web.UnitTests.Controllers
         public void Contact()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            var mockedMapper = new Mock<IMapper>();
+            HomeController controller = new HomeController(mockedMapper.Object);
 
             // Act
             ViewResult result = controller.Contact() as ViewResult;
