@@ -7,13 +7,8 @@ namespace UpBeat.Data.Models.Abstracts
 {
     public abstract class BaseModel : IAuditable, IDeletable
     {
-        public BaseModel()
-        {
-            this.Id = Guid.NewGuid();
-        }
-
         [Key]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         
         [Index]
         public bool IsDeleted { get; set; }

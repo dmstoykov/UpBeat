@@ -12,10 +12,11 @@ namespace UpBeat.Web.App_Start
     {
         public void RegisterMappings()
         {
-            // ERROR: Injection of dependency IConfigurationProvider into parameter configurationProvider of constructor of type Mapper
             var jsonModelAssembly = Assembly.Load(Assemblies.JsonModels);
+            var viewModels = Assembly.GetExecutingAssembly();
 
             this.Execute(jsonModelAssembly);
+            this.Execute(viewModels);
         }
 
         public static IMapperConfigurationExpression Configuration { get; private set; }

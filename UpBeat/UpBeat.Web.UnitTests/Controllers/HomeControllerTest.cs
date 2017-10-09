@@ -18,8 +18,7 @@ namespace UpBeat.Web.UnitTests.Controllers
         public void Index()
         {
             // Arrange
-            var mockedMapper = new Mock<IMapper>();
-            HomeController controller = new HomeController(mockedMapper.Object);
+            HomeController controller = new HomeController();
 
             // Act
             ViewResult result = controller.Index() as ViewResult;
@@ -32,8 +31,7 @@ namespace UpBeat.Web.UnitTests.Controllers
         public void About()
         {
             // Arrange
-            var mockedMapper = new Mock<IMapper>();
-            HomeController controller = new HomeController(mockedMapper.Object);
+            HomeController controller = new HomeController();
 
             // Act
             ViewResult result = controller.About() as ViewResult;
@@ -46,8 +44,7 @@ namespace UpBeat.Web.UnitTests.Controllers
         public void Contact()
         {
             // Arrange
-            var mockedMapper = new Mock<IMapper>();
-            HomeController controller = new HomeController(mockedMapper.Object);
+            HomeController controller = new HomeController();
 
             // Act
             ViewResult result = controller.Contact() as ViewResult;

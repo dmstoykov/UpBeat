@@ -4,4 +4,35 @@
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
+@Html.ActionLink("Playlist link", "All", "Playlist")
+
+@*@foreach (var album in ViewBag.Albums)
+{
+    <div>
+        <p>@album.Name</p>
+        @foreach (var image in album.Images)
+        {
+            <img src="@image.Url" alt="Album cover photo" />
+        }
+        <ul>
+            @foreach (var track in album.Tracks)
+            {
+                <li>
+                    @track.Name
+                    @if (track.PreviewUrl != null)
+                    {
+                        <audio controls>
+                            <source src="@track.PreviewUrl" />
+                        </audio>
+                    }
+                    else
+                    {
+                        <strong>No preview url avaliable.</strong>
+                    }
+                </li>
+            }
+        </ul>
+    </div>
+}*@
+
 <p>Use this area to provide additional information.</p>

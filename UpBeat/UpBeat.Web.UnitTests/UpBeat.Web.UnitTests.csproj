@@ -108,10 +108,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UpBeat.Web.Controllers\UpBeat.Web.Controllers.csproj">
-      <Project>{ff696748-192d-45fa-bdd6-30c812989a9f}</Project>
-      <Name>UpBeat.Web.Controllers</Name>
-    </ProjectReference>
     <ProjectReference Include="..\UpBeat.Web\UpBeat.Web.csproj">
       <Project>{DD2B1C6B-C0B7-4F47-908D-B871DE817AC7}</Project>
       <Name>UpBeat.Web</Name>

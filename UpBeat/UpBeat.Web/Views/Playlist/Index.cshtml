@@ -1,0 +1,8 @@
+﻿@using UpBeat.Web.Models
+@model PlaylistViewModel
+
+@foreach (var album in Model.Albums)
+{
+    @Html.Partial("_AlbumPartial", album);
+}
+

@@ -3,22 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 using Newtonsoft.Json;
-using UpBeat.Data.JsonModels;
 using UpBeat.Common.Constants;
-using AutoMapper;
-using AutoMapper.QueryableExtensions;
+using UpBeat.Data.Repositories;
+using UpBeat.Data.Models;
+using UpBeat.Data;
 
 namespace UpBeat.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IMapper mapper;
-
-        public HomeController(IMapper mapper)
-        {
-            this.mapper = mapper;
-        }
-
         public ActionResult Index()
         {
             return View();
@@ -27,9 +20,10 @@ namespace UpBeat.Web.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-            var albums = JsonConvert.DeserializeObject<ICollection<Album>>(System.IO.File.ReadAllText(Resources.DbSeedPath));
 
-            var dbAlbums = albums.AsQueryable().ProjectTo<UpBeat.Data.Models.Album>().ToList();
+            var repo = new GenericRepository<Album>(new MsSqlDbContext());
+
+            ViewBag.Albums = repo.All.ToList();
 
             return View();
         }

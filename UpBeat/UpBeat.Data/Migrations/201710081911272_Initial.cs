@@ -11,7 +11,7 @@ namespace UpBeat.Data.Migrations
                 "dbo.Albums",
                 c => new
                     {
-                        Id = c.Guid(nullable: false),
+                        Id = c.Int(nullable: false, identity: true),
                         Name = c.String(),
                         ReleaseDate = c.String(),
                         IsDeleted = c.Boolean(nullable: false),
@@ -26,14 +26,14 @@ namespace UpBeat.Data.Migrations
                 "dbo.Artists",
                 c => new
                     {
-                        Id = c.Guid(nullable: false),
+                        Id = c.Int(nullable: false, identity: true),
                         Name = c.String(),
                         IsDeleted = c.Boolean(nullable: false),
                         DeletedOn = c.DateTime(),
                         CreatedOn = c.DateTime(),
                         ModifiedOn = c.DateTime(),
-                        Album_Id = c.Guid(),
-                        Track_Id = c.Guid(),
+                        Album_Id = c.Int(),
+                        Track_Id = c.Int(),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Albums", t => t.Album_Id)
@@ -46,7 +46,7 @@ namespace UpBeat.Data.Migrations
                 "dbo.Images",
                 c => new
                     {
-                        Id = c.Guid(nullable: false),
+                        Id = c.Int(nullable: false, identity: true),
                         Width = c.Int(nullable: false),
                         Height = c.Int(nullable: false),
                         Url = c.String(),
@@ -54,7 +54,7 @@ namespace UpBeat.Data.Migrations
                         DeletedOn = c.DateTime(),
                         CreatedOn = c.DateTime(),
                         ModifiedOn = c.DateTime(),
-                        Album_Id = c.Guid(),
+                        Album_Id = c.Int(),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Albums", t => t.Album_Id)
@@ -65,7 +65,7 @@ namespace UpBeat.Data.Migrations
                 "dbo.Tracks",
                 c => new
                     {
-                        Id = c.Guid(nullable: false),
+                        Id = c.Int(nullable: false, identity: true),
                         Name = c.String(),
                         Duration = c.Long(),
                         PreviewUrl = c.String(),
@@ -73,7 +73,7 @@ namespace UpBeat.Data.Migrations
                         DeletedOn = c.DateTime(),
                         CreatedOn = c.DateTime(),
                         ModifiedOn = c.DateTime(),
-                        Album_Id = c.Guid(),
+                        Album_Id = c.Int(),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Albums", t => t.Album_Id)

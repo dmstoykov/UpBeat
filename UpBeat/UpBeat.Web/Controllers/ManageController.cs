@@ -25,30 +25,6 @@ namespace UpBeat.Web.Controllers
             this.signInManager = signInManager;
         }
 
-        //public ISignInService SignInManager
-        //{
-        //    get
-        //    {
-        //        return signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
-        //    }
-        //    private set 
-        //    { 
-        //        signInManager = value; 
-        //    }
-        //}
-
-        //public ApplicationUserManager UserManager
-        //{
-        //    get
-        //    {
-        //        return userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
-        //    }
-        //    private set
-        //    {
-        //        userManager = value;
-        //    }
-        //}
-
         //
         // GET: /Manage/Index
         public async Task<ActionResult> Index(ManageMessageId? message)

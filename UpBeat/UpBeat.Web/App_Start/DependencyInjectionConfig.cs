@@ -14,6 +14,11 @@ namespace UpBeat.Web.App_Start
     using UpBeat.Auth.Contracts;
     using UpBeat.Auth;
     using AutoMapper;
+    using UpBeat.Data.Contracts;
+    using UpBeat.Data;
+    using UpBeat.Services.Contracts;
+    using UpBeat.Services;
+    using UpBeat.Data.Repositories;
 
     public static class DependencyInjectionConfig
     {
@@ -65,9 +70,14 @@ namespace UpBeat.Web.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Bind<IDbContext>().To<MsSqlDbContext>().InRequestScope();
+
             kernel.Bind<IMapper>().ToMethod(ctx => Mapper.Instance).InSingletonScope();
             kernel.Bind<ISignInService>().ToMethod(_ => HttpContext.Current.GetOwinContext().Get<ApplicationSignInManager>());
             kernel.Bind<IUserService>().ToMethod(_ => HttpContext.Current.GetOwinContext().Get<ApplicationUserManager>());
+            kernel.Bind(typeof(IGenericRepository<>)).To(typeof(GenericRepository<>)).InRequestScope();
+
+            kernel.Bind<IAlbumService>().To<AlbumService>();
         }
     }
 }

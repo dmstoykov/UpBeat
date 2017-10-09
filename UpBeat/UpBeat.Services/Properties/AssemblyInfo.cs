@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("UpBeat.Web.Models")]
+[assembly: AssemblyTitle("UpBeat.Services")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("UpBeat.Web.Models")]
+[assembly: AssemblyProduct("UpBeat.Services")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("0c80cb22-1540-496d-b629-08118486be41")]
+[assembly: Guid("bd5d10cf-f445-4115-9544-b4369d8d0522")]
 
 // Version information for an assembly consists of the following four values:
 //

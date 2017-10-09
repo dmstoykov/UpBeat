@@ -219,10 +219,18 @@
     <Compile Include="App_Start\DependencyInjectionConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PlaylistController.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AlbumViewModel.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\PlaylistViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -282,6 +290,8 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Playlist\Index.cshtml" />
+    <Content Include="Views\Playlist\_AlbumPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -308,17 +318,17 @@
       <Project>{A0CA61BE-9FCA-47DE-BC30-78E04C42BC61}</Project>
       <Name>UpBeat.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\UpBeat.Data.Models\UpBeat.Data.Models.csproj">
+      <Project>{2BDBFF4C-D6D8-47B8-A16F-5199C29C2531}</Project>
+      <Name>UpBeat.Data.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UpBeat.Data\UpBeat.Data.csproj">
       <Project>{5454AD8F-422E-4986-9829-0655EBE10764}</Project>
       <Name>UpBeat.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UpBeat.Web.Controllers\UpBeat.Web.Controllers.csproj">
-      <Project>{ff696748-192d-45fa-bdd6-30c812989a9f}</Project>
-      <Name>UpBeat.Web.Controllers</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\UpBeat.Web.Models\UpBeat.Web.Models.csproj">
-      <Project>{0c80cb22-1540-496d-b629-08118486be41}</Project>
-      <Name>UpBeat.Web.Models</Name>
+    <ProjectReference Include="..\UpBeat.Services\UpBeat.Services.csproj">
+      <Project>{BD5D10CF-F445-4115-9544-B4369D8D0522}</Project>
+      <Name>UpBeat.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
