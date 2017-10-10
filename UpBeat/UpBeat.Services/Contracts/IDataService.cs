@@ -5,5 +5,7 @@ namespace UpBeat.Services.Contracts
     public interface IDataService<T>
     {
         IEnumerable<T> GetAll();
+
+        T GetById(int id);
     }
 }

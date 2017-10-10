@@ -1,0 +1,37 @@
+﻿@using UpBeat.Web.Models
+@model AlbumViewModel
+
+<div class="row">
+    <div class="col s12 m5 center">
+        <img class="z-depth-3" src="@Model.ImageUrl" alt="Album cover" />
+    </div>
+    <div class="col s12 m7">
+        <h3 class="primary-text flow-text">@Model.Name</h3>
+        <h6 class="secondary-text"><span>Artists | </span>@string.Join(", ", Model.ArtistNames)</h6>
+        <hr />
+    </div>
+</div>
+<div class="row">
+    <div class="col sm12 m7 offset-m5">
+        <ul class="collection">
+            @foreach (var track in Model.Tracks)
+            {
+                <li class="collection-item">
+                    <span class="light-blue-text darken-4">@track.Name</span>
+                    <div class="inline-block right">
+                        @if (track.PreviewUrl != null)
+                        {
+                            <audio controls>
+                                <source src="@track.PreviewUrl" type="audio/mp3">
+                            </audio>
+                        }
+                        else
+                        {
+                            <span class="light-blue-text darken-4">No preview avaliable.</span>
+                        }
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

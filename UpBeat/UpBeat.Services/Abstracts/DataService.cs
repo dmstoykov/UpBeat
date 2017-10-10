@@ -24,5 +24,10 @@ namespace UpBeat.Services.Abstracts
         {
             return this.Data.All.ToList();
         }
+
+        public T GetById(int id)
+        {
+            return this.Data.Get(id);
+        }
     }
 }

@@ -1,6 +1,7 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     background: rgb(72,119,150); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(72,119,150,1) 0%, rgba(39,72,102,1) 45%, rgba(26,45,96,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(72,119,150,1) 0%,rgba(39,72,102,1) 45%,rgba(26,45,96,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -10,8 +11,13 @@
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
+    overflow: hidden;
+    flex: 1 0 auto;
+    margin-top: 0;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+    color:white;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 

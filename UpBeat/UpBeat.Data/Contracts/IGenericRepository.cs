@@ -11,6 +11,8 @@ namespace UpBeat.Data.Contracts
 
         IQueryable<T> AllAndDeleted { get; }
 
+        T Get(int id);
+
         void Add(T entity);
 
         void AddRange(IEnumerable<T> entities);

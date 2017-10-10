@@ -36,5 +36,13 @@ namespace UpBeat.Web.Controllers
 
             return View("Index", playlistViewModel);
         }
+
+        public ActionResult Details(int albumId)
+        {
+            var currentAlbum = this.albumService.GetById(albumId);
+            var albumViewModel = this.mapper.Map<AlbumViewModel>(currentAlbum);
+
+            return View("AlbumDetails", albumViewModel);
+        }
     }
 }

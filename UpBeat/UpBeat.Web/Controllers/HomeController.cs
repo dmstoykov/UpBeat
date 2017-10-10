@@ -21,10 +21,6 @@ namespace UpBeat.Web.Controllers
         {
             ViewBag.Message = "Your application description page.";
 
-            var repo = new GenericRepository<Album>(new MsSqlDbContext());
-
-            ViewBag.Albums = repo.All.ToList();
-
             return View();
         }
 

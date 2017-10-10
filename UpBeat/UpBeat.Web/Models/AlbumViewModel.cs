@@ -9,11 +9,15 @@ namespace UpBeat.Web.Models
 {
     public class AlbumViewModel : IMapFrom<Album>, ICustomMapping
     {
+        public int Id { get; set; }
+
         public string Name { get; set; }
 
         public string ImageUrl { get; set; }
 
         public List<string> ArtistNames { get; set; }
+
+        public List<Track> Tracks { get; set; }
 
         public void CreateMappings(IMapperConfigurationExpression configuration)
         {

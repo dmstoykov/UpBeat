@@ -1,5 +1,18 @@
 ﻿@using UpBeat.Web.Models
 @model AlbumViewModel
 
-<h3>@Model.Name</h3>
-<img src="@Model.ImageUrl" alt="Album cover" />
+<div class="row">
+    <div class="col s12 m5 center">
+        <img class="z-depth-3" src="@Model.ImageUrl" alt="Album cover" />
+    </div>
+    <div class="col s12 m7">
+        <h3 class="primary-text flow-text">@Model.Name</h3>
+        <h6 class="secondary-text"><span>Artists | </span>@string.Join(", ", Model.ArtistNames)</h6>
+        <a href="@Url.Action("Details", "Playlist", new { albumId = Model.Id })" class="waves-effect waves-light btn">
+        <i class="material-icons left">arrow_drop_down_circle</i>
+        Check out album
+        </a>
+        <hr />
+    </div>
+</div>
+

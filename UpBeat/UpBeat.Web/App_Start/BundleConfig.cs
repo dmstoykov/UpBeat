@@ -26,6 +26,19 @@ namespace UpBeat.Web
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/materialize").Include(
+                "~/Content/materialize.css",
+                      "~/Content/Custom/styles.css",
+                      "~/Content/site.css"
+                ));
+
+            bundles.Add(new ScriptBundle("~/bundles/materialize").Include(
+                "~/Scripts/materialize.js",
+                "~/Scripts/Custom/main.js",
+                      "~/Scripts/respond.js"
+                ));
+
         }
     }
 }

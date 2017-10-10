@@ -37,6 +37,11 @@ namespace UpBeat.Data.Repositories
             }
         }
 
+        public T Get(int id)
+        {
+            return this.context.Set<T>().Find(id);
+        }
+
         public void Add(T entity)
         {
             Guard.WhenArgument(entity, nameof(entity)).IsNull().Throw();
