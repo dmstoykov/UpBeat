@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Bytes2you.Validation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,9 @@ namespace UpBeat.Web.Controllers
 
         public PlaylistController(IMapper mapper, IAlbumService albumService)
         {
+            Guard.WhenArgument(mapper, mapper.GetType().Name).IsNull().Throw();
+            Guard.WhenArgument(albumService, albumService.GetType().Name).IsNull().Throw();
+
             this.mapper = mapper;
             this.albumService = albumService;
         }

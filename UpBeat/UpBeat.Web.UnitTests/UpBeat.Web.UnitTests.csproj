@@ -100,10 +100,16 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="TestStack.FluentMVCTesting, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TestStack.FluentMVCTesting.3.0.0\lib\NET45\TestStack.FluentMVCTesting.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\PlaylistController\All_Should.cs" />
+    <Compile Include="Controllers\PlaylistController\Constructor_Should.cs" />
+    <Compile Include="Controllers\PlaylistController\Details_Should.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Controllers\HomeControllerTest.cs" />
+    <Compile Include="Controllers\HomeController\HomeControllerTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
@@ -112,11 +118,20 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\UpBeat.Data.Models\UpBeat.Data.Models.csproj">
+      <Project>{2BDBFF4C-D6D8-47B8-A16F-5199C29C2531}</Project>
+      <Name>UpBeat.Data.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UpBeat.Services\UpBeat.Services.csproj">
+      <Project>{BD5D10CF-F445-4115-9544-B4369D8D0522}</Project>
+      <Name>UpBeat.Services</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UpBeat.Web\UpBeat.Web.csproj">
       <Project>{DD2B1C6B-C0B7-4F47-908D-B871DE817AC7}</Project>
       <Name>UpBeat.Web</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
