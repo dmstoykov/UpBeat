@@ -1,3 +1,7 @@
+
+## Build status
+[![Build status](https://ci.appveyor.com/api/projects/status/dad7auna24n08km2?svg=true)](https://ci.appveyor.com/project/MitkoStoikov/upbeat)
+
 # ASP.NET MVC Final Project
 
 This document describes the **final project assignment** for the **ASP.NET MVC** course at Telerik Academy.
