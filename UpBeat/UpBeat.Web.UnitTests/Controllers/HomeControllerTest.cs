@@ -18,13 +18,13 @@ namespace UpBeat.Web.UnitTests.Controllers
         public void Index()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            HomeController controller = new HomeController(); 
 
             // Act
-            ViewResult result = controller.Index() as ViewResult;
+            ViewResult testResult = controller.Index() as ViewResult;
 
             // Assert
-            Assert.IsNotNull(result);
+            Assert.IsNotNull(testResult);
         }
 
         [Test]

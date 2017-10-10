@@ -24,11 +24,8 @@ namespace UpBeat.Web.Controllers
             return View();
         }
 
-        [Authorize]
         public ActionResult Contact()
         {
-            ViewBag.Message = "Current logged user: " + User.Identity.Name;
-
             return View();
         }
     }
