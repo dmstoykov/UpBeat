@@ -1,6 +1,10 @@
 ﻿nav {
-    background-color: #223656;
     margin-bottom: 20px;
+    background: rgb(38,37,38); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(38,37,38,1) 1%, rgba(3,3,3,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(38,37,38,1) 1%,rgba(3,3,3,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(38,37,38,1) 1%,rgba(3,3,3,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262526', endColorstr='#030303',GradientType=0 ); /* IE6-9 */
 }
 
 .hidden {
@@ -8,8 +12,13 @@
 }
 
 .btn {
-    background-color: #29516d;
+    color:black;    
+    background-color: #c0ca33;
 }
+
+    .btn:hover {
+        background-color: #dce775;
+    }
 
 hr {
     background-color: #eaeaea;
@@ -20,7 +29,7 @@ hr {
 
 .page-footer {
     padding-top: 0;
-    background-color: #37474f;
+    background-color: #003028;
 }
 
 .inline-block {

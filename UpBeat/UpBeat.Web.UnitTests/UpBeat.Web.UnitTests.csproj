@@ -114,7 +114,6 @@
     <Compile Include="Services\AlbumService\Constructor_Should.cs" />
     <Compile Include="Services\AlbumService\GetAll_Should.cs" />
     <Compile Include="Services\AlbumService\GetById_Should.cs" />
-    <Compile Include="Services\MockedClasses\AlbumRepositoryMock.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />

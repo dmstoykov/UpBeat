@@ -7,19 +7,21 @@
     </div>
     <div class="col s12 m7">
         <h2 class="primary-text flow-text">@Model.Name</h2>
-        <h5 class="secondary-text"><span>Artists | </span>@string.Join(", ", Model.ArtistNames)</h5>
+        <h5 class="secondary-text flow-text"><span>Artists | </span>@string.Join(", ", Model.ArtistNames)</h5>
         <h5 class="secondary-text">@Model.Tracks.Count songs</h5>
-        <h6>Released @Model.ReleaseDate</h6>
-        <hr />
+        <h6 class="flow-text">Released @Model.ReleaseDate</h6>
     </div>
 </div>
 <div class="row">
-    <div class="col sm12 m7 offset-m5 center">
+    <div class="col sm12 m5 center">
+        <div class="waves-effect waves-light btn"><i class="material-icons left">favorite</i>Favourite</div>
+    </div>
+    <div class="col sm12 m7 center">
         <ul class="collection">
             @foreach (var track in Model.Tracks)
             {
                 <li class="collection-item">
-                    <span class="light-blue-text darken-4">@track.Name</span>
+                    <span class="black-text darken-4">@track.Name</span>
                     <div class="inline-block right">
                         @if (track.PreviewUrl != null)
                         {
@@ -29,7 +31,7 @@
                         }
                         else
                         {
-                            <span class="light-blue-text darken-4">No preview avaliable.</span>
+                            <span class="grey-text darken-4">No preview avaliable.</span>
                         }
                     </div>
                 </li>
