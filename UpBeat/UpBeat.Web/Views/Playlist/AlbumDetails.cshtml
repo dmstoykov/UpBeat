@@ -6,13 +6,15 @@
         <img class="z-depth-3" src="@Model.ImageUrl" alt="Album cover" />
     </div>
     <div class="col s12 m7">
-        <h3 class="primary-text flow-text">@Model.Name</h3>
-        <h6 class="secondary-text"><span>Artists | </span>@string.Join(", ", Model.ArtistNames)</h6>
+        <h2 class="primary-text flow-text">@Model.Name</h2>
+        <h5 class="secondary-text"><span>Artists | </span>@string.Join(", ", Model.ArtistNames)</h5>
+        <h5 class="secondary-text">@Model.Tracks.Count songs</h5>
+        <h6>Released @Model.ReleaseDate</h6>
         <hr />
     </div>
 </div>
 <div class="row">
-    <div class="col sm12 m7 offset-m5">
+    <div class="col sm12 m7 offset-m5 center">
         <ul class="collection">
             @foreach (var track in Model.Tracks)
             {

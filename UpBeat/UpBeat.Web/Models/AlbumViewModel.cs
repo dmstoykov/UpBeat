@@ -13,6 +13,8 @@ namespace UpBeat.Web.Models
 
         public string Name { get; set; }
 
+        public string ReleaseDate { get; set; }
+
         public string ImageUrl { get; set; }
 
         public List<string> ArtistNames { get; set; }
