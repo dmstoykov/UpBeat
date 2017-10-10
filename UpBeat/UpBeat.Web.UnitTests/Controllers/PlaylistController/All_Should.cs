@@ -15,7 +15,7 @@
     public class All_Should
     {
         [Test]
-        public void ReturnViewWithModelWithCorrectProperties_WhenThereIsAModelWithThePassedId()
+        public void ReturnViewWithModelWithCorrectProperties_WhenCalled()
         {
             // Arrange
             var resultViewName = "Index";
