@@ -7,5 +7,7 @@ namespace UpBeat.Services.Contracts
         IEnumerable<T> GetAll();
 
         T GetById(int id);
+
+        void Update(T entity);
     }
 }

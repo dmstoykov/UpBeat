@@ -6,6 +6,7 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     @Styles.Render("~/Content/materialize")
+    @Styles.Render("~/Content/kendo")
     @Scripts.Render("~/bundles/modernizr")
     @RenderSection("styles", required: false)
 </head>
@@ -41,7 +42,11 @@
         </div>
     </footer>
     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/kendo")
     @Scripts.Render("~/bundles/materialize")
+    @Scripts.Render("~/bundles/jqueryval")
+
+    @Html.Kendo().DeferredScripts()
     @RenderSection("scripts", required: false)
 </body>
 </html>

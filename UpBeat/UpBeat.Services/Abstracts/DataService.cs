@@ -29,5 +29,10 @@ namespace UpBeat.Services.Abstracts
         {
             return this.Data.Get(id);
         }
+
+        public void Update(T entity)
+        {
+            this.Data.Update(entity);
+        }
     }
 }

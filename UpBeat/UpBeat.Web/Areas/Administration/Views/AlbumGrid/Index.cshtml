@@ -25,7 +25,7 @@
             {
                 m.Id(c => c.Id);
             })
-            .Read(c => c.Action("ListCountries", "AlbumGrid"))
+            .Read(c => c.Action("ListAlbums", "AlbumGrid")).PageSize(DataConstants.DefaultGridPageLength)
             .Update(c => c.Action("EditAlbum", "AlbumGrid"))
             .Destroy(c => c.Action("RemoveAlbum", "AlbumGrid"));
         })

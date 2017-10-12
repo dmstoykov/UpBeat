@@ -14,5 +14,7 @@ namespace UpBeat.Common.Constants
         public const int MinModelNameLength = 3;
 
         public const int MaxModelNameLength = 30;
+
+        public const int DefaultGridPageLength = 10;
     }
 }
