@@ -59,7 +59,13 @@ namespace UpBeat.Web.Areas.Administration.Controllers
 
         public ActionResult RemoveAlbum(AlbumGridViewModel albumViewModel)
         {
-            return View();
+            if (albumViewModel != null)
+            {
+                var albumDbModel = this.mapper.Map<Album>(albumViewModel);
+                this.albumService.Remove(albumDbModel);
+            }
+
+            return this.Json(new { albumViewModel });
         }
     }
 }

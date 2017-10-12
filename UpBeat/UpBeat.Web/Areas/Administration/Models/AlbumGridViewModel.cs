@@ -9,7 +9,6 @@ namespace UpBeat.Web.Areas.Administration.Models
 {
     public class AlbumGridViewModel : IMapFrom<Album>
     {
-        [ReadOnly(true)]
         public int Id { get; set; }
 
         [StringLength(DataConstants.MaxModelNameLength,

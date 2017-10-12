@@ -9,5 +9,7 @@ namespace UpBeat.Services.Contracts
         T GetById(int id);
 
         void Update(T entity);
+
+        void Remove(T entity);
     }
 }

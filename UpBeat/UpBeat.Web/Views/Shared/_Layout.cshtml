@@ -26,6 +26,7 @@
                 <li>@(Html.ActionLink<HomeController>("Home", c => c.Index()))</li>
                 <li>@(Html.ActionLink<HomeController>("About", c => c.About()))</li>
                 <li>@(Html.ActionLink<PlaylistController>("Trending", c => c.All()))</li>
+                <li><hr /></li>
                 @Html.Partial("_LoginPartial")
             </ul>
         </div>

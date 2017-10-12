@@ -6,7 +6,6 @@
         .Name("AlbumGrid")
         .Columns((columns) =>
         {
-            columns.Bound(c => c.Id).Width(50);
             columns.Bound(c => c.Name).Width(150);
             columns.Bound(c => c.ReleaseDate).Width(100);
             columns.Command(c => { c.Edit(); c.Destroy(); }).Width(200);

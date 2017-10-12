@@ -34,5 +34,10 @@ namespace UpBeat.Services.Abstracts
         {
             this.Data.Update(entity);
         }
+
+        public void Remove(T entity)
+        {
+            this.Data.Remove(entity);
+        }
     }
 }

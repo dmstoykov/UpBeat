@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Linq;
 using System.Data.Entity;
+using System.Collections.Generic;
 using System.Data.Entity.Infrastructure;
 using Bytes2you.Validation;
 using UpBeat.Data.Contracts;
 using UpBeat.Data.Models.Contracts;
-using System.Collections.Generic;
 
 namespace UpBeat.Data.Repositories
 {
