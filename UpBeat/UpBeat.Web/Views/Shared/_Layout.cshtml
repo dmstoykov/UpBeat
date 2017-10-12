@@ -15,17 +15,16 @@
             @Html.ActionLink("UpBeat", "Index", "Home", new { area = "" }, new { @class = "brand-logo center" })
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="hide-on-med-and-down">
-                <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                <li>@Html.ActionLink("Trending", "All", "Playlist")</li>
-                
+                <li>@(Html.ActionLink<HomeController>("Home", c => c.Index()))</li>
+                <li>@(Html.ActionLink<PlaylistController>("Trending", c => c.All()))</li>
             </ul>
             <ul class="right hide-on-med-and-down">
                 @Html.Partial("_LoginPartial")
             </ul>
             <ul class="side-nav" id="mobile-demo">
-                <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                <li>@Html.ActionLink("About", "About", "Home")</li>
-                <li>@Html.ActionLink("Trending", "All", "Playlist")</li>
+                <li>@(Html.ActionLink<HomeController>("Home", c => c.Index()))</li>
+                <li>@(Html.ActionLink<HomeController>("About", c => c.About()))</li>
+                <li>@(Html.ActionLink<PlaylistController>("Trending", c => c.All()))</li>
                 @Html.Partial("_LoginPartial")
             </ul>
         </div>
@@ -37,7 +36,7 @@
         <div class="footer-copyright">
             <div class="container">
                 <span>Copyright © 2017 UpBeat Inc.All rights reserved.</span>
-                <span class="right">Design and Developed by @Html.ActionLink("UpBeat Inc.", "About", "Home")</span>
+                <span class="right">Design and Developed by @(Html.ActionLink<HomeController>("UpBeat Inc.", c => c.About()))</span>
             </div>
         </div>
     </footer>

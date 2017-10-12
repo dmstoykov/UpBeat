@@ -1,0 +1,25 @@
+﻿<div class="container">
+    <div class="row center">
+        <div class="col m10 offset-m1 s12">
+            <h3><i class="material-icons medium">verified_user</i> Administrator panel</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col m10 offset-m1 s12">
+            <h5 class="flow-text">Create model</h5>
+            <hr />
+            <a href="#" class="waves-effect waves-light btn-large">
+                <i class="material-icons medium left">disc_full</i> Add Album
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col m10 offset-m1 s12">
+            <h5 class="flow-text">Manage albums</h5>
+            <hr />
+            <a href="@(Url.Action<AlbumGridController>(c => c.Index()))" class="waves-effect waves-light btn-large">
+                <i class="material-icons medium left">edit</i> Edit album details
+            </a>
+        </div>
+    </div>
+</div>

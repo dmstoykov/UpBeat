@@ -1,0 +1,56 @@
+﻿using AutoMapper;
+using Bytes2you.Validation;
+using Kendo.Mvc.Extensions;
+using Kendo.Mvc.UI;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using UpBeat.Data.Models;
+using UpBeat.Services.Contracts;
+using UpBeat.Web.Areas.Administration.Models;
+
+namespace UpBeat.Web.Areas.Administration.Controllers
+{
+    public class AlbumGridController : Controller
+    {
+        private readonly IAlbumService albumService;
+        private readonly IMapper mapper;
+
+        public AlbumGridController(IAlbumService albumService, IMapper mapper)
+        {
+            Guard.WhenArgument(albumService, albumService.GetType().Name).IsNull().Throw();
+            Guard.WhenArgument(mapper, mapper.GetType().Name).IsNull().Throw();
+
+            this.albumService = albumService;
+            this.mapper = mapper;
+        }
+
+        // GET: Administration/AlbumGrid
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult ListAlbums(DataSourceRequest request)
+        {
+            var albums = this.albumService
+                .GetAll()
+                .Select(x => this.mapper.Map<Album, AlbumGridViewModel>(x))
+                .ToDataSourceResult(request);
+
+            return this.Json(albums);
+        }
+
+        public ActionResult EditAlbum(AlbumGridViewModel albumViewModel)
+        {
+            return this.View();
+        }
+
+        public ActionResult RemoveAlbum(AlbumGridViewModel albumViewModel)
+        {
+            return this.View();
+        }
+    }
+}
