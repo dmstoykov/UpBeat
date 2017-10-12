@@ -1,5 +1,6 @@
 ﻿using System.Web;
 using System.Web.Mvc;
+using UpBeat.Web.Infrastructure.Attributes;
 
 namespace UpBeat.Web
 {
@@ -8,6 +9,7 @@ namespace UpBeat.Web
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
+            filters.Add(new SaveChangesAttribute());
         }
     }
 }

@@ -9,11 +9,14 @@ using System.Web;
 using System.Web.Mvc;
 using UpBeat.Data.Models;
 using UpBeat.Services.Contracts;
+using UpBeat.Web.Areas.Administration.Controllers.Abstracts;
 using UpBeat.Web.Areas.Administration.Models;
+using UpBeat.Web.Infrastructure.Attributes;
 
 namespace UpBeat.Web.Areas.Administration.Controllers
 {
-    public class AlbumGridController : Controller
+    [SaveChanges]
+    public class AlbumGridController : AdminController
     {
         private readonly IAlbumService albumService;
         private readonly IMapper mapper;

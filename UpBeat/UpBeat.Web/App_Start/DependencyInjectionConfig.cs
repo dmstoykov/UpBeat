@@ -19,6 +19,10 @@ namespace UpBeat.Web.App_Start
     using UpBeat.Services.Contracts;
     using UpBeat.Services;
     using UpBeat.Data.Repositories;
+    using UpBeat.Data.UnitOfWork;
+    using Ninject.Web.Mvc.FilterBindingSyntax;
+    using UpBeat.Web.Infrastructure.Filters;
+    using UpBeat.Web.Infrastructure.Attributes;
 
     public static class DependencyInjectionConfig
     {
@@ -71,13 +75,15 @@ namespace UpBeat.Web.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind<IDbContext>().To<MsSqlDbContext>().InRequestScope();
+            kernel.Bind<ISaveChanges>().To<SaveChanges>();
 
             kernel.Bind<IMapper>().ToMethod(ctx => Mapper.Instance).InSingletonScope();
             kernel.Bind<ISignInService>().ToMethod(_ => HttpContext.Current.GetOwinContext().Get<ApplicationSignInManager>());
             kernel.Bind<IUserService>().ToMethod(_ => HttpContext.Current.GetOwinContext().Get<ApplicationUserManager>());
-            kernel.Bind(typeof(IGenericRepository<>)).To(typeof(GenericRepository<>)).InRequestScope();
+            kernel.Bind(typeof(IGenericRepository<>)).To(typeof(GenericRepository<>));
 
             kernel.Bind<IAlbumService>().To<AlbumService>();
+            kernel.BindFilter<SaveChangesFilter>(System.Web.Mvc.FilterScope.Controller, 0).WhenControllerHas<SaveChangesAttribute>();
         }
     }
 }
