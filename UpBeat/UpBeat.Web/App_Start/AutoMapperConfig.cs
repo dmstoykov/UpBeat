@@ -12,20 +12,19 @@ namespace UpBeat.Web.App_Start
     {
         public void RegisterMappings()
         {
-            var jsonModelAssembly = Assembly.Load(Assemblies.JsonModels);
-            var viewModels = Assembly.GetExecutingAssembly();
+            var currentAssembly = Assembly.GetExecutingAssembly();
+            var jsonModelsAssembly = Assembly.Load(Assemblies.JsonModels);
 
-            this.Execute(jsonModelAssembly);
-            this.Execute(viewModels);
+            this.Execute(new Assembly[] { currentAssembly, jsonModelsAssembly });
         }
 
         public static IMapperConfigurationExpression Configuration { get; private set; }
 
-        public IMapperConfigurationExpression Execute(Assembly assembly)
+        public IMapperConfigurationExpression Execute(Assembly[] assemblies)
         {
             Mapper.Initialize((config) =>
             {
-                var types = assembly.GetExportedTypes();
+                var types = assemblies.SelectMany(x => x.GetTypes()).ToList();
                 LoadStandardMappings(types, config);
                 LoadCustomMappings(types, config);
 
