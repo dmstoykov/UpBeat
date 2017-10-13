@@ -21,8 +21,7 @@ namespace UpBeat.Web.Models
         public void CreateMappings(IMapperConfigurationExpression configuration)
         {
             configuration.CreateMap<Track, TrackViewModel>()
-                .ForMember(x => x.Title, cfg => cfg.MapFrom(track => track.Name))
-                .ForMember(x => x.ArtistNames, cfg => cfg.MapFrom(track => track.Artists.Select(artist => artist.Name).ToList()));
+                .ForMember(x => x.Title, cfg => cfg.MapFrom(track => track.Name));
         }
     }
 }

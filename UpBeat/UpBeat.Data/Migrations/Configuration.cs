@@ -69,11 +69,6 @@ namespace UpBeat.Data.Migrations
             {
                 var tracks = album.Tracks;
 
-                foreach (var track in tracks)
-                {
-                    context.Artists.AddRange(track.Artists);
-                }
-
                 context.Tracks.AddRange(tracks);
                 context.Images.AddRange(album.Images);
 

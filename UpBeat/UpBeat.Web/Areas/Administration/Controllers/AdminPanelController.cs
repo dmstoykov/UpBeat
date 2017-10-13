@@ -20,16 +20,20 @@ namespace UpBeat.Web.Areas.Administration.Controllers
     {
         private readonly IMapper mapper;
         private readonly IAlbumService albumService;
+        private readonly ITrackService trackService;
 
         public AdminPanelController(
             IMapper mapper,
-            IAlbumService albumService)
+            IAlbumService albumService,
+            ITrackService trackService)
         {
             Guard.WhenArgument(mapper, mapper.GetType().Name).IsNull().Throw();
             Guard.WhenArgument(albumService, albumService.GetType().Name).IsNull().Throw();
+            Guard.WhenArgument(trackService, trackService.GetType().Name).IsNull().Throw();
 
             this.mapper = mapper;
             this.albumService = albumService;
+            this.trackService = trackService;
         }
 
         // GET: Administration/AdminPanel
@@ -57,6 +61,35 @@ namespace UpBeat.Web.Areas.Administration.Controllers
                 };
 
                 this.albumService.Add(albumDbModel);
+
+            }
+
+            return this.RedirectToAction<AlbumGridController>(c => c.Index());
+        }
+
+        [HttpGet]
+        public ActionResult AddTrack()
+        {
+            var avaliableAlbums = this.albumService.GetAll()
+                .Select(x => new SelectListItem() { Text = x.Name, Value = x.Name }).ToList() ;
+
+            var trackViewModel = new TrackViewModel()
+            {
+                AlbumSelectList = avaliableAlbums
+            };
+
+            return this.PartialView(Views.AddTrackPartial, trackViewModel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult AddTrack(TrackViewModel trackModel)
+        {
+            if (this.ModelState.IsValid)
+            {
+                var trackDbModel = this.mapper.Map<Track>(trackModel);
+
+                this.trackService.Add(trackDbModel, trackModel.AlbumName);
             }
 
             return this.RedirectToAction<AlbumGridController>(c => c.Index());

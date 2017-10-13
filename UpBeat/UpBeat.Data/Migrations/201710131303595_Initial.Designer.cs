@@ -13,7 +13,7 @@ namespace UpBeat.Data.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201710081911272_Initial"; }
+            get { return "201710131303595_Initial"; }
         }
         
         string IMigrationMetadata.Source

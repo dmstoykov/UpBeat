@@ -14,5 +14,7 @@ namespace UpBeat.Data.Models
         public int Height { get; set; }
 
         public string Url { get; set; }
+
+        public virtual Album Album { get; set; }
     }
 }

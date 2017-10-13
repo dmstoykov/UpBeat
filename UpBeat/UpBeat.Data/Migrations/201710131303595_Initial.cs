@@ -33,14 +33,11 @@ namespace UpBeat.Data.Migrations
                         CreatedOn = c.DateTime(),
                         ModifiedOn = c.DateTime(),
                         Album_Id = c.Int(),
-                        Track_Id = c.Int(),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Albums", t => t.Album_Id)
-                .ForeignKey("dbo.Tracks", t => t.Track_Id)
                 .Index(t => t.IsDeleted)
-                .Index(t => t.Album_Id)
-                .Index(t => t.Track_Id);
+                .Index(t => t.Album_Id);
             
             CreateTable(
                 "dbo.Images",
@@ -162,7 +159,6 @@ namespace UpBeat.Data.Migrations
             DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
             DropForeignKey("dbo.Tracks", "Album_Id", "dbo.Albums");
-            DropForeignKey("dbo.Artists", "Track_Id", "dbo.Tracks");
             DropForeignKey("dbo.Images", "Album_Id", "dbo.Albums");
             DropForeignKey("dbo.Artists", "Album_Id", "dbo.Albums");
             DropIndex("dbo.AspNetUserLogins", new[] { "UserId" });
@@ -176,7 +172,6 @@ namespace UpBeat.Data.Migrations
             DropIndex("dbo.Tracks", new[] { "IsDeleted" });
             DropIndex("dbo.Images", new[] { "Album_Id" });
             DropIndex("dbo.Images", new[] { "IsDeleted" });
-            DropIndex("dbo.Artists", new[] { "Track_Id" });
             DropIndex("dbo.Artists", new[] { "Album_Id" });
             DropIndex("dbo.Artists", new[] { "IsDeleted" });
             DropIndex("dbo.Albums", new[] { "IsDeleted" });

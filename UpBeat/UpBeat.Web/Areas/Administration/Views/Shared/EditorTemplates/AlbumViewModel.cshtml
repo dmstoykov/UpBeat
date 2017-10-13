@@ -1,18 +1,30 @@
 ﻿@using UpBeat.Web.Areas.Administration.Models
 @model AlbumViewModel
 
-@using (Html.BeginForm<AdminPanelController>(c => c.AddAlbum(null), FormMethod.Post, htmlAttributes: new { id = "addition-form" }))
-{
-    @Html.EditorFor(model => model.Name, new { htmlattributes = new { placeholder = "Album name", required = true } })
-        @Html.ValidationMessageFor(m => m.Name)
+<div class="row">
+    @using (Html.BeginForm<AdminPanelController>(c => c.AddAlbum(null), FormMethod.Post, htmlAttributes: new { @class = "col s12", id = "addition-form" }))
+    {
+        HtmlHelper.UnobtrusiveJavaScriptEnabled = true;
 
-    @Html.EditorFor(model => model.ReleaseDate, new { htmlattributes = new { placeholder = "Album release date", required = true } })
-        @Html.ValidationMessageFor(m => m.ReleaseDate)
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                @Html.EditorFor(model => model.Name,
+               new { htmlattributes = new { @class = "validate", id = "icon-prefix", required = true } })
+                <label for="icon_prefix">Name</label>
+                @Html.ValidationMessageFor(m => m.Name, "", new { @class = "red-text"})
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">today</i>
+                @Html.EditorFor(model => model.ReleaseDate,
+               new { htmlattributes = new { @class="validate", id = "icon_date", required = true } })
+                <label for="icon_date">Release date</label>
+                <div>
+                    @Html.ValidationMessageFor(m => m.ReleaseDate, "", new { @class = "red-text" })
+                </div>
+            </div>
+        </div>
 
-    @*@Html.DropDownListFor(model => model.Artists.Name, Model.Artists, htmlAttributes: new { placeholder = "Artists" })
-
-    @Html.DropDownListFor(model => model.Images.Name, Model.Images, htmlAttributes: new { placeholder = "Images" })*@
-
-    @Html.AntiForgeryToken()
-}
-
+        @Html.AntiForgeryToken()
+    }
+</div>

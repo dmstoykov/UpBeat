@@ -29,20 +29,5 @@ namespace UpBeat.Services.Abstracts
         {
             return this.Data.Get(id);
         }
-
-        public void Add(T entity)
-        {
-            this.Data.Add(entity);
-        }
-
-        public void Update(T entity)
-        {
-            this.Data.Update(entity);
-        }
-
-        public void Remove(T entity)
-        {
-            this.Data.Remove(entity);
-        }
     }
 }

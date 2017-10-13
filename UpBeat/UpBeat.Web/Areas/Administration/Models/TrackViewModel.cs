@@ -10,18 +10,22 @@ using UpBeat.Data.Models;
 
 namespace UpBeat.Web.Areas.Administration.Models
 {
-    public class AlbumViewModel : IMapFrom<Album>
+    public class TrackViewModel : IMapFrom<Track>
     {
         [Required]
         [StringLength(DataConstants.MaxModelNameLength,
             MinimumLength = DataConstants.MinModelNameLength,
-            ErrorMessage = "Invalid album name length!")]
+            ErrorMessage = "Invalid track name length!")]
         public string Name { get; set; }
 
+        public long? Duration { get; set; }
+
         [Required]
-        [StringLength(DataConstants.AlbumReleaseDateLength,
-            MinimumLength = DataConstants.AlbumReleaseDateLength,
-            ErrorMessage = "Invalid date format")]
-        public string ReleaseDate { get; set; }
+        public string PreviewUrl { get; set; }
+
+        [Required]
+        public string AlbumName { get; set; }
+
+        public IEnumerable<SelectListItem> AlbumSelectList { get; set; }
     }
 }

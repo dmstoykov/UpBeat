@@ -233,8 +233,11 @@
     <Compile Include="Areas\Administration\Controllers\Abstracts\AdminController.cs" />
     <Compile Include="Areas\Administration\Controllers\AdminPanelController.cs" />
     <Compile Include="Areas\Administration\Controllers\AlbumGridController.cs" />
+    <Compile Include="Areas\Administration\Controllers\TrackGridController.cs" />
     <Compile Include="Areas\Administration\Models\AlbumGridViewModel.cs" />
     <Compile Include="Areas\Administration\Models\AlbumViewModel.cs" />
+    <Compile Include="Areas\Administration\Models\TrackGridViewModel.cs" />
+    <Compile Include="Areas\Administration\Models\TrackViewModel.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -320,6 +323,9 @@
     <Content Include="Content\Kendo\kendo.common.min.css.map" />
     <Content Include="Areas\Administration\Views\Shared\_AddAlbumPartial.cshtml" />
     <Content Include="Areas\Administration\Views\Shared\EditorTemplates\AlbumViewModel.cshtml" />
+    <Content Include="Areas\Administration\Views\Shared\_AddTrackPartial.cshtml" />
+    <Content Include="Areas\Administration\Views\Shared\EditorTemplates\TrackViewModel.cshtml" />
+    <Content Include="Areas\Administration\Views\TrackGrid\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Libs\Kendo.Mvc.dll" />
     <Content Include="Libs\Kendo.Mvc.xml" />

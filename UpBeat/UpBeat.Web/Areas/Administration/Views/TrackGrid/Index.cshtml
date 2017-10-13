@@ -1,0 +1,35 @@
+﻿@using UpBeat.Web.Areas.Administration.Models;
+
+<div class="container">
+    @(Html.Kendo()
+        .Grid<TrackGridViewModel>()
+        .Name("TrackGrid")
+        .Columns((columns) =>
+        {
+            columns.Bound(c => c.Name).Width(150);
+            columns.Bound(c => c.PreviewUrl).Width(200);
+            columns.Command(c => { c.Edit(); c.Destroy(); }).Width(150);
+        })
+        .Editable(e => e.Mode(GridEditMode.InLine))
+        .Pageable(c =>
+        {
+            c.Refresh(true)
+            .PageSizes(true);
+        })
+        .Sortable()
+        .DataSource(source =>
+        {
+            source.Ajax()
+            .Model(m =>
+            {
+                m.Id(c => c.Id);
+            })
+            .Read(c => c.Action("ListTracks", "TrackGrid")).PageSize(DataConstants.DefaultGridPageLength)
+            .Update(c => c.Action("EditTrack", "TrackGrid"))
+            .Destroy(c => c.Action("RemoveTrack", "TrackGrid"));
+        })
+        .Filterable(f => f.Mode(GridFilterMode.Menu))
+        .Deferred()
+    )
+
+</div>
