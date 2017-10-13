@@ -48,6 +48,9 @@ namespace UpBeat.Services
         {
             Guard.WhenArgument(track, "TrackToUpdate").IsNull().Throw();
 
+            var trackExists = this.Data.All.Any(x => x.Name == track.Name);
+            Guard.WhenArgument(trackExists, "TrackToUpdate").IsFalse().Throw();
+
             this.Data.Update(track);
         }
     }
