@@ -16,6 +16,7 @@
             // Arrange
             var albumId = 1;
             var albumRepositoryMock = new Mock<IGenericRepository<Album>>();
+            var artistRepositoryMock = new Mock<IGenericRepository<Artist>>();
             var albumModel = new Album()
             {
                 Id = 1,
@@ -34,7 +35,7 @@
             albumRepositoryMock.Setup(x => x.Get(albumModel.Id)).Returns(albumModel);
 
             // Act
-            var albumService = new AlbumService(albumRepositoryMock.Object);
+            var albumService = new AlbumService(albumRepositoryMock.Object, artistRepositoryMock.Object);
             var result = albumService.GetById(albumId);
 
             // Assert
@@ -47,6 +48,7 @@
             // Arrange
             var albumId = 1;
             var albumRepositoryMock = new Mock<IGenericRepository<Album>>();
+            var artistRepositoryMock = new Mock<IGenericRepository<Artist>>();
             var albumModel = new Album()
             {
                 Id = 1,
@@ -65,7 +67,7 @@
             albumRepositoryMock.Setup(x => x.Get(albumModel.Id)).Returns(albumModel);
 
             // Act
-            var albumService = new AlbumService(albumRepositoryMock.Object);
+            var albumService = new AlbumService(albumRepositoryMock.Object, artistRepositoryMock.Object);
             var result = albumService.GetById(albumId);
 
             // Assert
@@ -78,6 +80,7 @@
             // Arrange
             var albumId = 100;
             var albumRepositoryMock = new Mock<IGenericRepository<Album>>();
+            var artistRepositoryMock = new Mock<IGenericRepository<Artist>>();
             var albumModel = new Album()
             {
                 Id = 1,
@@ -96,7 +99,7 @@
             albumRepositoryMock.Setup(x => x.Get(albumModel.Id)).Returns(albumModel);
 
             // Act
-            var albumService = new AlbumService(albumRepositoryMock.Object);
+            var albumService = new AlbumService(albumRepositoryMock.Object, artistRepositoryMock.Object);
             var result = albumService.GetById(albumId);
 
             // Assert

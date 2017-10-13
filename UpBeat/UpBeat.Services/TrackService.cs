@@ -11,8 +11,8 @@ namespace UpBeat.Services
     {
         private readonly IGenericRepository<Album> albumRepository;
 
-        public TrackService(IGenericRepository<Track> dataRepository, IGenericRepository<Album> albumRepository)
-            :base(dataRepository)
+        public TrackService(IGenericRepository<Track> trackRepository, IGenericRepository<Album> albumRepository)
+            :base(trackRepository)
         {
             Guard.WhenArgument(albumRepository, albumRepository.GetType().Name).IsNull().Throw();
             this.albumRepository = albumRepository;
@@ -35,6 +35,9 @@ namespace UpBeat.Services
 
         public void Remove(Track track)
         {
+            var trackExists = this.Data.All.Any(x => x.Name == track.Name);
+            Guard.WhenArgument(trackExists, "Track doesn't exist").IsFalse().Throw();
+
             Guard.WhenArgument(track, track.GetType().Name).IsNull().Throw();
 
             this.Data.Remove(track);

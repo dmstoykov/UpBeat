@@ -16,6 +16,7 @@
         {
             // Arrange
             var albumRepositoryMock = new Mock<IGenericRepository<Album>>();
+            var artistRepositoryMock = new Mock<IGenericRepository<Artist>>();
             var albumModel = new List<Album>()
             {
                 new Album()
@@ -29,7 +30,7 @@
             albumRepositoryMock.Setup(x => x.All).Returns(albumModel);
 
             // Act
-            var albumService = new AlbumService(albumRepositoryMock.Object);
+            var albumService = new AlbumService(albumRepositoryMock.Object, artistRepositoryMock.Object);
             var result = albumService.GetAll();
 
             // Assert
@@ -42,12 +43,13 @@
         {
             // Arrange
             var albumRepositoryMock = new Mock<IGenericRepository<Album>>();
+            var artistRepositoryMock = new Mock<IGenericRepository<Artist>>();
             var albumModel = new List<Album>() { }.AsQueryable();
 
             albumRepositoryMock.Setup(x => x.All).Returns(albumModel);
 
             // Act
-            var albumService = new AlbumService(albumRepositoryMock.Object);
+            var albumService = new AlbumService(albumRepositoryMock.Object, artistRepositoryMock.Object);
             var result = albumService.GetAll();
 
             // Assert

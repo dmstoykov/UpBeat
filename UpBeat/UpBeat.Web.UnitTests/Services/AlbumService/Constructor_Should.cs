@@ -14,17 +14,18 @@
         public void ReturnsAnInstance_WhenParameterIsNotNull()
         {
             // Arrange
-            var genericRepositoryMock = new Mock<IGenericRepository<Album>>();
+            var genericAlbumRepositoryMock = new Mock<IGenericRepository<Album>>();
+            var genericArtistRepopositoryMock = new Mock<IGenericRepository<Artist>>();
 
             // Act & Assert
-            Assert.DoesNotThrow(() => new AlbumService(genericRepositoryMock.Object));
+            Assert.DoesNotThrow(() => new AlbumService(genericAlbumRepositoryMock.Object, genericArtistRepopositoryMock.Object));
         }
 
         [Test]
         public void ThrowException_WhenGenericRepositoryIsNull()
         {
             // Arrange, Act & Assert
-            Assert.Throws<NullReferenceException>(() => new AlbumService(null));
+            Assert.Throws<NullReferenceException>(() => new AlbumService(null, null));
         }
     }
 }

@@ -23,5 +23,10 @@ namespace UpBeat.Web.Areas.Administration.Models
             MinimumLength = DataConstants.AlbumReleaseDateLength,
             ErrorMessage = "Invalid date format")]
         public string ReleaseDate { get; set; }
+
+        [Required]
+        public string ArtistName { get; set; }
+
+        public IEnumerable<SelectListItem> ArtistSelectList { get; set; }
     }
 }

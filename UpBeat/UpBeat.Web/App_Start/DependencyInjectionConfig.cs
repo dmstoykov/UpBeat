@@ -84,6 +84,8 @@ namespace UpBeat.Web.App_Start
 
             kernel.Bind<IAlbumService>().To<AlbumService>();
             kernel.Bind<ITrackService>().To<TrackService>();
+            kernel.Bind<IArtistService>().To<ArtistService>();
+
             kernel.BindFilter<SaveChangesFilter>(System.Web.Mvc.FilterScope.Controller, 0).WhenControllerHas<SaveChangesAttribute>();
         }
     }

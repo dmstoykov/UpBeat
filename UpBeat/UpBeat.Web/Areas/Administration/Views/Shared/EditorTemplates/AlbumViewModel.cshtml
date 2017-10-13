@@ -4,8 +4,6 @@
 <div class="row">
     @using (Html.BeginForm<AdminPanelController>(c => c.AddAlbum(null), FormMethod.Post, htmlAttributes: new { @class = "col s12", id = "addition-form" }))
     {
-        HtmlHelper.UnobtrusiveJavaScriptEnabled = true;
-
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">account_circle</i>
@@ -21,6 +19,13 @@
                 <label for="icon_date">Release date</label>
                 <div>
                     @Html.ValidationMessageFor(m => m.ReleaseDate, "", new { @class = "red-text" })
+                </div>
+            </div>
+            <div class="col s12">
+                <i class="material-icons prefix">today</i>
+                @Html.DropDownListFor(model => model.ArtistName, Model.ArtistSelectList, new { @class = "validate browser-default", required = true })
+                <div>
+                    @Html.ValidationMessageFor(m => m.ArtistName, "", new { @class = "red-text" })
                 </div>
             </div>
         </div>

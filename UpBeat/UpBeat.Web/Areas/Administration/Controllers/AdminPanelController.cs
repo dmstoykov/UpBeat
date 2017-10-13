@@ -21,19 +21,23 @@ namespace UpBeat.Web.Areas.Administration.Controllers
         private readonly IMapper mapper;
         private readonly IAlbumService albumService;
         private readonly ITrackService trackService;
+        private readonly IArtistService artistService;
 
         public AdminPanelController(
             IMapper mapper,
             IAlbumService albumService,
-            ITrackService trackService)
+            ITrackService trackService,
+            IArtistService artistService)
         {
             Guard.WhenArgument(mapper, mapper.GetType().Name).IsNull().Throw();
             Guard.WhenArgument(albumService, albumService.GetType().Name).IsNull().Throw();
             Guard.WhenArgument(trackService, trackService.GetType().Name).IsNull().Throw();
+            Guard.WhenArgument(artistService, artistService.GetType().Name).IsNull().Throw();
 
             this.mapper = mapper;
             this.albumService = albumService;
             this.trackService = trackService;
+            this.artistService = artistService;
         }
 
         // GET: Administration/AdminPanel
@@ -45,7 +49,15 @@ namespace UpBeat.Web.Areas.Administration.Controllers
         [HttpGet]
         public ActionResult AddAlbum()
         {
-            return this.PartialView(Views.AddAlbumPartial);
+            var avaliableArtists = this.artistService.GetAll()
+                .Select(x => new SelectListItem() { Text = x.Name, Value = x.Name });
+
+            var albumViewModel = new AlbumViewModel()
+            {
+                ArtistSelectList = avaliableArtists
+            };
+
+            return this.PartialView(Views.AddAlbumPartial, albumViewModel);
         }
 
         [HttpPost]
@@ -60,8 +72,7 @@ namespace UpBeat.Web.Areas.Administration.Controllers
                     Resources.DefaultAlbumImage
                 };
 
-                this.albumService.Add(albumDbModel);
-
+                this.albumService.Add(albumDbModel, albumModel.ArtistName);
             }
 
             return this.RedirectToAction<AlbumGridController>(c => c.Index());

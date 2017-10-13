@@ -45,7 +45,9 @@
   <ItemGroup>
     <Compile Include="Abstracts\DataService.cs" />
     <Compile Include="AlbumService.cs" />
+    <Compile Include="ArtistService.cs" />
     <Compile Include="Contracts\IAlbumService.cs" />
+    <Compile Include="Contracts\IArtistService.cs" />
     <Compile Include="Contracts\IDataService.cs" />
     <Compile Include="Contracts\ITrackService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

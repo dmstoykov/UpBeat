@@ -6,9 +6,13 @@
         .Name("AlbumGrid")
         .Columns((columns) =>
         {
+            columns.Bound(c => c.Image).ClientTemplate(
+                  @"<img src='#:Image#' style='width: 54px; height:54px;' />")
+                  .Width(55).MinScreenWidth(500);
+
             columns.Bound(c => c.Name).Width(150);
-            columns.Bound(c => c.ReleaseDate).Width(100);
-            columns.Command(c => { c.Edit(); c.Destroy(); }).Width(200);
+            columns.Bound(c => c.ReleaseDate).Width(70);
+            columns.Command(c => { c.Edit(); c.Destroy(); }).Width(150);
         })
         .Editable(e => e.Mode(GridEditMode.InLine))
         .Pageable(c =>

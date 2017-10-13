@@ -20,7 +20,6 @@ namespace UpBeat.Web.Areas.Administration.Models
 
         public long? Duration { get; set; }
 
-        [Required]
         public string PreviewUrl { get; set; }
 
         [Required]
