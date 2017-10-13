@@ -64,12 +64,19 @@
     <Compile Include="Constants\Assemblies.cs" />
     <Compile Include="Constants\DataConstants.cs" />
     <Compile Include="Constants\Resources.cs" />
+    <Compile Include="Constants\Views.cs" />
     <Compile Include="Mappings\ICustomMapping.cs" />
     <Compile Include="Mappings\IMapFrom.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UpBeat.Data.Models\UpBeat.Data.Models.csproj">
+      <Project>{2BDBFF4C-D6D8-47B8-A16F-5199C29C2531}</Project>
+      <Name>UpBeat.Data.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

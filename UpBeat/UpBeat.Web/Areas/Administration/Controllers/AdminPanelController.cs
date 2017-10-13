@@ -1,14 +1,37 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using UpBeat.Common.Constants;
+using UpBeat.Data.Models;
+using UpBeat.Services.Contracts;
 using UpBeat.Web.Areas.Administration.Controllers.Abstracts;
+using UpBeat.Web.Areas.Administration.Models;
+using System.Web.Mvc.Expressions;
+using UpBeat.Web.Infrastructure.Attributes;
+using Bytes2you.Validation;
 
 namespace UpBeat.Web.Areas.Administration.Controllers
 {
+    [SaveChanges]
     public class AdminPanelController : AdminController
     {
+        private readonly IMapper mapper;
+        private readonly IAlbumService albumService;
+
+        public AdminPanelController(
+            IMapper mapper,
+            IAlbumService albumService)
+        {
+            Guard.WhenArgument(mapper, mapper.GetType().Name).IsNull().Throw();
+            Guard.WhenArgument(albumService, albumService.GetType().Name).IsNull().Throw();
+
+            this.mapper = mapper;
+            this.albumService = albumService;
+        }
+
         // GET: Administration/AdminPanel
         public ActionResult Index()
         {
@@ -18,8 +41,25 @@ namespace UpBeat.Web.Areas.Administration.Controllers
         [HttpGet]
         public ActionResult AddAlbum()
         {
+            return this.PartialView(Views.AddAlbumPartial);
+        }
 
-            return View();
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult AddAlbum(AlbumViewModel albumModel)
+        {
+            if (this.ModelState.IsValid)
+            {
+                var albumDbModel = this.mapper.Map<Album>(albumModel);
+                albumDbModel.Images = new List<Image>()
+                {
+                    Resources.DefaultAlbumImage
+                };
+
+                this.albumService.Add(albumDbModel);
+            }
+
+            return this.RedirectToAction<AlbumGridController>(c => c.Index());
         }
     }
 }

@@ -45,11 +45,19 @@
   <ItemGroup>
     <Compile Include="Abstracts\DataService.cs" />
     <Compile Include="AlbumService.cs" />
+    <Compile Include="ArtistService.cs" />
     <Compile Include="Contracts\IAlbumService.cs" />
+    <Compile Include="Contracts\IArtistService.cs" />
     <Compile Include="Contracts\IDataService.cs" />
+    <Compile Include="Contracts\IImageService.cs" />
+    <Compile Include="ImageService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\UpBeat.Data.JsonModels\UpBeat.Data.JsonModels.csproj">
+      <Project>{78C6FD55-234D-4B62-883C-665019FF60B7}</Project>
+      <Name>UpBeat.Data.JsonModels</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UpBeat.Data.Models\UpBeat.Data.Models.csproj">
       <Project>{2BDBFF4C-D6D8-47B8-A16F-5199C29C2531}</Project>
       <Name>UpBeat.Data.Models</Name>

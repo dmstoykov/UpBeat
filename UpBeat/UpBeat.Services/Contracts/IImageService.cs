@@ -2,7 +2,7 @@
 
 namespace UpBeat.Services.Contracts
 {
-    public interface IAlbumService : IDataService<Album>
+    public interface IImageService : IDataService<Image>
     {
     }
 }

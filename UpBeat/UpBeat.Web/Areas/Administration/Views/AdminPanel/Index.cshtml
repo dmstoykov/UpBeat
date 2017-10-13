@@ -8,7 +8,12 @@
         <div class="col m10 offset-m1 s12">
             <h5 class="flow-text">Create model</h5>
             <hr />
-            <a href="#" class="waves-effect waves-light btn-large">
+            <a data-ajax="true"
+               data-ajax-mode="replace"
+               data-ajax-success="openModal('Add Album')"
+               data-ajax-update="#modal-body"
+               href="@(Url.Action<AdminPanelController>(c => c.AddAlbum()))"
+               class="waves-effect waves-light btn-large">
                 <i class="material-icons medium left">disc_full</i> Add Album
             </a>
         </div>
@@ -22,4 +27,24 @@
             </a>
         </div>
     </div>
+
+    <div id="popupModal" class="modal black-text">
+        <div class="modal-content" id="modal-form">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body" id="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button id="submit-btn" class="waves-effect waves-light btn">Add</button>
+                <button class="waves-effect waves-light btn modal-close">Close</button>
+            </div>
+        </div>
+    </div>
 </div>
+
+@section Scripts{
+    @Scripts.Render("~/bundles/modals")
+}
+
+

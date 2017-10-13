@@ -25,7 +25,8 @@ namespace UpBeat.Web.Models
         {
             configuration.CreateMap<Album, AlbumViewModel>()
                 .ForMember(x => x.ArtistNames, cfg => cfg.MapFrom(album => album.Artists.Select(y => y.Name).ToList()))
-                .ForMember(x => x.ImageUrl, cfg => cfg.MapFrom(album => album.Images.ElementAt(1).Url));
+                .ForMember(x => x.ImageUrl, cfg => 
+                cfg.MapFrom(album =>album.Images.Count > 1 ? album.Images.ElementAt(1).Url : album.Images.FirstOrDefault().Url));
         }
     }
 }

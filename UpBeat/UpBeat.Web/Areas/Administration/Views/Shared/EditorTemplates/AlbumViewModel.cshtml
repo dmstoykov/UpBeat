@@ -1,0 +1,18 @@
+﻿@using UpBeat.Web.Areas.Administration.Models
+@model AlbumViewModel
+
+@using (Html.BeginForm<AdminPanelController>(c => c.AddAlbum(null), FormMethod.Post, htmlAttributes: new { id = "addition-form" }))
+{
+    @Html.EditorFor(model => model.Name, new { htmlattributes = new { placeholder = "Album name", required = true } })
+        @Html.ValidationMessageFor(m => m.Name)
+
+    @Html.EditorFor(model => model.ReleaseDate, new { htmlattributes = new { placeholder = "Album release date", required = true } })
+        @Html.ValidationMessageFor(m => m.ReleaseDate)
+
+    @*@Html.DropDownListFor(model => model.Artists.Name, Model.Artists, htmlAttributes: new { placeholder = "Artists" })
+
+    @Html.DropDownListFor(model => model.Images.Name, Model.Images, htmlAttributes: new { placeholder = "Images" })*@
+
+    @Html.AntiForgeryToken()
+}
+

@@ -234,6 +234,7 @@
     <Compile Include="Areas\Administration\Controllers\AdminPanelController.cs" />
     <Compile Include="Areas\Administration\Controllers\AlbumGridController.cs" />
     <Compile Include="Areas\Administration\Models\AlbumGridViewModel.cs" />
+    <Compile Include="Areas\Administration\Models\AlbumViewModel.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -317,10 +318,13 @@
     <Content Include="Content\Kendo\fonts\glyphs\WebComponentsIcons.woff" />
     <Content Include="Content\Kendo\kendo.black.min.css.map" />
     <Content Include="Content\Kendo\kendo.common.min.css.map" />
+    <Content Include="Areas\Administration\Views\Shared\_AddAlbumPartial.cshtml" />
+    <Content Include="Areas\Administration\Views\Shared\EditorTemplates\AlbumViewModel.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Libs\Kendo.Mvc.dll" />
     <Content Include="Libs\Kendo.Mvc.xml" />
     <Content Include="Scripts\Custom\main.js" />
+    <Content Include="Scripts\Custom\modal.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\Kendo\kendo.aspnetmvc.min.js" />
@@ -378,7 +382,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Administration\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
