@@ -1,5 +1,5 @@
-﻿using Bytes2you.Validation;
-using System.Linq;
+﻿using System.Linq;
+using Bytes2you.Validation;
 using UpBeat.Data.Contracts;
 using UpBeat.Data.Models;
 using UpBeat.Services.Abstracts;
@@ -14,13 +14,14 @@ namespace UpBeat.Services
         public TrackService(IGenericRepository<Track> trackRepository, IGenericRepository<Album> albumRepository)
             :base(trackRepository)
         {
-            Guard.WhenArgument(albumRepository, albumRepository.GetType().Name).IsNull().Throw();
+            Guard.WhenArgument(albumRepository, "AlbumRepository").IsNull().Throw();
             this.albumRepository = albumRepository;
         }
 
         public void Add(Track track, string albumName)
         {
-            Guard.WhenArgument(track, track.GetType().Name).IsNull().Throw();
+            Guard.WhenArgument(track, "TrackToAdd").IsNull().Throw();
+            Guard.WhenArgument(albumName, "TrackAlbumName").IsNullOrEmpty().Throw();
 
             var trackExists = this.Data.All.Any(x => x.Name == track.Name);
             Guard.WhenArgument(trackExists, "Existing track").IsTrue().Throw();
@@ -35,17 +36,17 @@ namespace UpBeat.Services
 
         public void Remove(Track track)
         {
-            var trackExists = this.Data.All.Any(x => x.Name == track.Name);
-            Guard.WhenArgument(trackExists, "Track doesn't exist").IsFalse().Throw();
+            Guard.WhenArgument(track, "TrackToRemove").IsNull().Throw();
 
-            Guard.WhenArgument(track, track.GetType().Name).IsNull().Throw();
+            var trackExists = this.Data.All.Any(x => x.Name == track.Name);
+            Guard.WhenArgument(trackExists, "TrackToRemove").IsFalse().Throw();
 
             this.Data.Remove(track);
         }
 
         public void Update(Track track)
         {
-            Guard.WhenArgument(track, track.GetType().Name).IsNull().Throw();
+            Guard.WhenArgument(track, "TrackToUpdate").IsNull().Throw();
 
             this.Data.Update(track);
         }

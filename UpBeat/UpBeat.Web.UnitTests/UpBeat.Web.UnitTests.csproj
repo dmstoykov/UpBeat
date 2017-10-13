@@ -111,9 +111,17 @@
     <Compile Include="Controllers\PlaylistController\Index_Should.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeController\HomeControllerTest.cs" />
+    <Compile Include="Services\AlbumService\Add_Should.cs" />
     <Compile Include="Services\AlbumService\Constructor_Should.cs" />
     <Compile Include="Services\AlbumService\GetAll_Should.cs" />
     <Compile Include="Services\AlbumService\GetById_Should.cs" />
+    <Compile Include="Services\AlbumService\Remove_Should.cs" />
+    <Compile Include="Services\AlbumService\Update_Should.cs" />
+    <Compile Include="Services\ArtistService\Constructor_Should.cs" />
+    <Compile Include="Services\TrackService\Add_Should.cs" />
+    <Compile Include="Services\TrackService\Constructor_Should.cs" />
+    <Compile Include="Services\TrackService\Remove_Should.cs" />
+    <Compile Include="Services\TrackService\Update_Should.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />

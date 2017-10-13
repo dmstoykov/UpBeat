@@ -20,8 +20,8 @@ namespace UpBeat.Web.Areas.Administration.Controllers
 
         public AlbumGridController(IAlbumService albumService, IMapper mapper)
         {
-            Guard.WhenArgument(albumService, albumService.GetType().Name).IsNull().Throw();
-            Guard.WhenArgument(mapper, mapper.GetType().Name).IsNull().Throw();
+            Guard.WhenArgument(albumService, "IAlbumService").IsNull().Throw();
+            Guard.WhenArgument(mapper, "IMapper").IsNull().Throw();
 
             this.albumService = albumService;
             this.mapper = mapper;

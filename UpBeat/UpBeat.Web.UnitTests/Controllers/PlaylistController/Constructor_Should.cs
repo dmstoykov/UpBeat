@@ -28,7 +28,7 @@
             var mapperMock = new Mock<IMapper>();
 
             // Act & Assert
-            Assert.Throws<NullReferenceException>(() => new Upbeat.PlaylistController(mapperMock.Object, null));
+            Assert.Throws<ArgumentNullException>(() => new Upbeat.PlaylistController(mapperMock.Object, null));
         }
 
         [Test]
@@ -38,7 +38,7 @@
             var albumServiceMock = new Mock<IAlbumService>();
 
             // Act & Assert
-            Assert.Throws<NullReferenceException>(() => new Upbeat.PlaylistController(null, albumServiceMock.Object));
+            Assert.Throws<ArgumentNullException>(() => new Upbeat.PlaylistController(null, albumServiceMock.Object));
         }
     }
 }

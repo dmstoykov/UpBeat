@@ -20,8 +20,8 @@ namespace UpBeat.Web.Areas.Administration.Controllers
 
         public TrackGridController(ITrackService trackService, IMapper mapper)
         {
-            Guard.WhenArgument(trackService, trackService.GetType().Name).IsNull().Throw();
-            Guard.WhenArgument(mapper, mapper.GetType().Name).IsNull().Throw();
+            Guard.WhenArgument(trackService, "ITrackService").IsNull().Throw();
+            Guard.WhenArgument(mapper, "IMapper").IsNull().Throw();
 
             this.trackService = trackService;
             this.mapper = mapper;

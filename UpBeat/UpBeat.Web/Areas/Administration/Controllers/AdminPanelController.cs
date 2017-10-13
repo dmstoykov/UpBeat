@@ -29,10 +29,10 @@ namespace UpBeat.Web.Areas.Administration.Controllers
             ITrackService trackService,
             IArtistService artistService)
         {
-            Guard.WhenArgument(mapper, mapper.GetType().Name).IsNull().Throw();
-            Guard.WhenArgument(albumService, albumService.GetType().Name).IsNull().Throw();
-            Guard.WhenArgument(trackService, trackService.GetType().Name).IsNull().Throw();
-            Guard.WhenArgument(artistService, artistService.GetType().Name).IsNull().Throw();
+            Guard.WhenArgument(mapper, "IMapper").IsNull().Throw();
+            Guard.WhenArgument(albumService, "IAlbumService").IsNull().Throw();
+            Guard.WhenArgument(trackService, "ITrackService").IsNull().Throw();
+            Guard.WhenArgument(artistService, "ArtistService").IsNull().Throw();
 
             this.mapper = mapper;
             this.albumService = albumService;
@@ -67,10 +67,6 @@ namespace UpBeat.Web.Areas.Administration.Controllers
             if (this.ModelState.IsValid)
             {
                 var albumDbModel = this.mapper.Map<Album>(albumModel);
-                albumDbModel.Images = new List<Image>()
-                {
-                    Resources.DefaultAlbumImage
-                };
 
                 this.albumService.Add(albumDbModel, albumModel.ArtistName);
             }

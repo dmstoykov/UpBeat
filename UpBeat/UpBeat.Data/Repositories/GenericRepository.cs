@@ -16,7 +16,7 @@ namespace UpBeat.Data.Repositories
 
         public GenericRepository(IDbContext context)
         {
-            Guard.WhenArgument(context, nameof(context)).IsNull().Throw();
+            Guard.WhenArgument(context, "IDbContext").IsNull().Throw();
 
             this.context = context;
         }
@@ -44,7 +44,7 @@ namespace UpBeat.Data.Repositories
 
         public void Add(T entity)
         {
-            Guard.WhenArgument(entity, nameof(entity)).IsNull().Throw();
+            Guard.WhenArgument(entity, "EntityToAdd").IsNull().Throw();
 
             DbEntityEntry entry = this.context.Entry(entity);
 
@@ -68,7 +68,7 @@ namespace UpBeat.Data.Repositories
 
         public void Remove(T entity)
         {
-            Guard.WhenArgument(entity, nameof(entity)).IsNull().Throw();
+            Guard.WhenArgument(entity, "EntityToRemove").IsNull().Throw();
 
             entity.IsDeleted = true;
             entity.DeletedOn = DateTime.Now;
@@ -88,7 +88,7 @@ namespace UpBeat.Data.Repositories
 
         public void Update(T entity)
         {
-            Guard.WhenArgument(entity, nameof(entity)).IsNull().Throw();
+            Guard.WhenArgument(entity, "EntityToUpdate").IsNull().Throw();
 
             DbEntityEntry entry = this.context.Entry(entity);
 

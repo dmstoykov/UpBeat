@@ -9,7 +9,7 @@ namespace UpBeat.Data.UnitOfWork
 
         public SaveChanges(IDbContext context)
         {
-            Guard.WhenArgument(context, context.GetType().Name).IsNull().Throw();
+            Guard.WhenArgument(context, "IDbContext").IsNull().Throw();
             this.context = context;
         }
 

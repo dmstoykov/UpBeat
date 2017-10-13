@@ -17,8 +17,8 @@ namespace UpBeat.Web.Controllers
 
         public PlaylistController(IMapper mapper, IAlbumService albumService)
         {
-            Guard.WhenArgument(mapper, mapper.GetType().Name).IsNull().Throw();
-            Guard.WhenArgument(albumService, albumService.GetType().Name).IsNull().Throw();
+            Guard.WhenArgument(mapper, "IMapper").IsNull().Throw();
+            Guard.WhenArgument(albumService, "IAlbumService").IsNull().Throw();
 
             this.mapper = mapper;
             this.albumService = albumService;

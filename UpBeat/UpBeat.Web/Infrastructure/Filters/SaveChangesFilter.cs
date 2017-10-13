@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using Bytes2you.Validation;
+using System.Web.Mvc;
 using UpBeat.Data.Contracts;
 
 namespace UpBeat.Web.Infrastructure.Filters
@@ -9,6 +10,7 @@ namespace UpBeat.Web.Infrastructure.Filters
 
         public SaveChangesFilter(ISaveChanges contextSaveChanges)
         {
+            Guard.WhenArgument(contextSaveChanges, "ISaveChanges").IsNull().Throw();
             this.contextSaveChanges = contextSaveChanges;
         }
 

@@ -11,21 +11,34 @@
     public class Constructor_Should
     {
         [Test]
-        public void ReturnsAnInstance_WhenParameterIsNotNull()
+        public void ReturnsAnInstance_WhenParametersAreNotNull()
         {
             // Arrange
-            var genericAlbumRepositoryMock = new Mock<IGenericRepository<Album>>();
-            var genericArtistRepopositoryMock = new Mock<IGenericRepository<Artist>>();
+            var albumRepositoryMock = new Mock<IGenericRepository<Album>>();
+            var artistRepopositoryMock = new Mock<IGenericRepository<Artist>>();
 
             // Act & Assert
-            Assert.DoesNotThrow(() => new AlbumService(genericAlbumRepositoryMock.Object, genericArtistRepopositoryMock.Object));
+            Assert.DoesNotThrow(() => new AlbumService(albumRepositoryMock.Object, artistRepopositoryMock.Object));
         }
 
         [Test]
-        public void ThrowException_WhenGenericRepositoryIsNull()
+        public void ThrowException_WhenAlbumRepositoryIsNull()
         {
-            // Arrange, Act & Assert
-            Assert.Throws<NullReferenceException>(() => new AlbumService(null, null));
+            // Arrange
+            var albumRepositoryMock = new Mock<IGenericRepository<Album>>();
+
+            //  Act & Assert
+            Assert.Throws<ArgumentNullException>(() => new AlbumService(albumRepositoryMock.Object, null));
+        }
+
+        [Test]
+        public void ThrowException_WhenArtistRepositoryIsNull()
+        {
+            // Arrange
+            var artistRepopositoryMock = new Mock<IGenericRepository<Artist>>();
+
+            // Act & Assert
+            Assert.Throws<ArgumentNullException>(() => new AlbumService(null, artistRepopositoryMock.Object));
         }
     }
 }

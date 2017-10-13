@@ -13,7 +13,7 @@ namespace UpBeat.Services.Abstracts
     {
         public DataService(IGenericRepository<T> dataRepository)
         {
-            Guard.WhenArgument(dataRepository, dataRepository.GetType().Name).IsNull().Throw();
+            Guard.WhenArgument(dataRepository, "DataRepository").IsNull().Throw();
 
             this.Data = dataRepository;
         }
