@@ -7,6 +7,10 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262526', endColorstr='#030303',GradientType=0 ); /* IE6-9 */
 }
 
+.row{
+    margin-bottom:10px;
+}
+
 .hidden {
     display: none;
 }
@@ -40,7 +44,7 @@ hr {
 }
 
 .inline-block {
-    display: inline-block !important;
+    display: inline-block;
 }
 
 .primary-text {
@@ -61,4 +65,9 @@ hr {
     top: 20%;
     left: 45%;
     z-index:1004;
+}
+
+.track-container:hover{
+    background-color:black;
+    opacity: 0.5;
 }

@@ -8,6 +8,8 @@ namespace UpBeat.Common.Constants
 {
     public class Views
     {
+        public const string IndexView = "Index";
+
         public const string AddAlbumPartial = "_AddAlbumPartial";
 
         public const string AddTrackPartial = "_AddTrackPartial";

@@ -329,6 +329,7 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Libs\Kendo.Mvc.dll" />
     <Content Include="Libs\Kendo.Mvc.xml" />
+    <Content Include="Scripts\Custom\audio-player.js" />
     <Content Include="Scripts\Custom\main.js" />
     <Content Include="Scripts\Custom\modal.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
