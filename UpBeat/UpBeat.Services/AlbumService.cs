@@ -33,7 +33,15 @@ namespace UpBeat.Services
             Guard.WhenArgument(albumArtist, "AlbumArtist").IsNull().Throw();
 
             album.Artists = new List<Artist>() { albumArtist };
-            album.Images = new List<Image>() { Resources.DefaultAlbumImage };
+            album.Images = new List<Image>()
+            {
+                new Image()
+                {
+                    Width = DataConstants.DefaultAlbumImageWidth,
+                    Height = DataConstants.DefaultAlbumImageWidth,
+                    Url = Resources.DefaultAlbumImageUrl
+                }
+            };
 
             this.Data.Add(album);
         }
