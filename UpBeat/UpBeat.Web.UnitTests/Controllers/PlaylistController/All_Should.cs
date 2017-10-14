@@ -43,7 +43,7 @@
 
             // Act & Assert
             playlistController
-                .WithCallTo(b => b.All())
+                .WithCallTo(b => b.All(1))
                     .ShouldRenderView(resultViewName)
                     .WithModel<PlaylistViewModel>(viewModel =>
                     {

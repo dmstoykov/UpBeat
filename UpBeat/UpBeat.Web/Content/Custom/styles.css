@@ -67,7 +67,19 @@ hr {
     z-index:1004;
 }
 
-.track-container:hover{
-    background-color:black;
-    opacity: 0.5;
+.track-container{
+    min-height: 70px;
+}
+
+.track-container:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.playlist-container{
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

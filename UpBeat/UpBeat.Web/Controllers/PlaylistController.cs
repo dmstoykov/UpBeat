@@ -1,10 +1,12 @@
 ﻿using AutoMapper;
 using Bytes2you.Validation;
+using PagedList;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using UpBeat.Common.Constants;
 using UpBeat.Services.Contracts;
 using UpBeat.Web.Models;
 
@@ -30,11 +32,14 @@ namespace UpBeat.Web.Controllers
             return View();
         }
 
-        public ActionResult All()
+        public ActionResult All(int? pageNumber)
         {
+            var pageNum = pageNumber ?? DataConstants.StartingPageNumber;
+
             var dbAlbums = this.albumService.GetAll()
                 .Select(x => this.mapper.Map<AlbumViewModel>(x))
-                .ToList();
+                .ToList()
+                .ToPagedList(pageNum, DataConstants.PageSize);
 
             var playlistViewModel = new PlaylistViewModel() { Albums = dbAlbums };
 

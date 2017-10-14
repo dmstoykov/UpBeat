@@ -1,8 +1,16 @@
 ﻿@using UpBeat.Web.Models
+@using PagedList.Mvc;
+
 @model PlaylistViewModel
 
 @foreach (var album in Model.Albums)
 {
     @Html.Partial("_AlbumPartial", album);
 }
+
+<div class="row center">
+    <div class="col s12 m12">
+        @Html.PagedListPager(Model.Albums, page => Url.Action("All", new { pageNumber = page }))
+    </div>
+</div>
 
