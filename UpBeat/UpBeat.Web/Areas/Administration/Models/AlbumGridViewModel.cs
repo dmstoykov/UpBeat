@@ -18,12 +18,12 @@ namespace UpBeat.Web.Areas.Administration.Models
 
         [StringLength(DataConstants.MaxModelNameLength,
             MinimumLength = DataConstants.MinModelNameLength,
-            ErrorMessage = "Invalid album name length!")]
+            ErrorMessage = ErrorMessages.FormName)]
         public string Name { get; set; }
 
         [StringLength(DataConstants.AlbumReleaseDateLength,
             MinimumLength = DataConstants.AlbumReleaseDateLength,
-            ErrorMessage = "Invalid date format")]
+            ErrorMessage = ErrorMessages.FormDate)]
         public string ReleaseDate { get; set; }
 
         public void CreateMappings(IMapperConfigurationExpression configuration)

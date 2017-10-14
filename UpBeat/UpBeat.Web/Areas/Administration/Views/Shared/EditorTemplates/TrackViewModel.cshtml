@@ -2,30 +2,45 @@
 @model TrackViewModel
 
 <div class="row">
-    @using (Html.BeginForm<AdminPanelController>(c => c.AddTrack(null), FormMethod.Post, htmlAttributes: new { @class = "col s12", id = "addition-form" }))
+    @using (Ajax.BeginForm<AdminPanelController>(c => c.AddTrack(null),
+                                htmlAttributes: new { @class = "col s12", id = "addition-form" },
+                                ajaxOptions: new AjaxOptions()
+                                {
+                                    HttpMethod = "Post",
+                                    OnBegin = "onFormSubmit()",
+                                    LoadingElementId = "waiting-loader",
+                                    OnComplete = "onFormFinish()"
+                                }))
     {
+        <div class="row">
+            <div class="col s12 center red-text">@Html.ValidationSummary()</div>
+        </div>
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">account_circle</i>
                 @Html.EditorFor(model => model.Name,
                new { htmlattributes = new { @class = "validate", id = "icon-prefix", required = true } })
                 <label for="icon_prefix">Name</label>
-                @Html.ValidationMessageFor(m => m.Name, "", new { @class = "red-text" })
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">today</i>
-                @Html.EditorFor(model => model.PreviewUrl,
-               new { htmlattributes = new { @class = "validate", id = "icon_date", required = true } })
-                <label for="icon_date">Preview Url</label>
-                <div>
-                    @Html.ValidationMessageFor(m => m.PreviewUrl, "", new { @class = "red-text" })
-                </div>
+
             </div>
             <div class="col s12">
-                @Html.DropDownListFor(model => model.AlbumName, Model.AlbumSelectList, new { @class = "validate browser-default", required = true })
-                <div>
-                    @Html.ValidationMessageFor(m => m.AlbumName, "", new { @class = "red-text" })
-                </div>
+                @Html.ValidationMessageFor(m => m.Name, "", new { @class = "red-text" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">insert_link</i>
+                @Html.EditorFor(model => model.PreviewUrl,
+               new { htmlattributes = new { @class = "validate", id = "insert_link", required = true } })
+                <label for="insert_link">Preview Url</label>
+                @Html.ValidationMessageFor(m => m.PreviewUrl, "", new { @class = "red-text" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <i class="material-icons prefix">album</i>
+                @Html.DropDownListFor(model => model.AlbumName, Model.AlbumSelectList, new { @class = "browser-default inline-block", required = true })
+                @Html.ValidationMessageFor(m => m.AlbumName, "", new { @class = "red-text" })
             </div>
         </div>
 

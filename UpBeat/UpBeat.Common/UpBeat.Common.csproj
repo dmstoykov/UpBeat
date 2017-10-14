@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Constants\Assemblies.cs" />
     <Compile Include="Constants\DataConstants.cs" />
+    <Compile Include="Constants\ErrorMessages.cs" />
     <Compile Include="Constants\Resources.cs" />
     <Compile Include="Constants\Views.cs" />
     <Compile Include="Mappings\ICustomMapping.cs" />

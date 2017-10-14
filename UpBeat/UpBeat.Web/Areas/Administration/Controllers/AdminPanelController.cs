@@ -71,7 +71,7 @@ namespace UpBeat.Web.Areas.Administration.Controllers
                 this.albumService.Add(albumDbModel, albumModel.ArtistName);
             }
 
-            return this.RedirectToAction<AlbumGridController>(c => c.Index());
+            return this.View();
         }
 
         [HttpGet]
@@ -99,7 +99,7 @@ namespace UpBeat.Web.Areas.Administration.Controllers
                 this.trackService.Add(trackDbModel, trackModel.AlbumName);
             }
 
-            return this.RedirectToAction<AlbumGridController>(c => c.Index());
+            return this.View();
         }
     }
 }

@@ -11,9 +11,10 @@ namespace UpBeat.Web.Areas.Administration.Models
 
         [StringLength(DataConstants.MaxModelNameLength,
             MinimumLength = DataConstants.MinModelNameLength,
-            ErrorMessage = "Invalid album name length!")]
+            ErrorMessage = ErrorMessages.FormName)]
         public string Name { get; set; }
 
+        [RegularExpression(DataConstants.UrlRegex, ErrorMessage = ErrorMessages.FormLink)]
         public string PreviewUrl { get; set; }
     }
 }

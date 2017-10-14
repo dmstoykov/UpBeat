@@ -12,13 +12,20 @@
 }
 
 .btn {
-    color:black;    
+    color: black;
+    background-color: #c0ca33;
+    margin: 5px 0;
+}
+
+.btn-large {
+    margin: 5px 0;
+    color: black;
     background-color: #c0ca33;
 }
 
-    .btn:hover {
-        background-color: #dce775;
-    }
+.btn:hover, .btn-large:hover {
+    background-color: #dce775;
+}
 
 hr {
     background-color: #eaeaea;
@@ -33,7 +40,7 @@ hr {
 }
 
 .inline-block {
-    display: inline-block;
+    display: inline-block !important;
 }
 
 .primary-text {
@@ -47,4 +54,11 @@ hr {
 
 .collection-item:hover {
     background-color: #f7f7f7;
+}
+
+#waiting-loader{
+    position:fixed;
+    top: 20%;
+    left: 45%;
+    z-index:1004;
 }

@@ -2,7 +2,15 @@
 @model AlbumViewModel
 
 <div class="row">
-    @using (Html.BeginForm<AdminPanelController>(c => c.AddAlbum(null), FormMethod.Post, htmlAttributes: new { @class = "col s12", id = "addition-form" }))
+    @using (Ajax.BeginForm<AdminPanelController>(c => c.AddAlbum(null),
+                                ajaxOptions: new AjaxOptions()
+                                {
+                                    HttpMethod = "Post",
+                                    OnBegin = "onFormSubmit()",
+                                    LoadingElementId="waiting-loader",
+                                    OnComplete= "onFormFinish()"
+                                },
+                                htmlAttributes: new { @class = "col s12", id = "addition-form" }))
     {
         <div class="row">
             <div class="input-field col s12">
@@ -10,23 +18,23 @@
                 @Html.EditorFor(model => model.Name,
                new { htmlattributes = new { @class = "validate", id = "icon-prefix", required = true } })
                 <label for="icon_prefix">Name</label>
-                @Html.ValidationMessageFor(m => m.Name, "", new { @class = "red-text"})
+                @Html.ValidationMessageFor(m => m.Name, "", new { @class = "red-text" })
             </div>
+        </div>
+        <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">today</i>
                 @Html.EditorFor(model => model.ReleaseDate,
-               new { htmlattributes = new { @class="validate", id = "icon_date", required = true } })
+               new { htmlattributes = new { @class = "validate", id = "icon_date", required = true } })
                 <label for="icon_date">Release date</label>
-                <div>
-                    @Html.ValidationMessageFor(m => m.ReleaseDate, "", new { @class = "red-text" })
-                </div>
+                @Html.ValidationMessageFor(m => m.ReleaseDate, "", new { @class = "red-text" })
             </div>
+        </div>
+        <div class="row">
             <div class="col s12">
-                <i class="material-icons prefix">today</i>
-                @Html.DropDownListFor(model => model.ArtistName, Model.ArtistSelectList, new { @class = "validate browser-default", required = true })
-                <div>
-                    @Html.ValidationMessageFor(m => m.ArtistName, "", new { @class = "red-text" })
-                </div>
+                <i class="material-icons prefix">stars</i>
+                @Html.DropDownListFor(model => model.ArtistName, Model.ArtistSelectList, new { @class = "browser-default inline-block", required = true })
+                @Html.ValidationMessageFor(m => m.ArtistName, "", new { @class = "red-text" })
             </div>
         </div>
 

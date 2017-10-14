@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using UpBeat.Common.Constants;
 using UpBeat.Common.Mappings;
@@ -15,11 +13,12 @@ namespace UpBeat.Web.Areas.Administration.Models
         [Required]
         [StringLength(DataConstants.MaxModelNameLength,
             MinimumLength = DataConstants.MinModelNameLength,
-            ErrorMessage = "Invalid track name length!")]
+            ErrorMessage = ErrorMessages.FormName)]
         public string Name { get; set; }
 
         public long? Duration { get; set; }
 
+        [RegularExpression(DataConstants.UrlRegex, ErrorMessage = ErrorMessages.FormLink)]
         public string PreviewUrl { get; set; }
 
         [Required]

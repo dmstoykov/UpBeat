@@ -4,8 +4,19 @@
             <h3><i class="material-icons medium">verified_user</i> Administrator panel</h3>
         </div>
     </div>
+    <div id="waiting-loader" class="preloader-wrapper big active hidden">
+        <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div><div class="gap-patch">
+                <div class="circle"></div>
+            </div><div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
     <div class="row">
-        <div class="col m10 offset-m1 s12">
+        <div class="col m10 offset-m1 s12 center">
             <h5 class="flow-text">Create model</h5>
             <hr />
             <a data-ajax="true"
@@ -14,7 +25,7 @@
                data-ajax-update="#modal-body"
                href="@(Url.Action<AdminPanelController>(c => c.AddAlbum()))"
                class="waves-effect waves-light btn-large">
-                <i class="material-icons medium left">disc_full</i> Add Album
+                <i class="material-icons medium left">panorama</i> Add Album
             </a>
             <a data-ajax="true"
                data-ajax-mode="replace"
@@ -24,10 +35,11 @@
                class="waves-effect waves-light btn-large">
                 <i class="material-icons medium left">disc_full</i> Add Track
             </a>
+
         </div>
     </div>
     <div class="row">
-        <div class="col m10 offset-m1 s12">
+        <div class="col m10 offset-m1 s12 center">
             <h5 class="flow-text">Manage albums</h5>
             <hr />
             <a href="@(Url.Action<AlbumGridController>(c => c.Index()))" class="waves-effect waves-light btn-large">
@@ -52,9 +64,12 @@
             </div>
         </div>
     </div>
+
+
 </div>
 
 @section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
     @Scripts.Render("~/bundles/modals")
 }
 

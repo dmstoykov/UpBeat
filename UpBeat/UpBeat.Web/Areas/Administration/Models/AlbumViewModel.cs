@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using UpBeat.Common.Constants;
 using UpBeat.Common.Mappings;
@@ -15,13 +13,11 @@ namespace UpBeat.Web.Areas.Administration.Models
         [Required]
         [StringLength(DataConstants.MaxModelNameLength,
             MinimumLength = DataConstants.MinModelNameLength,
-            ErrorMessage = "Invalid album name length!")]
+            ErrorMessage = ErrorMessages.FormName)]
         public string Name { get; set; }
 
         [Required]
-        [StringLength(DataConstants.AlbumReleaseDateLength,
-            MinimumLength = DataConstants.AlbumReleaseDateLength,
-            ErrorMessage = "Invalid date format")]
+        [RegularExpression("^[0-9]{4}-[0-9]{2}-[0-9]{2}$", ErrorMessage = ErrorMessages.FormDate)]
         public string ReleaseDate { get; set; }
 
         [Required]
