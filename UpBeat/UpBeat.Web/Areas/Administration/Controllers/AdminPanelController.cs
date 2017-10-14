@@ -32,7 +32,7 @@ namespace UpBeat.Web.Areas.Administration.Controllers
             Guard.WhenArgument(mapper, "IMapper").IsNull().Throw();
             Guard.WhenArgument(albumService, "IAlbumService").IsNull().Throw();
             Guard.WhenArgument(trackService, "ITrackService").IsNull().Throw();
-            Guard.WhenArgument(artistService, "ArtistService").IsNull().Throw();
+            Guard.WhenArgument(artistService, "IArtistService").IsNull().Throw();
 
             this.mapper = mapper;
             this.albumService = albumService;

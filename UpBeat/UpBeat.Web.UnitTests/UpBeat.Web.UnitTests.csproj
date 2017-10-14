@@ -105,6 +105,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AdminPanelController\AddAlbum_Post_Should.cs" />
+    <Compile Include="Controllers\AdminPanelController\AddAlbum_Should.cs" />
+    <Compile Include="Controllers\AdminPanelController\AddTrack_Post_Should.cs" />
+    <Compile Include="Controllers\AdminPanelController\AddTrack_Should.cs" />
+    <Compile Include="Controllers\AdminPanelController\Constructor_Should.cs" />
+    <Compile Include="Controllers\AdminPanelController\Index_Should.cs" />
     <Compile Include="Controllers\PlaylistController\All_Should.cs" />
     <Compile Include="Controllers\PlaylistController\Constructor_Should.cs" />
     <Compile Include="Controllers\PlaylistController\Details_Should.cs" />
