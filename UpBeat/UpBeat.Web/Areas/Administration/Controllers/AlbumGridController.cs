@@ -15,16 +15,16 @@ namespace UpBeat.Web.Areas.Administration.Controllers
     [SaveChanges]
     public class AlbumGridController : AdminController
     {
-        private readonly IAlbumService albumService;
         private readonly IMapper mapper;
+        private readonly IAlbumService albumService;
 
-        public AlbumGridController(IAlbumService albumService, IMapper mapper)
+        public AlbumGridController(IMapper mapper, IAlbumService albumService)
         {
-            Guard.WhenArgument(albumService, "IAlbumService").IsNull().Throw();
             Guard.WhenArgument(mapper, "IMapper").IsNull().Throw();
+            Guard.WhenArgument(albumService, "IAlbumService").IsNull().Throw();
 
-            this.albumService = albumService;
             this.mapper = mapper;
+            this.albumService = albumService;
         }
 
         // GET: Administration/AlbumGrid

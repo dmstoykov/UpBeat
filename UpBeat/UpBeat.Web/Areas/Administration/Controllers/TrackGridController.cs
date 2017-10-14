@@ -15,16 +15,16 @@ namespace UpBeat.Web.Areas.Administration.Controllers
     [SaveChanges]
     public class TrackGridController : AdminController
     {
-        private readonly ITrackService trackService;
         private readonly IMapper mapper;
+        private readonly ITrackService trackService;
 
-        public TrackGridController(ITrackService trackService, IMapper mapper)
+        public TrackGridController(IMapper mapper, ITrackService trackService)
         {
-            Guard.WhenArgument(trackService, "ITrackService").IsNull().Throw();
             Guard.WhenArgument(mapper, "IMapper").IsNull().Throw();
+            Guard.WhenArgument(trackService, "ITrackService").IsNull().Throw();
 
-            this.trackService = trackService;
             this.mapper = mapper;
+            this.trackService = trackService;
         }
 
         // GET: Administration/TrackGrid
