@@ -263,7 +263,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Custom\about-page.css" />
+    <Content Include="Content\Custom\home-page.css" />
     <Content Include="Content\Custom\styles.css" />
+    <Content Include="Content\Images\creator_picture.jpg" />
+    <Content Include="Content\Images\home-header.jpg" />
     <Content Include="Content\Kendo\Black\editor.png" />
     <Content Include="Content\Kendo\Black\imagebrowser.png" />
     <Content Include="Content\Kendo\Black\indeterminate.gif" />
@@ -339,6 +343,7 @@
     <Content Include="Scripts\Custom\audio-player.js" />
     <Content Include="Scripts\Custom\main.js" />
     <Content Include="Scripts\Custom\modal.js" />
+    <Content Include="Scripts\Custom\parallax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\Kendo\kendo.aspnetmvc.min.js" />
@@ -397,7 +402,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

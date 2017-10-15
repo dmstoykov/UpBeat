@@ -26,18 +26,5 @@ namespace UpBeat.Web.UnitTests.Controllers
             // Assert
             Assert.IsNotNull(testResult);
         }
-
-        [Test]
-        public void About()
-        {
-            // Arrange
-            HomeController controller = new HomeController();
-
-            // Act
-            ViewResult result = controller.About() as ViewResult;
-
-            // Assert
-            Assert.AreEqual("Your application description page.", result.ViewBag.Message);
-        }
     }
 }

@@ -2,4 +2,8 @@
     ViewBag.Title = "About";
 }
 
+@section styles{
+    @Styles.Render("~/Content/Custom/about-page.css")
+    }
+
 @(Html.Action<HomeController>(c => c.AboutContent()))

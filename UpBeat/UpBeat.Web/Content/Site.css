@@ -9,13 +9,13 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d5c5a', endColorstr='#060909',GradientType=0 ); /* IE6-9 */
 }
 
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     overflow: hidden;
     flex: 1 0 auto;
     margin-top: 0;
     width: 100%;
-    padding-left: 15px;
     padding-right: 15px;
     color:white;
 }

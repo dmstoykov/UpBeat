@@ -22,15 +22,14 @@ namespace UpBeat.Web.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        [OutputCache(Duration = DataConstants.LongCacheTime)]
+        [OutputCache(Duration = 3)]
         [ChildActionOnly]
         public ActionResult AboutContent()
         {
+            ViewBag.Title = "About the creator";
             return this.PartialView(Views.AboutContentPartial);
         }
     }

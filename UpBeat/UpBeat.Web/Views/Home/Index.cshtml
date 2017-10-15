@@ -2,4 +2,12 @@
     ViewBag.Title = "Home Page";
 }
 
+@section styles{
+@Styles.Render("~/Content/Custom/home-page.css")    
+}
+
 @(Html.Action<HomeController>(c => c.HomePage()))
+
+@section scripts{
+@Scripts.Render("~/Scripts/Custom/parallax.js")    
+}
