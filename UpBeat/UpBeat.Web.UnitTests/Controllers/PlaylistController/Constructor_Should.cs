@@ -16,9 +16,10 @@
             // Arrange
             var mapperMock = new Mock<IMapper>();
             var albumService = new Mock<IAlbumService>();
+            var userServiceMock = new Mock<IUsersService>();
 
             // Act & Assert
-            Assert.DoesNotThrow(() => new Upbeat.PlaylistController(mapperMock.Object, albumService.Object));
+            Assert.DoesNotThrow(() => new Upbeat.PlaylistController(mapperMock.Object, albumService.Object, userServiceMock.Object));
         }
 
         [Test]
@@ -28,7 +29,7 @@
             var mapperMock = new Mock<IMapper>();
 
             // Act & Assert
-            Assert.Throws<ArgumentNullException>(() => new Upbeat.PlaylistController(mapperMock.Object, null));
+            Assert.Throws<ArgumentNullException>(() => new Upbeat.PlaylistController(mapperMock.Object, null, null));
         }
 
         [Test]
@@ -38,7 +39,7 @@
             var albumServiceMock = new Mock<IAlbumService>();
 
             // Act & Assert
-            Assert.Throws<ArgumentNullException>(() => new Upbeat.PlaylistController(null, albumServiceMock.Object));
+            Assert.Throws<ArgumentNullException>(() => new Upbeat.PlaylistController(null, albumServiceMock.Object, null));
         }
     }
 }

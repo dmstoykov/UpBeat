@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using UpBeat.Data.Models.Contracts;
+using System.Collections.Generic;
+using UpBeat.Common.Constants;
+using System.Security.Principal;
 
 namespace UpBeat.Data.Models
 {
@@ -24,14 +27,26 @@ namespace UpBeat.Data.Models
         [DataType(DataType.DateTime)]
         public DateTime? DeletedOn { get; set; }
 
+        [StringLength(DataConstants.MaxModelNameLength,
+            MinimumLength = DataConstants.MinModelNameLength,
+            ErrorMessage = ErrorMessages.FormName)]
+        public string FirstName { get; set; }
+
+        [StringLength(DataConstants.MaxModelNameLength,
+            MinimumLength = DataConstants.MinModelNameLength,
+            ErrorMessage = ErrorMessages.FormName)]
+        public string LastName { get; set; }
+
+        public virtual ICollection<Album> FavouriteAlbums { get; set; }
+
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<User> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
             var userIdentity = await manager.CreateIdentityAsync(this, DefaultAuthenticationTypes.ApplicationCookie);
             // Add custom user claims here
+            userIdentity.AddClaim(new Claim("FirstName", this.FirstName));
+
             return userIdentity;
         }
-
-        // Add favourites collection here and add claims
     }
 }

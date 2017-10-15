@@ -13,5 +13,9 @@ namespace UpBeat.Common.Constants
         public const string AddAlbumPartial = "_AddAlbumPartial";
 
         public const string AddTrackPartial = "_AddTrackPartial";
+
+        public const string HomePagePartial = "_HomePagePartial";
+
+        public const string AboutContentPartial = "_AboutContentPartial";
     }
 }

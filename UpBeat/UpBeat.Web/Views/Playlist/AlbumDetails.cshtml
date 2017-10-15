@@ -9,8 +9,11 @@
         <h5 class="secondary-text">@Model.Tracks.Count songs</h5>
         <h6 class="flow-text">Released @Model.ReleaseDate</h6>
         <hr />
-        <div class="waves-effect waves-light btn"><i class="material-icons left">favorite</i>Favourite</div>
-        <hr />
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div class="waves-effect waves-light btn"><i class="material-icons left">favorite</i>Favourite</div>
+            <hr />
+        }
     </div>
     <div class="col s12 m7 center playlist-container">
             @foreach (var track in Model.Tracks)

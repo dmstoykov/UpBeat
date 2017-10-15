@@ -16,14 +16,17 @@ namespace UpBeat.Web.Controllers
     {
         private readonly IMapper mapper;
         private readonly IAlbumService albumService;
+        private readonly IUsersService userService;
 
-        public PlaylistController(IMapper mapper, IAlbumService albumService)
+        public PlaylistController(IMapper mapper, IAlbumService albumService, IUsersService userService)
         {
             Guard.WhenArgument(mapper, "IMapper").IsNull().Throw();
             Guard.WhenArgument(albumService, "IAlbumService").IsNull().Throw();
+            Guard.WhenArgument(userService, "IUserService").IsNull().Throw();
 
             this.mapper = mapper;
             this.albumService = albumService;
+            this.userService = userService;
         }
 
         // GET: Playlist
@@ -52,6 +55,13 @@ namespace UpBeat.Web.Controllers
             var albumViewModel = this.mapper.Map<AlbumViewModel>(currentAlbum);
 
             return View("AlbumDetails", albumViewModel);
+        }
+
+        public ActionResult AddToFavourites(int albumId)
+        {
+            this.userService.AddFavouriteAlbum(albumId);
+
+            return this.View("Details", albumId);
         }
     }
 }

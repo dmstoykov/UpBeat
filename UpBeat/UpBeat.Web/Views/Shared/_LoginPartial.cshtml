@@ -1,5 +1,6 @@
 ﻿@using Microsoft.AspNet.Identity
 @using UpBeat.Common.Constants;
+@using UpBeat.Data.Models.Extensions;
 
 @if (Request.IsAuthenticated)
 {
@@ -11,7 +12,7 @@
             <li>@(Html.ActionLink<AdminPanelController>("Administration", c => c.Index()))</li>
         }
         <li>
-            @(Html.ActionLink<ManageController>("Hello " + User.Identity.GetUserName() + "!", c => c.Index(null), htmlAttributes: new { title = "Manage" }))
+            @(Html.ActionLink<ManageController>("Hello " + User.Identity.GetFirstName() + "!", c => c.Index(null), htmlAttributes: new { title = "Manage" }))
         </li>
         <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
     }

@@ -16,9 +16,11 @@
             // Arrange
             var mapperMock = new Mock<IMapper>();
             var albumServiceMock = new Mock<IAlbumService>();
+            var userServiceMock = new Mock<IUsersService>();
 
             // Act
-            var playlistController = new UpBeat.PlaylistController(mapperMock.Object, albumServiceMock.Object);
+            var playlistController =
+                new UpBeat.PlaylistController(mapperMock.Object, albumServiceMock.Object, userServiceMock.Object);
 
             // Act & Assert
             playlistController

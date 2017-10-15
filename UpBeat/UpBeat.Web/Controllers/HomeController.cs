@@ -2,11 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
-using Newtonsoft.Json;
 using UpBeat.Common.Constants;
-using UpBeat.Data.Repositories;
-using UpBeat.Data.Models;
-using UpBeat.Data;
 
 namespace UpBeat.Web.Controllers
 {
@@ -17,6 +13,13 @@ namespace UpBeat.Web.Controllers
             return View();
         }
 
+        [OutputCache(Duration = DataConstants.LongCacheTime)]
+        [ChildActionOnly]
+        public ActionResult HomePage()
+        {
+            return this.PartialView(Views.HomePagePartial);
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -24,9 +27,11 @@ namespace UpBeat.Web.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        [OutputCache(Duration = DataConstants.LongCacheTime)]
+        [ChildActionOnly]
+        public ActionResult AboutContent()
         {
-            return View();
+            return this.PartialView(Views.AboutContentPartial);
         }
     }
 }

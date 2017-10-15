@@ -21,6 +21,8 @@
             var viewModelName = "AlbumDetails";
             var mapperMock = new Mock<IMapper>();
             var albumServiceMock = new Mock<IAlbumService>();
+            var userServiceMock = new Mock<IUsersService>();
+
             var albumModel = new Album()
             {
                 Id = 1,
@@ -39,7 +41,8 @@
             mapperMock.Setup(x => x.Map<AlbumViewModel>(albumModel)).Returns(albumViewModel);
 
             // Act
-            var playlistController = new UpBeat.PlaylistController(mapperMock.Object, albumServiceMock.Object);
+            var playlistController =
+                new UpBeat.PlaylistController(mapperMock.Object, albumServiceMock.Object, userServiceMock.Object);
 
             // Act & Assert
             playlistController
