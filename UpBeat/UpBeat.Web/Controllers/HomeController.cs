@@ -25,7 +25,7 @@ namespace UpBeat.Web.Controllers
             return View();
         }
 
-        [OutputCache(Duration = 3)]
+        [OutputCache(Duration = DataConstants.LongCacheTime)]
         [ChildActionOnly]
         public ActionResult AboutContent()
         {

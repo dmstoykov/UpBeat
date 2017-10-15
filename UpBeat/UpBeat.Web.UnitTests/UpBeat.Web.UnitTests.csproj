@@ -163,6 +163,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\UpBeat.Common\UpBeat.Common.csproj">
+      <Project>{A0CA61BE-9FCA-47DE-BC30-78E04C42BC61}</Project>
+      <Name>UpBeat.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UpBeat.Data.Models\UpBeat.Data.Models.csproj">
       <Project>{2BDBFF4C-D6D8-47B8-A16F-5199C29C2531}</Project>
       <Name>UpBeat.Data.Models</Name>
