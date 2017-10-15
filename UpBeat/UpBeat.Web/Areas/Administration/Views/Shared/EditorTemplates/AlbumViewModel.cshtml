@@ -33,7 +33,7 @@
         <div class="row">
             <div class="col s12">
                 <i class="material-icons prefix">stars</i>
-                @Html.DropDownListFor(model => model.ArtistName, Model.ArtistSelectList, new { @class = "browser-default inline-block", required = true })
+                @Html.DropDownListFor(model => model.ArtistName, Model.ArtistSelectList, new { @class = "inline-block", required = true })
                 @Html.ValidationMessageFor(m => m.ArtistName, "", new { @class = "red-text" })
             </div>
         </div>

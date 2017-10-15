@@ -45,6 +45,7 @@ hr {
 
 .inline-block {
     display: inline-block;
+    margin-left: 15px;
 }
 
 .primary-text {
