@@ -11,37 +11,46 @@
         <hr />
         @if (User.Identity.IsAuthenticated)
         {
-            <div class="waves-effect waves-light btn"><i class="material-icons left">favorite</i>Favourite</div>
-            <hr />
+            using (Ajax.BeginForm<PlaylistController>(c => c.AddToFavourites(Model.Id), ajaxOptions: new AjaxOptions()
+            {
+                HttpMethod = "Post",
+                UpdateTargetId = "favourite-btn"
+            },
+                htmlAttributes: new { id = "favourite-form" })
+            ){
+                <div id="favourite-btn" class="waves-effect waves-light btn"><i class="material-icons left">favorite</i> Favourite</div>
+                <hr />
+            }
+
         }
     </div>
     <div class="col s12 m7 center playlist-container">
-            @foreach (var track in Model.Tracks)
+        @foreach (var track in Model.Tracks)
             {
-                <div class="row valign-wrapper track-container">
-                    <div class="col s9 m9">
-                        @track.Name
-                    </div>
-                    <div class="col s3 m3 right">
-                        @if (track.PreviewUrl != null)
-                        {
-                            <a class="btn-floating btn-large waves-effect waves-light audioPlayBtn"><i class="material-icons medium">play_circle_outline</i></a>
-                                <audio class="hidden" controls>
-                                    <source src="@track.PreviewUrl" type="audio/mp3">
-                                </audio>
-                        }
-                        else
-                        {
-                            <span class="grey-text darken-4">No preview avaliable.</span>
-                        }
-                    </div>
+            <div class="row valign-wrapper track-container">
+                <div class="col s9 m9">
+                    @track.Name
                 </div>
-            }
+                <div class="col s3 m3 right">
+                    @if (track.PreviewUrl != null)
+                    {
+                        <a class="btn-floating btn-large waves-effect waves-light audioPlayBtn"><i class="material-icons medium">play_circle_outline</i></a>
+                        <audio class="hidden" controls>
+                            <source src="@track.PreviewUrl" type="audio/mp3">
+                        </audio>
+                    }
+                    else
+                    {
+                        <span class="grey-text darken-4">No preview avaliable.</span>
+                    }
+                </div>
+            </div>
+        }
     </div>
 
 </div>
 
 @section scripts{
 
-@Scripts.Render("~/Scripts/Custom/audio-player.js")
+    @Scripts.Render("~/Scripts/Custom/audio-player.js")
 }

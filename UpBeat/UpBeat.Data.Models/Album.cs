@@ -14,5 +14,7 @@ namespace UpBeat.Data.Models
         public virtual ICollection<Image> Images { get; set; }
 
         public virtual ICollection<Track> Tracks { get; set; }
+
+        public virtual ICollection<User> Users { get; set; }
     }
 }

@@ -6,6 +6,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 using UpBeat.Web.Models;
 using UpBeat.Auth.Contracts;
+using UpBeat.Services.Contracts;
 
 namespace UpBeat.Web.Controllers
 {
@@ -13,16 +14,18 @@ namespace UpBeat.Web.Controllers
     public class ManageController : Controller
     {
         private ISignInService signInManager;
+        private readonly IUsersService userService;
         private IUserService userManager;
 
         public ManageController()
         {
         }
 
-        public ManageController(IUserService userManager, ISignInService signInManager)
+        public ManageController(IUserService userManager, ISignInService signInManager, IUsersService userService)
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
+            this.userService = userService;
         }
 
         //
@@ -39,8 +42,14 @@ namespace UpBeat.Web.Controllers
                 : "";
 
             var userId = User.Identity.GetUserId();
+
+            var currentUser = this.userService.GetByUsername(User.Identity.Name);
             var model = new IndexViewModel
             {
+                Username = User.Identity.Name,
+                FirstName = currentUser.FirstName,
+                LastName = currentUser.LastName,
+                FavouriteAlbums = currentUser.FavouriteAlbums,
                 HasPassword = HasPassword(),
                 PhoneNumber = await this.userManager.GetPhoneNumberAsync(userId),
                 TwoFactor = await this.userManager.GetTwoFactorEnabledAsync(userId),

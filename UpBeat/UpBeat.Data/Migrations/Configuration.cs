@@ -35,8 +35,11 @@ namespace UpBeat.Data.Migrations
                 var userManager = new UserManager<User>(userStore);
                 var user = new User
                 {
-                    UserName = DataConstants.AdministratorUserName,
-                    Email = DataConstants.AdministratorUserName,
+                    UserName = DataConstants.AdminUserName,
+                    FirstName = DataConstants.AdminFirstName,
+                    LastName = DataConstants.AdminLastName,
+                    FavouriteAlbums = new List<Album>(),
+                    Email = DataConstants.AdminUserName,
                     EmailConfirmed = true,
                     CreatedOn = DateTime.Now
                 };

@@ -84,6 +84,10 @@
     <Compile Include="Migrations\201710150045342_Updated user model.Designer.cs">
       <DependentUpon>201710150045342_Updated user model.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710151000491_updated album model.cs" />
+    <Compile Include="Migrations\201710151000491_updated album model.Designer.cs">
+      <DependentUpon>201710151000491_updated album model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MsSqlDbContext.cs" />
     <Compile Include="Contracts\IDbContext.cs" />
@@ -116,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710150045342_Updated user model.resx">
       <DependentUpon>201710150045342_Updated user model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710151000491_updated album model.resx">
+      <DependentUpon>201710151000491_updated album model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

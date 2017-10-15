@@ -20,6 +20,11 @@ namespace UpBeat.Services
             this.albumService = albumService;
         }
 
+        public User GetByUsername(string username)
+        {
+            return this.Data.All.Where(x => x.UserName == username).FirstOrDefault();
+        }
+
         public void AddFavouriteAlbum(int albumId)
         {
             Guard.WhenArgument(albumId, "AlbumId").IsEqual(0).Throw();

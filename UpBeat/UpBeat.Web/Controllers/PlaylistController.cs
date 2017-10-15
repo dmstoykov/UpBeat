@@ -8,10 +8,12 @@ using System.Web;
 using System.Web.Mvc;
 using UpBeat.Common.Constants;
 using UpBeat.Services.Contracts;
+using UpBeat.Web.Infrastructure.Attributes;
 using UpBeat.Web.Models;
 
 namespace UpBeat.Web.Controllers
 {
+    [SaveChanges]
     public class PlaylistController : Controller
     {
         private readonly IMapper mapper;
@@ -61,7 +63,7 @@ namespace UpBeat.Web.Controllers
         {
             this.userService.AddFavouriteAlbum(albumId);
 
-            return this.View("Details", albumId);
+            return this.Content("Unfavourite");
         }
     }
 }

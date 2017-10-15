@@ -5,7 +5,11 @@ namespace UpBeat.Common.Constants
     {
         public const string AdminRoleName = "Admin";
 
-        public const string AdministratorUserName = "admin@upbeat.com";
+        public const string AdminUserName = "admin@upbeat.com";
+
+        public const string AdminFirstName = "Mitko";
+
+        public const string AdminLastName = "Stoikov";
 
         public const string AdministratorPassword = "Mitko123!";
 
