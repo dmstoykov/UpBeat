@@ -46,6 +46,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\UpBeat.Web\Libs\Kendo.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework">
       <HintPath>..\packages\MSTest.TestFramework.1.1.17\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
@@ -126,6 +128,7 @@
     <Compile Include="Controllers\AlbumGridController\Index_Should.cs" />
     <Compile Include="Controllers\AlbumGridController\ListAlbums_Should.cs" />
     <Compile Include="Controllers\AlbumGridController\RemoveAlbum_Should.cs" />
+    <Compile Include="Controllers\PlaylistController\AddToFavourites_Should.cs" />
     <Compile Include="Controllers\PlaylistController\All_Should.cs" />
     <Compile Include="Controllers\PlaylistController\Constructor_Should.cs" />
     <Compile Include="Controllers\PlaylistController\Details_Should.cs" />
@@ -148,6 +151,9 @@
     <Compile Include="Services\TrackService\Constructor_Should.cs" />
     <Compile Include="Services\TrackService\Remove_Should.cs" />
     <Compile Include="Services\TrackService\Update_Should.cs" />
+    <Compile Include="Services\UserService\AddFavouriteAlbum_Should.cs" />
+    <Compile Include="Services\UserService\Constructor_Should.cs" />
+    <Compile Include="Services\UserService\GetByUsername_Should.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />

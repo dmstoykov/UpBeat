@@ -17,11 +17,14 @@ namespace UpBeat.Services
         public UserService(IGenericRepository<User> userRepository, IAlbumService albumService) 
             : base(userRepository)
         {
+            Guard.WhenArgument(albumService, "IAlbumService").IsNull().Throw();
             this.albumService = albumService;
         }
 
         public User GetByUsername(string username)
         {
+            Guard.WhenArgument(username, "SearchUsername").IsNullOrEmpty().Throw();
+
             return this.Data.All.Where(x => x.UserName == username).FirstOrDefault();
         }
 
