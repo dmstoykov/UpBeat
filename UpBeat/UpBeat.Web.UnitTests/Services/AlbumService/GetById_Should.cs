@@ -6,6 +6,8 @@
     using Moq;
     using UpBeat.Data.Models;
     using UpBeat.Data.Contracts;
+    using System.Linq;
+    using System;
 
     [TestFixture]
     public class GetById_Should
@@ -32,7 +34,9 @@
                 }
             };
 
-            albumRepositoryMock.Setup(x => x.Get(albumModel.Id)).Returns(albumModel);
+            var albumList = new List<Album>() { albumModel }.AsQueryable();
+
+            albumRepositoryMock.Setup(x => x.All).Returns(albumList);
 
             // Act
             var albumService = new AlbumService(albumRepositoryMock.Object, artistRepositoryMock.Object);
@@ -64,7 +68,9 @@
                 }
             };
 
-            albumRepositoryMock.Setup(x => x.Get(albumModel.Id)).Returns(albumModel);
+            var albumList = new List<Album>() { albumModel }.AsQueryable();
+
+            albumRepositoryMock.Setup(x => x.All).Returns(albumList);
 
             // Act
             var albumService = new AlbumService(albumRepositoryMock.Object, artistRepositoryMock.Object);
@@ -96,14 +102,54 @@
                 }
             };
 
-            albumRepositoryMock.Setup(x => x.Get(albumModel.Id)).Returns(albumModel);
+            var albumList = new List<Album>() { albumModel }.AsQueryable();
+
+            albumRepositoryMock.Setup(x => x.All).Returns(albumList);
+
+            // Act
+            var albumService = new AlbumService(albumRepositoryMock.Object, artistRepositoryMock.Object);
+
+            // Assert
+            Assert.Throws<ArgumentNullException>(() => albumService.GetById(albumId));
+        }
+
+        [Test]
+        public void ReturnAlbumWithNonDeletedTracks_WhenPassedCorrectId()
+        {
+            // Arrange
+            var albumId = 1;
+            var albumRepositoryMock = new Mock<IGenericRepository<Album>>();
+            var artistRepositoryMock = new Mock<IGenericRepository<Artist>>();
+            var albumModel = new Album()
+            {
+                Id = 1,
+                Name = "Sample album 1",
+                Tracks = new List<Track>()
+                {
+                    new Track()
+                    {
+                        Id =1,
+                        Name ="Sample track 1",
+                        IsDeleted = true
+                    },
+                    new Track()
+                    {
+                        Id = 2,
+                        Name = "Sample track 2",
+                    }
+                }
+            };
+
+            var albumList = new List<Album>() { albumModel }.AsQueryable();
+
+            albumRepositoryMock.Setup(x => x.All).Returns(albumList);
 
             // Act
             var albumService = new AlbumService(albumRepositoryMock.Object, artistRepositoryMock.Object);
             var result = albumService.GetById(albumId);
 
             // Assert
-            Assert.IsNull(result);
+            Assert.AreEqual(result.Tracks.Count, 1);
         }
     }
 }

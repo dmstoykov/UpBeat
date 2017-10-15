@@ -38,7 +38,7 @@ namespace UpBeat.Services
         {
             Guard.WhenArgument(track, "TrackToRemove").IsNull().Throw();
 
-            var trackExists = this.Data.All.Any(x => x.Name == track.Name);
+            var trackExists = this.Data.All.Any(x => x.Id == track.Id);
             Guard.WhenArgument(trackExists, "TrackToRemove").IsFalse().Throw();
 
             this.Data.Remove(track);
@@ -48,7 +48,7 @@ namespace UpBeat.Services
         {
             Guard.WhenArgument(track, "TrackToUpdate").IsNull().Throw();
 
-            var trackExists = this.Data.All.Any(x => x.Name == track.Name);
+            var trackExists = this.Data.All.Any(x => x.Id == track.Id);
             Guard.WhenArgument(trackExists, "TrackToUpdate").IsFalse().Throw();
 
             this.Data.Update(track);

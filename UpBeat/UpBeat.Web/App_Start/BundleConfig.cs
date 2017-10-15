@@ -12,6 +12,10 @@ namespace UpBeat.Web
                         "~/Scripts/jquery-{version}.js",
                         "~/Scripts/jquery.unobtrusive-ajax.min.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/Kendo/js").Include(
+                "~/Scripts/Kendo/kendo.web.min.js",
+                "~/Scripts/Kendo/kendo.aspnetmvc.min.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
@@ -36,11 +40,7 @@ namespace UpBeat.Web
                       "~/Scripts/respond.js"
                 ));
 
-            bundles.Add(new ScriptBundle("~/bundles/kendo").Include(
-                "~/Scripts/Kendo/kendo.web.min.js",
-                "~/Scripts/Kendo/kendo.aspnetmvc.min.js"));
-
-            bundles.Add(new StyleBundle("~/Content/kendo").Include(
+            bundles.Add(new StyleBundle("~/Content/Kendo/css").Include(
                   "~/Content/Kendo/kendo.black.min.css",
                   "~/Content/Kendo/kendo.common.min.css"));
         }

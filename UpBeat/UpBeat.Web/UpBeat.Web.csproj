@@ -337,6 +337,10 @@
     <Content Include="Areas\Administration\Views\Shared\_AddTrackPartial.cshtml" />
     <Content Include="Areas\Administration\Views\Shared\EditorTemplates\TrackViewModel.cshtml" />
     <Content Include="Areas\Administration\Views\TrackGrid\Index.cshtml" />
+    <Content Include="App_Data\dbSeed.json" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <None Include="Properties\PublishProfiles\upbeat-project - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\upbeat-project - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Libs\Kendo.Mvc.dll" />
     <Content Include="Libs\Kendo.Mvc.xml" />
@@ -400,9 +404,7 @@
     <Content Include="Views\Shared\_HomePagePartial.cshtml" />
     <Content Include="Views\Shared\_AboutContentPartial.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>

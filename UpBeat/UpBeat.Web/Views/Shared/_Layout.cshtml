@@ -8,7 +8,7 @@
     <title>@ViewBag.Title - UpBeat Inc.</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     @Styles.Render("~/Content/materialize")
-    @Styles.Render("~/Content/kendo")
+    @Styles.Render("~/Content/Kendo/css")
     @Scripts.Render("~/bundles/modernizr")
     @RenderSection("styles", required: false)
 </head>
@@ -45,7 +45,7 @@
         </div>
     </footer>
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/kendo")
+    @Scripts.Render("~/bundles/Kendo/js")
     @Scripts.Render("~/bundles/materialize")
 
     @Html.Kendo().DeferredScripts()

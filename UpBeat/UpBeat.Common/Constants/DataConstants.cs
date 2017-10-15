@@ -11,7 +11,7 @@ namespace UpBeat.Common.Constants
 
         public const string AdminLastName = "Stoikov";
 
-        public const string AdministratorPassword = "Mitko123!";
+        public const string AdministratorPassword = "Admin123!";
 
         public const int AlbumReleaseDateLength = 10;
 

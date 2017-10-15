@@ -21,6 +21,20 @@ namespace UpBeat.Services
             this.artistRepository = artistRepository;
         }
 
+        public Album GetById(int id)
+        {
+            var result = this.Data.All.Where(x => x.Id == id).FirstOrDefault();
+            Guard.WhenArgument(result, "ResultAlbum").IsNull().Throw();
+
+            if (result.Tracks != null)
+            {
+                var tracks = result.Tracks.Where(x => !x.IsDeleted).ToList();
+                result.Tracks = tracks;
+            }
+
+            return result;
+        }
+
         public void Add(Album album, string artistName)
         {
             Guard.WhenArgument(album, "Album").IsNull().Throw();
@@ -50,7 +64,7 @@ namespace UpBeat.Services
         {
             Guard.WhenArgument(album, "AlbumToRemove").IsNull().Throw();
 
-            var albumToRemove = this.Data.All.Any(x => x.Name == album.Name);
+            var albumToRemove = this.Data.All.Any(x => x.Id == album.Id);
             Guard.WhenArgument(albumToRemove, "AlbumToRemove").IsFalse().Throw();
 
             this.Data.Remove(album);
@@ -60,7 +74,7 @@ namespace UpBeat.Services
         {
             Guard.WhenArgument(album, "AlbumToUpdate").IsNull().Throw();
 
-            var albumToUpdate = this.Data.All.Any(x => x.Name == album.Name);
+            var albumToUpdate = this.Data.All.Any(x => x.Id == album.Id);
             Guard.WhenArgument(albumToUpdate, "AlbumToUpdate").IsFalse().Throw();
 
             this.Data.Update(album);
