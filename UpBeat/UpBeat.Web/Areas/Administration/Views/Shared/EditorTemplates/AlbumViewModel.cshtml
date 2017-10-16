@@ -3,16 +3,20 @@
 
 <div class="row">
     @using (Ajax.BeginForm<AdminPanelController>(c => c.AddAlbum(null),
-                                ajaxOptions: new AjaxOptions()
-                                {
-                                    HttpMethod = "Post",
-                                    OnBegin = "onFormSubmit()",
-                                    LoadingElementId="waiting-loader",
-                                    OnComplete= "onFormFinish()"
-                                },
-                                htmlAttributes: new { @class = "col s12", id = "addition-form" }))
+                                                ajaxOptions: new AjaxOptions()
+                                                {
+                                                    HttpMethod = "Post",
+                                                    OnBegin = "onFormSubmit()",
+                                                    LoadingElementId = "waiting-loader",
+                                                    OnComplete = "onFormFinish()"
+                                                },
+                                                htmlAttributes: new { @class = "col s12", id = "addition-form" }))
     {
         <div class="row">
+            <div class="col s12 center red-text">@Html.ValidationSummary()</div>
+        </div>
+        <div class="row">
+
             <div class="input-field col s12">
                 <i class="material-icons prefix">account_circle</i>
                 @Html.EditorFor(model => model.Name,

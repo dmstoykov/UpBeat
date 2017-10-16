@@ -21,6 +21,11 @@
                 </div>
             </div>
             <div class="row center">
+                <div class="col m8 offset-m2 s12 red-text">
+                    @Html.ValidationSummary()
+                </div>
+            </div>
+            <div class="row center">
                 <div class="col m8 offset-m2 s12">
                     @Html.LabelFor(m => m.Email, new { @class = "left" })
                     @Html.TextBoxFor(m => m.Email, new { @class = "validate" })
