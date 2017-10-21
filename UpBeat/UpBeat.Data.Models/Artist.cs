@@ -1,4 +1,5 @@
-﻿using UpBeat.Data.Models.Abstracts;
+﻿using System.Collections.Generic;
+using UpBeat.Data.Models.Abstracts;
 
 namespace UpBeat.Data.Models
 {
@@ -6,6 +7,6 @@ namespace UpBeat.Data.Models
     {
         public string Name { get; set; }
 
-        public virtual Album Album { get; set; }
+        public virtual ICollection<Album> Albums { get; set; }
     }
 }

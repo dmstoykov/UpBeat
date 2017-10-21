@@ -114,7 +114,7 @@
             {
                 Id = 1,
                 Name = "John Doe",
-                Album = albumModel
+                Albums = new List<Album> { albumModel }
             };
 
             var albumsList = new List<Album>() { }.AsQueryable();
