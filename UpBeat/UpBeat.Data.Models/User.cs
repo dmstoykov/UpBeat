@@ -8,7 +8,6 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using UpBeat.Data.Models.Contracts;
 using System.Collections.Generic;
 using UpBeat.Common.Constants;
-using System.Security.Principal;
 
 namespace UpBeat.Data.Models
 {
